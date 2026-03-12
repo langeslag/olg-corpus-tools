@@ -29,7 +29,6 @@ def concord(query):
 
 json_file = 'heliand-c.json'
 if Path(json_file).is_file():
-    print('heliand-c.json already present. Loading...')
     with open(json_file) as json_data:
         tokens = json.load(json_data)
 else:
