@@ -1,4 +1,4 @@
-# HeliPaD concordance.
+# Heliand concordance.
 # For lemma forms see HeliPaD, or heliand-c.json.
 import argparse,re,json
 from pathlib import Path
@@ -12,27 +12,39 @@ args = argparser.parse_args()
 query = args.query
 
 def concord(query):
+    counts = dict.fromkeys(['c_lemma', 'c_form', 'm_form'])
     c_lemma_hits = [i['verse'] + ': ' + i['form'] for i in c_tokens if i['lemma'] == query]
     c_form_hits = [i['verse'] + ': ' + i['lemma'] for i in c_tokens if i['form'] == query]
     m_form_hits = [i['verse'] for i in m_tokens if query in i['tokens']]
     if len(c_lemma_hits) == 0:
         c_lemma_hits.append('No hits.')
+    else:
+        counts['c_lemma'] = len(c_lemma_hits)
     if len(c_form_hits) == 0:
         c_form_hits.append('No hits.')
+    else:
+        counts['c_form'] = len(c_form_hits)
     if len(m_form_hits) == 0:
         m_form_hits.append('No hits.')
-    if len(c_lemma_hits) - len(c_form_hits) > 0:
-        c_form_hits.extend([''] * (len(c_lemma_hits) - len(c_form_hits)))
-    elif len(c_form_hits) - len(c_lemma_hits) > 0:
-        c_lemma_hits.extend([''] * (len(c_form_hits) - len(c_lemma_hits)))
-    if len(c_lemma_hits) - len(m_form_hits) > 0:
-        m_form_hits.extend([''] * (len(c_lemma_hits) - len(m_form_hits)))
+    else:
+        counts['m_form'] = len(m_form_hits)
+    table_length = max(len(c_lemma_hits), len(c_form_hits), len(m_form_hits))
+    for i in [c_lemma_hits, c_form_hits, m_form_hits]:
+        if table_length > len(i):
+            i.extend([''] * (table_length - len(i)))
     table = PrettyTable()
     table.add_column('"' + query + '" as lemma (C):',c_lemma_hits)
     table.add_column('"' + query + '" as form (C):',c_form_hits)
     table.add_column('"' + query + '" as form (M):',m_form_hits)
     table.align = 'l'
     print(table)
+
+    print('')
+    for k,v in counts.items():
+        if v is not None:
+            print(f"{str(v)} hits in {k}.")
+        else:
+            print(f"No hits in {k}.")
 
 c_json_file = 'heliand-c.json'
 if not(Path(c_json_file).is_file()):
