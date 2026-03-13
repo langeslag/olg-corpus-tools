@@ -1,5 +1,6 @@
 # Heliand concordance.
 # For lemma forms see HeliPaD, or heliand-c.json.
+# TODO: k/c equivalence; b/ƀ equivalence; ð/đ equivalence
 import argparse,re,json
 from pathlib import Path
 from prettytable import PrettyTable
@@ -13,8 +14,8 @@ query = args.query
 
 def concord(query):
     counts = dict.fromkeys(['c_lemma', 'c_form', 'm_form'])
-    c_lemma_hits = [i['verse'] + ': ' + i['form'] for i in c_tokens if i['lemma'] == query]
-    c_form_hits = [i['verse'] + ': ' + i['lemma'] for i in c_tokens if i['form'] == query]
+    c_lemma_hits = [i['verse'] + ': ' + i['form'] + ' (' + i['pos'] + ')' for i in c_tokens if i['lemma'] == query]
+    c_form_hits = [i['verse'] + ' (' + i['lemma'] + ' ' + i['pos'] + ')' for i in c_tokens if i['form'] == query]
     m_form_hits = [i['verse'] for i in m_tokens if query in i['tokens']]
     if len(c_lemma_hits) == 0:
         c_lemma_hits.append('No hits.')
@@ -39,12 +40,20 @@ def concord(query):
     table.align = 'l'
     print(table)
 
-    print('')
+    summary = ''
+    initial = True
     for k,v in counts.items():
-        if v is not None:
-            print(f"{str(v)} hits in {k}.")
+        if v is not None and v > 1:
+            summary += f"{str(v)} hits in {k}; "
+        elif v is not None and v == 1:
+            summary += f"1 hit in {k}; "
+        elif initial:
+            summary += f"No hits in {k}; "
         else:
-            print(f"No hits in {k}.")
+            summary += f"no hits in {k}; "
+        initial = False
+    summary = summary.rstrip('; ') + '.'
+    print(summary)
 
 c_json_file = 'heliand-c.json'
 if not(Path(c_json_file).is_file()):

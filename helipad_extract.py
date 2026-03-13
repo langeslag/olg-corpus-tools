@@ -46,8 +46,8 @@ def extract():
             newline = line_boundary.search(line)
             off_verse = caesura.search(line)
             if result:
-                token['form'] = result.group(2)
-                token['lemma'] = result.group(3)
+                token['form'] = result.group(2).lower()
+                token['lemma'] = result.group(3).lower()
                 token['pos'] = result.group(1)
                 tokens.append(token)
             elif off_verse:
