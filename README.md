@@ -10,7 +10,7 @@ Requires `GitPython`.
 
 ## `wikisource_extract.py` and `wikisource-extract.ipynb`
 
-A script converting the [German Wikisource](https://de.wikisource.org/wiki/Heliand)'s text of the _Heliand_ (representing [Behaghel's [fourth, i.e. 1922?] edition](https://archive.org/details/heliandundgenesi00beha/), based on M, i.e. [Munich, Bayerische Staatsbibliothek, Cgm 25](https://www.digitale-sammlungen.de/de/view/bsb00026305), but with heavy emendation), to JSON and plaintext.
+A script converting the [German Wikisource](https://de.wikisource.org/wiki/Heliand)'s text of the _Heliand_ (representing [Behaghel's [third, i.e. 1922?] edition](https://archive.org/details/heliandundgenesi00beha/), based on M, i.e. [Munich, Bayerische Staatsbibliothek, Cgm 25](https://www.digitale-sammlungen.de/de/view/bsb00026305), but with heavy emendation), to JSON and plaintext.
 
 Requires `bs4` and `pymediawiki`.
 
