@@ -16,7 +16,7 @@ Requires `bs4` and `pymediawiki`.
 
 ## `helicord.py`
 
-A command-line concordance taking any number of headword and/or inflected forms as arguments, and returning matching halfline references with the lemma or form encountered.
+A command-line concordance taking any number of headword and/or inflected forms as arguments, and returning matching halfline references with the lemma or form encountered, consulting both of the data sets generated in the other scripts (which are accordingly generated if the JSONs are not present).
 
 Requires `GitPython` and `prettytable`.
 
