@@ -16,7 +16,7 @@ def concord(query):
     counts = dict.fromkeys(['c_lemma', 'c_form', 'm_form'])
     c_lemma_hits = [i['verse'] + ': ' + i['form'] + ' (' + i['pos'] + ')' for i in c_tokens if i['lemma'] == query]
     c_form_hits = [i['verse'] + ' (' + i['lemma'] + ' ' + i['pos'] + ')' for i in c_tokens if i['form'] == query]
-    m_form_hits = [i['verse'] for i in m_tokens if query in i['tokens']]
+    m_form_hits = [k for k,v in m_tokens.items() if query in v]
     if len(c_lemma_hits) == 0:
         c_lemma_hits.append('No hits.')
     else:

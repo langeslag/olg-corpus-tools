@@ -22,8 +22,8 @@ with open(m_json_file) as m_json_data:
 c_lemmas = [i['lemma'].replace('-', '') for i in c_tokens]
 c_forms = [i['form'] for i in c_tokens]
 m_forms = []
-for verse in m_verses:
-    m_forms.extend(verse['tokens'])
+for k,v in m_verses.items():
+    m_forms.extend(v)
 
 all_forms = sorted(c_lemmas + c_forms + m_forms)
 all_forms = list(dict.fromkeys(all_forms))

@@ -65,7 +65,7 @@ def extract():
             heliand.append(data)
         previous_line = line
     
-    heliand_clean = []
+    heliand_clean = dict()
     for line in heliand:
         line_no = line[0].replace('b', 'x')
         on_verse = {
@@ -76,8 +76,8 @@ def extract():
             'verse': line_no + 'b',
             'tokens': [normalize(i) for i in line[2]]
         }
-        heliand_clean.append(on_verse)
-        heliand_clean.append(off_verse)
+        heliand_clean[on_verse['verse']] = on_verse['tokens']
+        heliand_clean[off_verse['verse']] = off_verse['tokens']
     
     json_file_clean = 'heliand-m.json'
     if not(Path(json_file_clean).is_file()):
@@ -117,19 +117,19 @@ def extract():
     else:
         print('Generating heliand-m.txt...')
         verse_lines = []
-        for verse in heliand_clean:
-            if len(verse['tokens']) == 1 and len(verse['tokens'][0]) < 1:
+        for k,v in heliand_clean.items():
+            if len(v) == 1 and len(v[0]) < 1:
                 empty = '                   '
             else:
                 empty = ''
-            tokens = [token for token in verse['tokens'] if len(token) > 0]
-            if 'a' in verse['verse']:
+            tokens = [token for token in v if len(v) > 0]
+            if 'a' in k:
                 if print_line_numbers == True:
-                    if 'x' in verse['verse']:
+                    if 'x' in k:
                         zusatz = 'x'
                     else:
                         zusatz = ' '
-                    line_no = str("{:04d}".format(int(verse['verse'].rstrip('ax')))) + zusatz + ' '
+                    line_no = str("{:04d}".format(int(k.rstrip('ax')))) + zusatz + ' '
                 else:
                     line_no = ''
                 reconstructed_line = line_no + empty + ' '.join(tokens)
