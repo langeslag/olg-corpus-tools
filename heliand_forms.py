@@ -5,33 +5,40 @@ from pathlib import Path
 import wikisource_extract
 import helipad_extract
 
-c_json_file = 'heliand-c.json'
-if not(Path(c_json_file).is_file()):
-    helipad_extract.extract()
-
-with open(c_json_file) as c_json_data:
-    c_tokens = json.load(c_json_data)
+def generate():
+    c_json_file = 'heliand-c.json'
+    if not(Path(c_json_file).is_file()):
+        helipad_extract.extract()
     
-m_json_file = 'heliand-m.json'
-if not(Path(m_json_file).is_file()):
-    wikisource_extract.extract()
+    with open(c_json_file) as c_json_data:
+        c_tokens = json.load(c_json_data)
+        
+    m_json_file = 'heliand-m.json'
+    if not(Path(m_json_file).is_file()):
+        wikisource_extract.extract()
+    
+    with open(m_json_file) as m_json_data:
+            m_verses = json.load(m_json_data)
+    
+    c_lemmas = [i['lemma'].replace('-', '') for i in c_tokens]
+    c_forms = [i['form'] for i in c_tokens]
+    m_forms = []
+    for k,v in m_verses.items():
+        m_forms.extend(v)
+    
+    all_forms = sorted(c_lemmas + c_forms + m_forms)
+    all_forms = list(dict.fromkeys(all_forms))
+    if '' in all_forms:
+        all_forms.remove('')
+    
+    print('Generating heliand-forms.json...')
+    with open('heliand-forms.json', 'w', encoding='utf-8') as outfile:
+        json.dump(all_forms, outfile, ensure_ascii=False, indent=4)
+    
+    print('Generating heliand-forms.txt...')
+    with open('heliand-forms.txt', 'w') as outfile:
+        outfile.write('\n'.join(all_forms))
+    print('Done.')
 
-with open(m_json_file) as m_json_data:
-        m_verses = json.load(m_json_data)
-
-c_lemmas = [i['lemma'].replace('-', '') for i in c_tokens]
-c_forms = [i['form'] for i in c_tokens]
-m_forms = []
-for k,v in m_verses.items():
-    m_forms.extend(v)
-
-all_forms = sorted(c_lemmas + c_forms + m_forms)
-all_forms = list(dict.fromkeys(all_forms))
-if '' in all_forms:
-    all_forms.remove('')
-
-with open('heliand_forms.json', 'w', encoding='utf-8') as outfile:
-    json.dump(all_forms, outfile, ensure_ascii=False, indent=4)
-
-with open('heliand_forms.txt', 'w') as outfile:
-    outfile.write('\n'.join(all_forms))
+if __name__ == '__main__':
+    generate()
