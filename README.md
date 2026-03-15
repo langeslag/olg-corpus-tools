@@ -2,6 +2,10 @@
 
 Processing tools for Old Low German (i.e. Old Saxon) text corpora and resources.
 
+## `heliand_pipeline.py`
+
+Runs all the generative scripts mentioned below. See `requirements.txt` for library prerequisites.
+
 ## `helipad_extract.py` and `helipad-extract.ipynb`
 
 A script extracting token forms with their lemma, POS, and verse ID metadata from the CorpusSearch PSD-formatted [HeliPaD](https://github.com/DiGS-Corpora/HeliPaD) corpus (i.e. the text of [Sievers 1878](https://archive.org/details/heliandherausgvonsieve), representing the C text [[London, British Library, MS Cotton Caligula A. vii](https://searcharchives.bl.uk/catalog/041-001102326)] of the _Heliand_), and outputting them in JSON and plaintext formats. The script has a few variables for tweaking the presentation of the plaintext output.
@@ -13,6 +17,10 @@ Requires `GitPython`.
 A script converting the [German Wikisource](https://de.wikisource.org/wiki/Heliand)'s text of the _Heliand_ (representing [Behaghel's [third, i.e. 1922?] edition](https://archive.org/details/heliandundgenesi00beha/), based on M, i.e. [Munich, Bayerische Staatsbibliothek, Cgm 25](https://www.digitale-sammlungen.de/de/view/bsb00026305), but with heavy emendation), to JSON and plaintext.
 
 Requires `bs4` and `pymediawiki`.
+
+## `heliand_xpollinate.py`
+
+Transfers lemma and POS metadata from C to M, outputting to `heliand-m_rich.json`. The mechanism is to compare tokens in identical or adjacent position within the halfline between the two editions for Levenshtein distance, and duplicate the metadata if the similarity criterion is met. Currently this leaves M 97.8 percent lemmatized, precision unknown.
 
 ## `heliand_synoptic.py`
 
