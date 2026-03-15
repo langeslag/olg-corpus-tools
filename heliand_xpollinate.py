@@ -3,6 +3,7 @@
 import json
 from pathlib import Path
 from Levenshtein import distance
+from prettytable import PrettyTable
 import wikisource_extract
 import helipad_extract
 
@@ -26,6 +27,7 @@ def xfer():
                 m_verses = json.load(m_json_data)
         
         m_data = []
+        mismatches = []
         for verse,tokens in m_verses.items():
             c_verse = [token for token in c_tokens if token['verse'] == verse]
             for idx,token in enumerate(tokens):
@@ -45,18 +47,51 @@ def xfer():
                             token_data['lemma'] = c_verse[idx+1]['lemma']
                             token_data['pos'] = c_verse[idx+1]['pos']
                     if token_data['lemma'] is None and distance(token, c_verse[idx]['form']) < 4 or distance(token, c_verse[idx]['lemma']) < 4:
+                        if distance(token, c_verse[idx]['form']) > 2:
+                            mismatch = {
+                                    'verse': verse,
+                                    'm_form': token,
+                                    'c_form': c_verse[idx]['form'],
+                                    'lemma': c_verse[idx]['lemma']
+                                    }
+                            mismatches.append(mismatch)
                         token_data['lemma'] = c_verse[idx]['lemma']
                         token_data['pos'] = c_verse[idx]['pos']
                     if token_data['lemma'] is None and idx > 0:
                         if distance(token, c_verse[idx-1]['form']) < 4 or distance(token, c_verse[idx-1]['lemma']) < 4:
+                            if distance(token, c_verse[idx]['form']) > 2:
+                                mismatch = {
+                                    'verse': verse,
+                                    'm_form': token,
+                                    'c_form': c_verse[idx-1]['form'],
+                                    'lemma': c_verse[idx-1]['lemma']
+                                    }
+                            mismatches.append(mismatch)
                             token_data['lemma'] = c_verse[idx-1]['lemma']
                             token_data['pos'] = c_verse[idx-1]['pos']
                     if token_data['lemma'] is None and len(c_verse) - idx > 1:
                         if distance(token, c_verse[idx+1]['form']) < 4 or distance(token, c_verse[idx+1]['lemma']) < 4:
+                            if distance(token, c_verse[idx]['form']) > 2:
+                                mismatch = {
+                                    'verse': verse,
+                                    'm_form': token,
+                                    'c_form': c_verse[idx+1]['form'],
+                                    'lemma': c_verse[idx+1]['lemma']
+                                    }
+                                mismatches.append(mismatch)
                             token_data['lemma'] = c_verse[idx+1]['lemma']
                             token_data['pos'] = c_verse[idx+1]['pos']
                 m_data.append(token_data)
     
+        print('Printing edge cases to _proofread.txt for inspection...')
+        table = PrettyTable()
+        table.align = 'l'
+        table.field_names = ['Verse', 'C Form', 'M Form', 'Lemma']
+        for row in mismatches:
+            table.add_row([row['verse'], row['c_form'], row['m_form'], row['lemma']])
+        table_string = table.get_string()
+        with open('_proofread.txt', 'w') as inspect_file:
+            inspect_file.write(table_string)
         print('Generating heliand-m_rich.json...')
         with open('heliand-m_rich.json', 'w', encoding='utf-8') as outfile:
             json.dump(m_data, outfile, ensure_ascii=False, indent=4)
