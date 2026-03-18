@@ -2,7 +2,7 @@
 
 Processing tools for Old Low German (i.e. Old Saxon) text corpora and resources.
 
-## `heliand_pipeline.py`
+## `pipeline.py`
 
 Runs all the generative scripts mentioned below. See `requirements.txt` for library prerequisites.
 
@@ -18,9 +18,21 @@ A script converting the [German Wikisource](https://de.wikisource.org/wiki/Helia
 
 Requires `bs4` and `pymediawiki`.
 
+## `heliand-v_zangemeister.txt`
+
+My transcript of the Vatican _Heliand_ following [Zangemeister and Braune 1894](https://archive.org/details/bruchstckedera00zanguoft).
+
+## `heliand_v.py`
+
+Converts `heliand-v_zangemeister.txt` into JSON data.
+
 ## `heliand_xpollinate.py`
 
-Transfers lemma and POS metadata from C to M, outputting to `heliand-m_rich.json`. The mechanism is to compare tokens in identical or adjacent position within the halfline between the two editions for Levenshtein distance, and duplicate the metadata if the similarity criterion is met. Currently this leaves M 97.8 percent lemmatized, precision unknown.
+Transfers lemma and POS metadata from C to M, outputting to `heliand-m_rich.json`. The mechanism is to compare tokens in identical or adjacent position within the halfline between the two editions for Levenshtein distance, and duplicate the metadata if the similarity criterion is met. Currently this leaves M 97.8 percent lemmatized, I am currently correcting the false positives and negatives by hand.
+
+## `heliandv_xpollinate.py`
+
+Transfers lemma and POS metadata from C to V, outputting to `heliand-v_rich.json`. The mechanism is to compare tokens in identical or adjacent position within the halfline between the two editions for Levenshtein distance, and duplicate the metadata if the similarity criterion is met.
 
 ## `heliand_synoptic.py`
 
