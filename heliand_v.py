@@ -4,6 +4,10 @@
 import json
 from pathlib import Path
 
+print_line_numbers = True
+caesura_span = '    '
+#caesura_span = '\t'
+
 normalization = {
     'á': 'a',
     'é': 'e',
@@ -43,6 +47,24 @@ def extract():
             onverse_tokens = normalize(onverse).split()
             heliand[number + 'a'] = onverse_tokens
 
+    plaintext_file = 'heliand-v.txt'
+    print('Generating heliand-v.txt...')
+    verse_lines = []
+    for k,v in heliand.items():
+        tokens = [token for token in v if len(v) > 0]
+        if 'a' in k:
+            if print_line_numbers == True:
+                line_no = k.rstrip('a') + ' '
+            else:
+                line_no = ''
+            reconstructed_line = line_no + ' '.join(tokens)
+            verse_lines.append(reconstructed_line)
+        else:
+            verse_lines[-1] = verse_lines[-1] + caesura_span + ' '.join(tokens)
+            
+    with open(plaintext_file, 'w') as outfile:
+        outfile.write('\n'.join(verse_lines))
+    
     json_file = 'heliand-v.json'
     print('Generating heliand-v.json...')
     with open(json_file, 'w', encoding='utf-8') as outfile:
