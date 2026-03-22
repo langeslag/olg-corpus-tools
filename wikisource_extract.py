@@ -50,6 +50,15 @@ def extract():
     caesura = ' · '
     previous_line = ''
     for line in plaintext:
+        # Error in M3802:
+        if 'uuerðeouuiht' in line:
+            line.replace('uuerðeouuiht', 'uuerð eouuiht')
+        # Error in M5798:
+        if 'an scian' in line:
+            line.replace('an scian', 'anscian')
+        # Standardize word division in M4368:
+        if 'sodomo land' in line:
+            line.replace('sodomo land', 'sodomoland')
         if re.search(r'\d', line):
             if caesura in line:
                 line = (line.split(' ', 1)[0], line.split(' ', 1)[1].split(caesura))

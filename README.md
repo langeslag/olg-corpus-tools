@@ -48,6 +48,10 @@ A command-line concordance taking any number of headword and/or inflected forms 
 
 Requires `prettytable`.
 
+## `verses_of_different_length.py`
+
+Generates `verses-of-different-length.txt`, a synoptic output of M and C verses with different token counts for ease of comparison.
+
 ## License Notice
 
 These tools are Copyright 2026 P. S. Langeslag.

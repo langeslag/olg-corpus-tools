@@ -9,6 +9,7 @@ import heliand_forms
 import heliand_synoptic
 import heliand_xpollinate
 import heliandv_xpollinate
+import verses_of_different_length
 
 #for file in [
 #    'heliand-c.json',
@@ -34,3 +35,4 @@ heliand_forms.generate()
 heliand_synoptic.generate()
 heliand_xpollinate.xfer()
 heliandv_xpollinate.xfer()
+verses_of_different_length.generate()
