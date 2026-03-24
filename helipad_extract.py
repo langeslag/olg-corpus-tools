@@ -40,14 +40,6 @@ def extract():
         line_num = 1
         halfline = 'a'
         for line in psd:
-            # Not sure how line 379 came to be so wrong (what am I missing?):
-            if 'biuand ina mid uuadi' in line:
-                line.replace('biuand ina mid uuadi', 'biuuand ina mid uuadiu')
-            if 'uuiƀo scoinosta' in line:
-                line.replace('uuiƀo scoinosta', 'uuibo sconiost')
-            # Not sure how line 3802 came to be so wrong (how many of these are there?):
-            if 'nist thi uureth eouuiht' in line:
-                line.replace('nist thi uureth eouuiht', 'nis thi uuerd eouuiht')
             token = dict()
             token['verse'] = str(line_num) + halfline
             result = pattern.search(line)
@@ -58,18 +50,38 @@ def extract():
                 token['lemma'] = result.group(3).lower()
                 token['pos'] = result.group(1)
                 # Correct errors in HeliPaD:
+                if line_num == 379:
+                    # Not sure how line 379 came to be so wrong (what am I missing?):
+                    if token['form'] == 'biuand':
+                        token['form'] = 'biuuand'
+                    if token['form'] == 'uuadi':
+                        token['form'] = 'uuadiu'
+                    if token['form'] == 'uuiƀo':
+                        token['form'] = 'uuibo'
+                    if token['form'] == 'scoinosta':
+                        token['form'] = 'sconiost'
+                if line_num == 3802:
+                    if token['form'] == 'nist':
+                        token['form'] = 'nis'
+                    if token['form'] == 'uureth':
+                        token['form'] = 'uuerd'
+                if line_num in [805, 1662, 1685] and token['lemma'] == 'gornon':
+                    token['lemma'] = 'grornon'
                 if line_num == 1217 and token['form'] == 'lansam':
                     token['form'] = 'langsam'
                 if line_num == 2104 and token['lemma'] == 'wehslan':
                     token['lemma'] = 'wehslon'
                 if line_num == 2421 and token['lemma'] == 'up':
                     token['lemma'] = 'uppa'
-                if line_num == 3044 and halfline == 'a' and token['form'] == 'iiu':
+                if line_num == 3044 and token['form'] == 'iiu':
                     token['form'] = 'giu'
                 if line_num == 3087 and token['lemma'] == 'witan':
                     token['lemma'] = 'witi'
                 if line_num == 3381 and token['lemma'] == 'witan':
                     token['lemma'] = 'witi'
+                if line_num == 3596 and token['lemma'] == 'hatulo':
+                    token['lemma'] = 'hatul'
+                    token['pos'] = 'ADJ^N^SG'
                 if line_num == 3802 and token['form'] == 'filo':
                     token['lemma'] = 'filu'
                 if line_num == 4332 and token['lemma'] == 'witan':
@@ -97,23 +109,11 @@ def extract():
     if Path(plaintext_file).is_file():
         print('heliand-c.txt already present. Skipping.')
     else:
-        print('Generating heliand-c.txt. This may take a while...')
+        print('Generating heliand-c.txt. This step takes a minute...')
         verse_lines = []
         for number in range(1, int(tokens[-1]['verse'].rstrip('ab'))):
             hits_a = [i['form'] for i in tokens if i['verse'] == str(number) + 'a']
             hits_b = [i['form'] for i in tokens if i['verse'] == str(number) + 'b']
-            if number == 1217:
-                # Correct an error in HeliPaD:
-                idx = hits_a['lansam']
-                hits_a[idx] = 'langsam'
-            if number == 3044:
-                # Correct an error in HeliPaD:
-                idx = hits_a['iiu']
-                hits_a[idx] = 'giu'
-            if number == 5768:
-                # Correct an error in HeliPaD:
-                idx = hits_a['iddilgard']
-                hits_a[idx] = 'middilgard'
             if print_line_numbers == True:
                 reconstructed_line = str("{:04d}".format(number)) + ' ' + ' '.join(hits_a) + caesura_span + ' '.join(hits_b)
             else:

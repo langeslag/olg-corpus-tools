@@ -50,15 +50,6 @@ def extract():
     caesura = ' · '
     previous_line = ''
     for line in plaintext:
-        # Error in M3802:
-        if 'uuerðeouuiht' in line:
-            line.replace('uuerðeouuiht', 'uuerð eouuiht')
-        # Error in M5798:
-        if 'an scian' in line:
-            line.replace('an scian', 'anscian')
-        # Standardize word division in M4368:
-        if 'sodomo land' in line:
-            line.replace('sodomo land', 'sodomoland')
         if re.search(r'\d', line):
             if caesura in line:
                 line = (line.split(' ', 1)[0], line.split(' ', 1)[1].split(caesura))
@@ -79,12 +70,27 @@ def extract():
         line_no = line[0].replace('b', 'x')
         on_verse = {
             'verse': line_no + 'a',
-            'tokens': [normalize(i) for i in line[1]]
+            'tokens': [normalize(i) for i in line[1] if normalize(i) != '']
         }
         off_verse = {
             'verse': line_no + 'b',
-            'tokens': [normalize(i) for i in line[2]]
+            'tokens': [normalize(i) for i in line[2] if normalize(i) != '']
         }
+        if len(on_verse['tokens']) > 1:
+            # Word division in M4368:
+            if on_verse['tokens'][1] == 'sodomo' and on_verse['tokens'][2] == 'land':
+                on_verse['tokens'][1] = 'sodomoland'
+                on_verse['tokens'].pop()
+        if len(off_verse['tokens']) > 1:
+            # Error in M3802:
+            if off_verse['tokens'][-1] == 'uuerðeouuiht':
+                off_verse['tokens'][-1] = 'uuerð'
+                off_verse['tokens'].append('eouuiht')
+            # Error in M5798:
+            if off_verse['tokens'][-1] == 'scian' and off_verse['tokens'][-2] == 'an':
+                off_verse['tokens'][-2] = 'anscian'
+                off_verse['tokens'].pop()
+
         heliand_clean[on_verse['verse']] = on_verse['tokens']
         heliand_clean[off_verse['verse']] = off_verse['tokens']
     
