@@ -6,6 +6,7 @@ from Levenshtein import distance
 from prettytable import PrettyTable
 import wikisource_extract
 import helipad_extract
+import lemma2pos
 
 def xfer():
     target = 'heliand-m_rich_2ndpass.json'
@@ -33,6 +34,13 @@ def xfer():
         corrections_file = 'lemmas_inverted_corrected.json'
         with open(corrections_file) as corrections_json_data:
                 approved = json.load(corrections_json_data)
+
+        pos_file = 'heliand-c_pos.json'
+        if not(Path(pos_file).is_file()):
+            lemma2pos.generate()
+
+        with open(pos_file) as pos_data:
+                c_pos = json.load(pos_data)
         
         m_2ndpass = []
         mismatches = []
@@ -42,9 +50,18 @@ def xfer():
                 token_data = dict.fromkeys(['verse', 'form', 'lemma', 'pos'])
                 token_data['verse'] = verse
                 token_data['form'] = token
+                if len(approved[token]) == 1:
+                    lemma = approved[token][0]
+                    token_data['lemma'] = lemma
+                    if lemma in c_pos.keys():
+                        if len(c_pos[lemma]) == 1:
+                            token_data['pos'] = c_pos[lemma][0]
+                        else:
+                            base_labels = list(set([i.split('^')[0] for i in c_pos[lemma]]))
+                            if len(base_labels) == 1:
+                                token_data['pos'] = base_labels[0]
+                # I am resisting an elif here, just because verse-specific data may be better esp. for POS:
                 if len(c_verse) > idx:
-                    # This is the first key difference from first pass: I test whether the token form is a recognized form of C's lemma.
-                    # (not sure whether I'll have to unwrap that list still! how many levels does it go now?)
                     if c_verse[idx]['form'] == token or c_verse[idx]['lemma'] in [v for k,v in approved.items() if k == token][0]:
                         token_data['lemma'] = c_verse[idx]['lemma']
                         token_data['pos'] = c_verse[idx]['pos']
