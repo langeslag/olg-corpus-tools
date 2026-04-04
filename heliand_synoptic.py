@@ -1,11 +1,38 @@
 # Generates synoptic heliand_synoptic.json and heliand_synoptic.txt.
+# TODO: add in LPS
 import re,json
 from pathlib import Path
 import wikisource_extract
 import helipad_extract
 import heliand_v
+import heliandlps_xpollinate
+
+lps = dict()
+for witness in ['l', 'p', 's']:
+    json_file = f"heliand-{witness}.json"
+    if not(Path(json_file).is_file()):
+        heliandlps_xpollinate.xfer(witness)
+
+    with open(json_file) as json_data:
+        tokens = json.load(json_data)
+    
+    lps[witness] = tokens
 
 def generate():
+    def lps_reconstruct(witness, line_no):
+        on_verse_ref = line_no + 'a'
+        off_verse_ref = line_no + 'b'
+        if on_verse_ref in lps[witness].keys():
+            a = ' '.join(lps[witness][on_verse_ref])
+            if off_verse_ref in lps[witness].keys():
+                b = ' '.join(lps[witness][off_verse_ref])
+                line = '    '.join([a, b])
+            else:
+                line = a
+        else:
+            line = None
+        return line
+
     def reconstruct(line_no):
         on_verse_ref = line_no + 'a'
         off_verse_ref = line_no + 'b'
@@ -33,9 +60,16 @@ def generate():
                 v = v_a
         else:
             v = None
+        l = lps_reconstruct('l', line_no)
+        p = lps_reconstruct('p', line_no)
+        s = lps_reconstruct('s', line_no)
+
         result = {
             'c': c,
             'm': m,
+            'l': l,
+            'p': p,
+            's': s,
             'v': v
             }
         return result
@@ -77,17 +111,14 @@ def generate():
     with open('heliand-synoptic.txt', 'w') as outfile:
         for k,v in poem.items():
             line_no = str("{:04d}".format(int(k.rstrip('x'))))
-            if v['c'] is not None:
-                if v['v'] is not None:
-                    outfile.write('C' + line_no + '  ' + v['c'] + '\nM' + line_no + '  ' + v['m'] + '\nV' + line_no + '  ' + v['v'] + '\n\n')
-                else:
-                    outfile.write('C' + line_no + '  ' + v['c'] + '\nM' + line_no + '  ' + v['m'] + '\n\n')
-            else:
-                if 'x' in k:
-                    line_no = line_no + 'x'
-                    outfile.write('M' + line_no + ' ' + v['m'] + '\n\n')
-                else:
-                    outfile.write('M' + line_no + '  ' + v['m'] + '\n\n')
+            for witness in v.keys():
+                line = v[witness]
+                if line is not None:
+                    if 'x' in k:
+                        outfile.write(witness.upper() + line_no + ' ' + line + '\n')
+                    else:
+                        outfile.write(witness.upper() + line_no + '  ' + line + '\n')
+            outfile.write('\n')
     print('Done.')
 
 if __name__ == '__main__':
