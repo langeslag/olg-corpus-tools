@@ -22,6 +22,10 @@ Requires `bs4` and `pymediawiki`.
 
 My transcript of the Vatican _Heliand_ following [Zangemeister and Braune 1894](https://archive.org/details/bruchstckedera00zanguoft).
 
+## `heliand-l_raw.txt`, `heliand-p_raw.txt`, `heliand-s_raw.txt`
+
+My own (rough) transcripts of the so-called Leipzig, Prague, and Straubing fragments.
+
 ## `heliand_v.py`
 
 Converts `heliand-v_zangemeister.txt` into `heliand-v.json` as well as a normalized `heliand-v.txt`.
@@ -49,6 +53,10 @@ This file sits outside the pipeline, as it has been manually proofread and repre
 ## `heliand_xpollinate_2ndpass.py`
 
 Generates `heliand-m_rich_2ndpass.json` by repeating a version of `heliand_xpollinate.py`, but now informed by `lemmas_inverted_corrected.json` so as to avoid misassignments. It also knows to assign a lemma and rough POS label in most cases where C offers no matching token.
+
+## `heliandlps_xpollinate.py`
+
+Taking `heliand-l_raw.txt`, `heliand-p_raw.txt`, and `heliand-s_raw.txt` as input, (1) normalizes them into `heliand-l.txt` etc.; (2) outputs basic JSON files `heliand-l.json` etc.; (3) transfers POS and lemma metadata from HeliPaD and outputs to `heliand-l_rich.json` etc.
 
 ## `heliand_synoptic.py`
 
