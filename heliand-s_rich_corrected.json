@@ -1,0 +1,5745 @@
+[
+    {
+        "verse": "351b",
+        "form": "uuarun",
+        "lemma": "wesan",
+        "pos": "BEDI^3^PL"
+    },
+    {
+        "verse": "352a",
+        "form": "bokspahe",
+        "lemma": "bokspahi",
+        "pos": "ADJ^N^PL"
+    },
+    {
+        "verse": "352a",
+        "form": "uueros",
+        "lemma": "wer",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "352b",
+        "form": "endi",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "352b",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "352b",
+        "form": "bref",
+        "lemma": "bref",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "352b",
+        "form": "scriuun",
+        "lemma": "skrivan",
+        "pos": "VBDI^3^PL"
+    },
+    {
+        "verse": "353a",
+        "form": "tulgo",
+        "lemma": "tulgo",
+        "pos": "ADV"
+    },
+    {
+        "verse": "353a",
+        "form": "niudlica",
+        "lemma": "niudliko",
+        "pos": "ADV"
+    },
+    {
+        "verse": "353b",
+        "form": "nomana",
+        "lemma": "namo",
+        "pos": "N^G^PL"
+    },
+    {
+        "verse": "353b",
+        "form": "gihuilikne",
+        "lemma": "gihwilik",
+        "pos": "GE+WADJ^A^SG"
+    },
+    {
+        "verse": "354a",
+        "form": "ia",
+        "lemma": "ja",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "354a",
+        "form": "land",
+        "lemma": "land",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "354a",
+        "form": "ia",
+        "lemma": "ja",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "354a",
+        "form": "liudi",
+        "lemma": "liudi",
+        "pos": "N^A^PL"
+    },
+    {
+        "verse": "354b",
+        "form": "that",
+        "lemma": "that",
+        "pos": "C"
+    },
+    {
+        "verse": "354b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "354b",
+        "form": "ni",
+        "lemma": "ne",
+        "pos": "NEG"
+    },
+    {
+        "verse": "354b",
+        "form": "mahti",
+        "lemma": "mugan",
+        "pos": "MDDI^3^SG"
+    },
+    {
+        "verse": "354b",
+        "form": "alettian",
+        "lemma": "alettian",
+        "pos": "VB"
+    },
+    {
+        "verse": "354b",
+        "form": "monn",
+        "lemma": "man",
+        "pos": "MAN^N^3^SG"
+    },
+    {
+        "verse": "355a",
+        "form": "gumano",
+        "lemma": "gumo",
+        "pos": "N^G^PL"
+    },
+    {
+        "verse": "355a",
+        "form": "sulica",
+        "lemma": "sulik",
+        "pos": "ADJ^A^SG"
+    },
+    {
+        "verse": "355a",
+        "form": "gambra",
+        "lemma": "gambra",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "355b",
+        "form": "so",
+        "lemma": "so",
+        "pos": "C"
+    },
+    {
+        "verse": "355b",
+        "form": "imu",
+        "lemma": "he",
+        "pos": "PRO^D^3^SG"
+    },
+    {
+        "verse": "355b",
+        "form": "scolde",
+        "lemma": "skulan",
+        "pos": "MDDI^3^SG"
+    },
+    {
+        "verse": "355b",
+        "form": "geldan",
+        "lemma": "geldan",
+        "pos": "VB"
+    },
+    {
+        "verse": "355b",
+        "form": "gihue",
+        "lemma": "gihwe",
+        "pos": "GE+WPRO^N"
+    },
+    {
+        "verse": "356a",
+        "form": "heliđa",
+        "lemma": "helith",
+        "pos": "N^G^PL"
+    },
+    {
+        "verse": "356a",
+        "form": "fan",
+        "lemma": "fan",
+        "pos": "P"
+    },
+    {
+        "verse": "356a",
+        "form": "is",
+        "lemma": "is",
+        "pos": "PRO$^D^3^SG"
+    },
+    {
+        "verse": "356a",
+        "form": "haƀde",
+        "lemma": "hovid",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "356b",
+        "form": "tha",
+        "lemma": "tho",
+        "pos": "ADV"
+    },
+    {
+        "verse": "356b",
+        "form": "giuuet",
+        "lemma": "witan",
+        "pos": "GE+VBDI^3^SG"
+    },
+    {
+        "verse": "356b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^SG"
+    },
+    {
+        "verse": "356b",
+        "form": "ak",
+        "lemma": "ok",
+        "pos": "ALSO"
+    },
+    {
+        "verse": "356b",
+        "form": "mid",
+        "lemma": "mid",
+        "pos": "P"
+    },
+    {
+        "verse": "356b",
+        "form": "is",
+        "lemma": "is",
+        "pos": "PRO$^D^3^SG"
+    },
+    {
+        "verse": "356b",
+        "form": "hiskie",
+        "lemma": "hiwiski",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "357a",
+        "form": "ioseph",
+        "lemma": "joseph",
+        "pos": "NPR^N^SG"
+    },
+    {
+        "verse": "357a",
+        "form": "the",
+        "lemma": "the",
+        "pos": "D^N^SG"
+    },
+    {
+        "verse": "357a",
+        "form": "goda",
+        "lemma": "god",
+        "pos": "ADJ^N^SG"
+    },
+    {
+        "verse": "357b",
+        "form": "so",
+        "lemma": "so",
+        "pos": "C"
+    },
+    {
+        "verse": "357b",
+        "form": "it",
+        "lemma": "it",
+        "pos": "PRO^A^3^SG"
+    },
+    {
+        "verse": "357b",
+        "form": "god",
+        "lemma": "god",
+        "pos": "NPR^N^SG"
+    },
+    {
+        "verse": "357b",
+        "form": "mahtig",
+        "lemma": "mahtig",
+        "pos": "ADJ^N^SG"
+    },
+    {
+        "verse": "358a",
+        "form": "uualdand",
+        "lemma": "waldand",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "358a",
+        "form": "uuelde",
+        "lemma": "willian",
+        "pos": "MDDI^3^SG"
+    },
+    {
+        "verse": "358b",
+        "form": "sohte",
+        "lemma": "sokian",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "358b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^SG"
+    },
+    {
+        "verse": "358b",
+        "form": "thie",
+        "lemma": "the",
+        "pos": "D^A^PL"
+    },
+    {
+        "verse": "358b",
+        "form": "uuanamun",
+        "lemma": "wanam",
+        "pos": "ADJ^A^PL"
+    },
+    {
+        "verse": "358b",
+        "form": "hem",
+        "lemma": "hem",
+        "pos": "N^A^PL"
+    },
+    {
+        "verse": "359a",
+        "form": "thie",
+        "lemma": "the",
+        "pos": "D^A^SG"
+    },
+    {
+        "verse": "359a",
+        "form": "burg",
+        "lemma": "burg",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "359a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "359a",
+        "form": "bethleem",
+        "lemma": "bethlehem",
+        "pos": "NPR^D^SG"
+    },
+    {
+        "verse": "359b",
+        "form": "thar",
+        "lemma": "thar",
+        "pos": "ADV"
+    },
+    {
+        "verse": "359b",
+        "form": "ira",
+        "lemma": "iru",
+        "pos": "PRO$^G^3^PL"
+    },
+    {
+        "verse": "359b",
+        "form": "beđera",
+        "lemma": "bethia",
+        "pos": "Q^G^PL"
+    },
+    {
+        "verse": "359b",
+        "form": "uuas",
+        "lemma": "wesan",
+        "pos": "BEDI^3^SG"
+    },
+    {
+        "verse": "360a",
+        "form": "thes",
+        "lemma": "the",
+        "pos": "D^G^SG"
+    },
+    {
+        "verse": "360a",
+        "form": "heliđes",
+        "lemma": "helith",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "360a",
+        "form": "handmal",
+        "lemma": "handmahal",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "368b",
+        "form": "endi",
+        "lemma": "endi",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "368b",
+        "form": "maht",
+        "lemma": "maht",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "368b",
+        "form": "godes",
+        "lemma": "god",
+        "pos": "NPR^G^SG"
+    },
+    {
+        "verse": "369a",
+        "form": "that",
+        "lemma": "that",
+        "pos": "C"
+    },
+    {
+        "verse": "369a",
+        "form": "iru",
+        "lemma": "siu",
+        "pos": "PRO^D^3^SG"
+    },
+    {
+        "verse": "369a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "369a",
+        "form": "themu",
+        "lemma": "the",
+        "pos": "D^D^SG"
+    },
+    {
+        "verse": "369a",
+        "form": "siđe",
+        "lemma": "sith",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "369b",
+        "form": "sunu",
+        "lemma": "sunu",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "369b",
+        "form": "aden",
+        "lemma": "odan",
+        "pos": "ADJ^N^SG"
+    },
+    {
+        "verse": "369b",
+        "form": "uuarđ",
+        "lemma": "werthan",
+        "pos": "RDDI^3^SG"
+    },
+    {
+        "verse": "370a",
+        "form": "giboren",
+        "lemma": "beran",
+        "pos": "GE+VN"
+    },
+    {
+        "verse": "370a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "370a",
+        "form": "bethleem",
+        "lemma": "bethlehem",
+        "pos": "NPR^D^SG"
+    },
+    {
+        "verse": "370b",
+        "form": "barno",
+        "lemma": "barn",
+        "pos": "N^G^PL"
+    },
+    {
+        "verse": "370b",
+        "form": "strongost",
+        "lemma": "strang",
+        "pos": "ADJS^N^SG"
+    },
+    {
+        "verse": "371a",
+        "form": "allera",
+        "lemma": "al",
+        "pos": "Q^G^PL"
+    },
+    {
+        "verse": "371a",
+        "form": "kuninga",
+        "lemma": "kuning",
+        "pos": "N^G^PL"
+    },
+    {
+        "verse": "371a",
+        "form": "crahtigost",
+        "lemma": "kraftag",
+        "pos": "ADJS^N^SG"
+    },
+    {
+        "verse": "371b",
+        "form": "cumen",
+        "lemma": "kuman",
+        "pos": "VN"
+    },
+    {
+        "verse": "371b",
+        "form": "uuarđ",
+        "lemma": "werthan",
+        "pos": "RDDI^3^SG"
+    },
+    {
+        "verse": "371b",
+        "form": "the",
+        "lemma": "the",
+        "pos": "D^N^SG"
+    },
+    {
+        "verse": "371b",
+        "form": "meria",
+        "lemma": "mari",
+        "pos": "ADJ^N^SG"
+    },
+    {
+        "verse": "372a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "372a",
+        "form": "monna",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "372a",
+        "form": "lioht",
+        "lemma": "lioht",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "372b",
+        "form": "so",
+        "lemma": "so",
+        "pos": "C"
+    },
+    {
+        "verse": "372b",
+        "form": "is",
+        "lemma": "it",
+        "pos": "PRO^G^3^SG"
+    },
+    {
+        "verse": "372b",
+        "form": "er",
+        "lemma": "er",
+        "pos": "ADV"
+    },
+    {
+        "verse": "372b",
+        "form": "monigan",
+        "lemma": "manag",
+        "pos": "Q^A^SG"
+    },
+    {
+        "verse": "372b",
+        "form": "dag",
+        "lemma": "dag",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "373a",
+        "form": "biliđi",
+        "lemma": "bilithi",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "373a",
+        "form": "uuarun",
+        "lemma": "wesan",
+        "pos": "BEDI^3^PL"
+    },
+    {
+        "verse": "373b",
+        "form": "endi",
+        "lemma": "endi",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "373b",
+        "form": "bakna",
+        "lemma": "bokan",
+        "pos": "N^G^PL"
+    },
+    {
+        "verse": "373b",
+        "form": "filu",
+        "lemma": "filo",
+        "pos": "Q^N^PL"
+    },
+    {
+        "verse": "374a",
+        "form": "giuuorden",
+        "lemma": "werthan",
+        "pos": "GE+RN"
+    },
+    {
+        "verse": "374a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "374a",
+        "form": "thesseru",
+        "lemma": "these",
+        "pos": "D^D^SG"
+    },
+    {
+        "verse": "374a",
+        "form": "uueraldi",
+        "lemma": "werold",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "374b",
+        "form": "tha",
+        "lemma": "tho",
+        "pos": "ADV"
+    },
+    {
+        "verse": "374b",
+        "form": "uuas",
+        "lemma": "wesan",
+        "pos": "BEDI^3^SG"
+    },
+    {
+        "verse": "374b",
+        "form": "it",
+        "lemma": "it",
+        "pos": "PRO^N^3^SG"
+    },
+    {
+        "verse": "374b",
+        "form": "all",
+        "lemma": "al",
+        "pos": "Q^N^SG"
+    },
+    {
+        "verse": "374b",
+        "form": "giuuarod",
+        "lemma": "waron",
+        "pos": "GE+VN"
+    },
+    {
+        "verse": "374b",
+        "form": "so",
+        "lemma": "so",
+        "pos": "ADV"
+    },
+    {
+        "verse": "375a",
+        "form": "so",
+        "lemma": "so",
+        "pos": "C"
+    },
+    {
+        "verse": "375a",
+        "form": "it",
+        "lemma": "it",
+        "pos": "PRO^A^3^SG"
+    },
+    {
+        "verse": "375a",
+        "form": "er",
+        "lemma": "er",
+        "pos": "ADV"
+    },
+    {
+        "verse": "375a",
+        "form": "spehe",
+        "lemma": "spahi",
+        "pos": "ADJ^N^PL"
+    },
+    {
+        "verse": "375a",
+        "form": "menn",
+        "lemma": "man",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "375b",
+        "form": "gisproken",
+        "lemma": "sprekan",
+        "pos": "GE+VN"
+    },
+    {
+        "verse": "375b",
+        "form": "heddun",
+        "lemma": "hebbian",
+        "pos": "HVDI^3^PL"
+    },
+    {
+        "verse": "376a",
+        "form": "thur",
+        "lemma": "thurh",
+        "pos": "P"
+    },
+    {
+        "verse": "376a",
+        "form": "huilik",
+        "lemma": "hwilik",
+        "pos": "WADJ^A^SG"
+    },
+    {
+        "verse": "376a",
+        "form": "ađmodi",
+        "lemma": "othmodi",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "376b",
+        "form": "he",
+        "lemma": "he",
+        "pos": "PRO^N^3^SG"
+    },
+    {
+        "verse": "376b",
+        "form": "thit",
+        "lemma": "these",
+        "pos": "D^A^SG"
+    },
+    {
+        "verse": "376b",
+        "form": "erđriki",
+        "lemma": "erthriki",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "376b",
+        "form": "herod",
+        "lemma": "herod",
+        "pos": "ADV"
+    },
+    {
+        "verse": "377a",
+        "form": "thur",
+        "lemma": "thurh",
+        "pos": "P"
+    },
+    {
+        "verse": "377a",
+        "form": "his",
+        "lemma": "he",
+        "pos": "PRO^G^3^SG"
+    },
+    {
+        "verse": "377a",
+        "form": "selues",
+        "lemma": "self",
+        "pos": "ADJ^G^SG"
+    },
+    {
+        "verse": "377a",
+        "form": "craht",
+        "lemma": "kraft",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "377b",
+        "form": "sokian",
+        "lemma": "sokian",
+        "pos": "VB"
+    },
+    {
+        "verse": "377b",
+        "form": "uuelde",
+        "lemma": "willian",
+        "pos": "MDDI^3^SG"
+    },
+    {
+        "verse": "378a",
+        "form": "monegera",
+        "lemma": "manag",
+        "pos": "Q^G^PL"
+    },
+    {
+        "verse": "378a",
+        "form": "mundbora",
+        "lemma": "mundboro",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "378b",
+        "form": "tha",
+        "lemma": "tho",
+        "pos": "ADV"
+    },
+    {
+        "verse": "378b",
+        "form": "ine",
+        "lemma": "he",
+        "pos": "PRO^A^3^SG"
+    },
+    {
+        "verse": "378b",
+        "form": "thiu",
+        "lemma": "the",
+        "pos": "D^N^SG"
+    },
+    {
+        "verse": "378b",
+        "form": "moder",
+        "lemma": "modar",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "378b",
+        "form": "nam",
+        "lemma": "niman",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "379a",
+        "form": "biuuand",
+        "lemma": "biwindan",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "379a",
+        "form": "ine",
+        "lemma": "he",
+        "pos": "PRO^A^3^SG"
+    },
+    {
+        "verse": "379a",
+        "form": "mid",
+        "lemma": "mid",
+        "pos": "P"
+    },
+    {
+        "verse": "379a",
+        "form": "uuadie",
+        "lemma": "uuad",
+        "pos": "N^I^SG"
+    },
+    {
+        "verse": "379b",
+        "form": "uuiuo",
+        "lemma": "wif",
+        "pos": "N^G^PL"
+    },
+    {
+        "verse": "379b",
+        "form": "sconiost",
+        "lemma": "skoni",
+        "pos": "ADJS^N^SG"
+    },
+    {
+        "verse": "380a",
+        "form": "fagarun",
+        "lemma": "fagar",
+        "pos": "ADJ^D^PL"
+    },
+    {
+        "verse": "380a",
+        "form": "frahtun",
+        "lemma": "frataha",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "380b",
+        "form": "endi",
+        "lemma": "endi",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "380b",
+        "form": "ine",
+        "lemma": "he",
+        "pos": "PRO^A^3^SG"
+    },
+    {
+        "verse": "380b",
+        "form": "mid",
+        "lemma": "mid",
+        "pos": "P"
+    },
+    {
+        "verse": "380b",
+        "form": "ire",
+        "lemma": "iru",
+        "pos": "PRO$^D^3^PL"
+    },
+    {
+        "verse": "380b",
+        "form": "folmun",
+        "lemma": "folm",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "380b",
+        "form": "tuem",
+        "lemma": "twene",
+        "pos": "NUM^D^PL"
+    },
+    {
+        "verse": "381a",
+        "form": "legdu",
+        "lemma": "leggian",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "381a",
+        "form": "lioƀlica",
+        "lemma": "liofliko",
+        "pos": "ADV"
+    },
+    {
+        "verse": "381b",
+        "form": "luttilne",
+        "lemma": "luttil",
+        "pos": "ADJ^A^SG"
+    },
+    {
+        "verse": "381b",
+        "form": "monn",
+        "lemma": "man",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "382a",
+        "form": "that",
+        "lemma": "the",
+        "pos": "D^A^SG"
+    },
+    {
+        "verse": "382a",
+        "form": "kind",
+        "lemma": "kind",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "382a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "382a",
+        "form": "ene",
+        "lemma": "en",
+        "pos": "NUM^A^SG"
+    },
+    {
+        "verse": "382a",
+        "form": "krebbian",
+        "lemma": "kribbia",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "382b",
+        "form": "thah",
+        "lemma": "thoh",
+        "pos": "ADV"
+    },
+    {
+        "verse": "382b",
+        "form": "he",
+        "lemma": "he",
+        "pos": "PRO^N^3^SG"
+    },
+    {
+        "verse": "382b",
+        "form": "heddi",
+        "lemma": "hebbian",
+        "pos": "HVDS^3^SG"
+    },
+    {
+        "verse": "382b",
+        "form": "creht",
+        "lemma": "kraft",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "382b",
+        "form": "godes",
+        "lemma": "god",
+        "pos": "NPR^G^SG"
+    },
+    {
+        "verse": "383a",
+        "form": "manno",
+        "lemma": "man",
+        "pos": "N^G^PL"
+    },
+    {
+        "verse": "383a",
+        "form": "drohtin",
+        "lemma": "drohtin",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "383b",
+        "form": "thar",
+        "lemma": "thar",
+        "pos": "ADV"
+    },
+    {
+        "verse": "383b",
+        "form": "sat",
+        "lemma": "sittian",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "383b",
+        "form": "thiu",
+        "lemma": "the",
+        "pos": "D^N^SG"
+    },
+    {
+        "verse": "383b",
+        "form": "moder",
+        "lemma": "modar",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "383b",
+        "form": "biuoran",
+        "lemma": "biforan",
+        "pos": "ADV"
+    },
+    {
+        "verse": "384a",
+        "form": "uuif",
+        "lemma": "wif",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "384a",
+        "form": "uuakandi",
+        "lemma": "wakon",
+        "pos": "VGI^N^SG"
+    },
+    {
+        "verse": "384b",
+        "form": "uuardode",
+        "lemma": "wardon",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "393a",
+        "form": "felde",
+        "lemma": "feld",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "393b",
+        "form": "sie",
+        "lemma": "he",
+        "pos": "PRO^N^3^PL"
+    },
+    {
+        "verse": "393b",
+        "form": "uurdun",
+        "lemma": "werthan",
+        "pos": "RDDI^3^PL"
+    },
+    {
+        "verse": "393b",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "393b",
+        "form": "forhtun",
+        "lemma": "forhta",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "393b",
+        "form": "tha",
+        "lemma": "tho",
+        "pos": "ADV"
+    },
+    {
+        "verse": "394a",
+        "form": "the",
+        "lemma": "the",
+        "pos": "D^N^PL"
+    },
+    {
+        "verse": "394a",
+        "form": "menn",
+        "lemma": "man",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "394a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "394a",
+        "form": "ira",
+        "lemma": "iru",
+        "pos": "PRO$^D^3^SG"
+    },
+    {
+        "verse": "394a",
+        "form": "mode",
+        "lemma": "mod",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "394b",
+        "form": "giseun",
+        "lemma": "sehan",
+        "pos": "GE+VBDI^3^PL"
+    },
+    {
+        "verse": "394b",
+        "form": "thar",
+        "lemma": "thar",
+        "pos": "ADV"
+    },
+    {
+        "verse": "394b",
+        "form": "mahtigne",
+        "lemma": "mahtig",
+        "pos": "ADJ^A^SG"
+    },
+    {
+        "verse": "395a",
+        "form": "godes",
+        "lemma": "god",
+        "pos": "NPR^G^SG"
+    },
+    {
+        "verse": "395a",
+        "form": "engil",
+        "lemma": "engil",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "395a",
+        "form": "cuman",
+        "lemma": "kuman",
+        "pos": "VB"
+    },
+    {
+        "verse": "395b",
+        "form": "the",
+        "lemma": "the",
+        "pos": "D^N^SG"
+    },
+    {
+        "verse": "395b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "395b",
+        "form": "tigene",
+        "lemma": "tegegnes",
+        "pos": "ADV"
+    },
+    {
+        "verse": "395b",
+        "form": "sprak",
+        "lemma": "sprekan",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "396a",
+        "form": "het",
+        "lemma": "hetan",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "396a",
+        "form": "that",
+        "lemma": "that",
+        "pos": "C"
+    },
+    {
+        "verse": "396a",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "396a",
+        "form": "the",
+        "lemma": "the",
+        "pos": "D^N^PL"
+    },
+    {
+        "verse": "396a",
+        "form": "uuardas",
+        "lemma": "ward",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "396b",
+        "form": "uuiht",
+        "lemma": "wiht",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "396b",
+        "form": "ni",
+        "lemma": "ne",
+        "pos": "NEG"
+    },
+    {
+        "verse": "396b",
+        "form": "andredin",
+        "lemma": "andradan",
+        "pos": "VBDI^3^PL"
+    },
+    {
+        "verse": "397a",
+        "form": "leđes",
+        "lemma": "leth",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "397a",
+        "form": "fon",
+        "lemma": "fan",
+        "pos": "P"
+    },
+    {
+        "verse": "397a",
+        "form": "themu",
+        "lemma": "the",
+        "pos": "D^D^SG"
+    },
+    {
+        "verse": "397a",
+        "form": "liohte",
+        "lemma": "lioht",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "397b",
+        "form": "ek",
+        "lemma": "ik",
+        "pos": "PRO^N^1^SG"
+    },
+    {
+        "verse": "397b",
+        "form": "scal",
+        "lemma": "skulan",
+        "pos": "MDPI^1^SG"
+    },
+    {
+        "verse": "397b",
+        "form": "iu",
+        "lemma": "gi",
+        "pos": "PRO^D^2^PL"
+    },
+    {
+        "verse": "397b",
+        "form": "lieƀare",
+        "lemma": "liof",
+        "pos": "ADJR^A^SG"
+    },
+    {
+        "verse": "397b",
+        "form": "thing",
+        "lemma": "thing",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "398a",
+        "form": "tulgo",
+        "lemma": "tulgo",
+        "pos": "ADV"
+    },
+    {
+        "verse": "398a",
+        "form": "uuarlica",
+        "lemma": "warliko",
+        "pos": "ADV"
+    },
+    {
+        "verse": "398b",
+        "form": "uuillian",
+        "lemma": "willio",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "398b",
+        "form": "seggian",
+        "lemma": "seggian",
+        "pos": "VB"
+    },
+    {
+        "verse": "399a",
+        "form": "kuđian",
+        "lemma": "kuthian",
+        "pos": "VB"
+    },
+    {
+        "verse": "399a",
+        "form": "craht",
+        "lemma": "kraft",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "399a",
+        "form": "mikil",
+        "lemma": "mikil",
+        "pos": "ADJ^A^SG"
+    },
+    {
+        "verse": "399b",
+        "form": "nu",
+        "lemma": "nu",
+        "pos": "ADV"
+    },
+    {
+        "verse": "399b",
+        "form": "is",
+        "lemma": "wesan",
+        "pos": "BEPI^3^SG"
+    },
+    {
+        "verse": "399b",
+        "form": "crist",
+        "lemma": "krist",
+        "pos": "NPR^N^SG"
+    },
+    {
+        "verse": "399b",
+        "form": "giboren",
+        "lemma": "beran",
+        "pos": "GE+VN"
+    },
+    {
+        "verse": "400a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "400a",
+        "form": "thesseru",
+        "lemma": "these",
+        "pos": "D^D^SG"
+    },
+    {
+        "verse": "514b",
+        "form": "siu",
+        "lemma": "so",
+        "pos": "C"
+    },
+    {
+        "verse": "514b",
+        "form": "nia",
+        "lemma": "siu",
+        "pos": "PRO^N^3^SG"
+    },
+    {
+        "verse": "514b",
+        "form": "thane",
+        "lemma": "the",
+        "pos": "D^A^SG"
+    },
+    {
+        "verse": "514b",
+        "form": "uuih",
+        "lemma": "wih",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "514b",
+        "form": "ni",
+        "lemma": "wih",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "514b",
+        "form": "forlet",
+        "lemma": "farlatan",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "515a",
+        "form": "ak",
+        "lemma": "ak",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "515a",
+        "form": "siu",
+        "lemma": "siu",
+        "pos": "PRO^N^3^SG"
+    },
+    {
+        "verse": "515a",
+        "form": "thar",
+        "lemma": "thar",
+        "pos": "ADV"
+    },
+    {
+        "verse": "515a",
+        "form": "ire",
+        "lemma": "iru",
+        "pos": "PRO$^D^3^SG"
+    },
+    {
+        "verse": "515a",
+        "form": "drohtine",
+        "lemma": "drohtin",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "515a",
+        "form": "uuel",
+        "lemma": "wel",
+        "pos": "ADV"
+    },
+    {
+        "verse": "515b",
+        "form": "dages",
+        "lemma": "dag",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "515b",
+        "form": "endi",
+        "lemma": "endi",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "515b",
+        "form": "nahtes",
+        "lemma": "naht",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "516a",
+        "form": "gode",
+        "lemma": "god",
+        "pos": "NPR^D^SG"
+    },
+    {
+        "verse": "516a",
+        "form": "thianade",
+        "lemma": "thionon",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "516b",
+        "form": "siu",
+        "lemma": "siu",
+        "pos": "PRO^N^3^SG"
+    },
+    {
+        "verse": "516b",
+        "form": "cam",
+        "lemma": "kuman",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "516b",
+        "form": "than",
+        "lemma": "thar",
+        "pos": "ADV"
+    },
+    {
+        "verse": "516b",
+        "form": "ak",
+        "lemma": "ok",
+        "pos": "ALSO"
+    },
+    {
+        "verse": "516b",
+        "form": "gongan",
+        "lemma": "gangan",
+        "pos": "VB"
+    },
+    {
+        "verse": "516b",
+        "form": "to",
+        "lemma": "to",
+        "pos": "P"
+    },
+    {
+        "verse": "517a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "517a",
+        "form": "the",
+        "lemma": "the",
+        "pos": "D^A^SG"
+    },
+    {
+        "verse": "517a",
+        "form": "seluan",
+        "lemma": "self",
+        "pos": "ADJ^A^SG"
+    },
+    {
+        "verse": "517a",
+        "form": "tid",
+        "lemma": "tid",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "517b",
+        "form": "son",
+        "lemma": "san",
+        "pos": "ADV"
+    },
+    {
+        "verse": "517b",
+        "form": "untkiende",
+        "lemma": "andkennian",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "518a",
+        "form": "that",
+        "lemma": "that",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "518a",
+        "form": "helege",
+        "lemma": "helag",
+        "pos": "ADJ^A^SG"
+    },
+    {
+        "verse": "518a",
+        "form": "barn",
+        "lemma": "barn",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "518a",
+        "form": "godes",
+        "lemma": "god",
+        "pos": "NPR^G^SG"
+    },
+    {
+        "verse": "518b",
+        "form": "endi",
+        "lemma": "endi",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "518b",
+        "form": "them",
+        "lemma": "the",
+        "pos": "D^D^PL"
+    },
+    {
+        "verse": "518b",
+        "form": "heliđun",
+        "lemma": "helith",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "518b",
+        "form": "cuđde",
+        "lemma": "kuthian",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "519a",
+        "form": "them",
+        "lemma": "the",
+        "pos": "D^D^SG"
+    },
+    {
+        "verse": "519a",
+        "form": "uuerede",
+        "lemma": "werod",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "519a",
+        "form": "ahter",
+        "lemma": "aftar",
+        "pos": "P"
+    },
+    {
+        "verse": "519a",
+        "form": "themu",
+        "lemma": "the",
+        "pos": "D^D^SG"
+    },
+    {
+        "verse": "519a",
+        "form": "uuihe",
+        "lemma": "wih",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "519b",
+        "form": "uuillspell",
+        "lemma": "wilspel",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "519b",
+        "form": "mikil",
+        "lemma": "mikil",
+        "pos": "ADJ^A^SG"
+    },
+    {
+        "verse": "520a",
+        "form": "quađ",
+        "lemma": "kwethan",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "520a",
+        "form": "that",
+        "lemma": "that",
+        "pos": "C"
+    },
+    {
+        "verse": "520a",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^SG"
+    },
+    {
+        "verse": "520a",
+        "form": "neriandes",
+        "lemma": "nerian",
+        "pos": "VGI^G^SG"
+    },
+    {
+        "verse": "520a",
+        "form": "ginist",
+        "lemma": "ginist",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "520b",
+        "form": "ginahid",
+        "lemma": "nahian",
+        "pos": "GE+VN"
+    },
+    {
+        "verse": "520b",
+        "form": "uueri",
+        "lemma": "wesan",
+        "pos": "BEDS^3^SG"
+    },
+    {
+        "verse": "521a",
+        "form": "helpa",
+        "lemma": "helpa",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "521a",
+        "form": "heuencuninges",
+        "lemma": "hevankuning",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "521b",
+        "form": "nu",
+        "lemma": "nu",
+        "pos": "ADV"
+    },
+    {
+        "verse": "521b",
+        "form": "is",
+        "lemma": "wesan",
+        "pos": "BEPI^3^SG"
+    },
+    {
+        "verse": "521b",
+        "form": "the",
+        "lemma": "the",
+        "pos": "D^N^SG"
+    },
+    {
+        "verse": "521b",
+        "form": "helega",
+        "lemma": "helag",
+        "pos": "ADJ^N^SG"
+    },
+    {
+        "verse": "521b",
+        "form": "crist",
+        "lemma": "krist",
+        "pos": "NPR^N^SG"
+    },
+    {
+        "verse": "522a",
+        "form": "uualdand",
+        "lemma": "waldand",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "522a",
+        "form": "selua",
+        "lemma": "self",
+        "pos": "ADJ^N^SG"
+    },
+    {
+        "verse": "522b",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "522b",
+        "form": "thessan",
+        "lemma": "these",
+        "pos": "D^A^SG"
+    },
+    {
+        "verse": "522b",
+        "form": "uuih",
+        "lemma": "wih",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "522b",
+        "form": "cumen",
+        "lemma": "kuman",
+        "pos": "VN"
+    },
+    {
+        "verse": "523a",
+        "form": "ti",
+        "lemma": "to",
+        "pos": "TO"
+    },
+    {
+        "verse": "523a",
+        "form": "alasianne",
+        "lemma": "alosian",
+        "pos": "VB"
+    },
+    {
+        "verse": "523a",
+        "form": "the",
+        "lemma": "the",
+        "pos": "D^N^PL"
+    },
+    {
+        "verse": "523a",
+        "form": "liudi",
+        "lemma": "liudi",
+        "pos": "N^A^PL"
+    },
+    {
+        "verse": "523b",
+        "form": "thi",
+        "lemma": "the",
+        "pos": "D^N^PL"
+    },
+    {
+        "verse": "523b",
+        "form": "her",
+        "lemma": "her",
+        "pos": "ADV"
+    },
+    {
+        "verse": "523b",
+        "form": "nu",
+        "lemma": "nu",
+        "pos": "ADV"
+    },
+    {
+        "verse": "523b",
+        "form": "longa",
+        "lemma": "lango",
+        "pos": "ADV"
+    },
+    {
+        "verse": "523b",
+        "form": "bidadun",
+        "lemma": "bidan",
+        "pos": "VBDI^3^PL"
+    },
+    {
+        "verse": "524a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "524a",
+        "form": "thesseru",
+        "lemma": "these",
+        "pos": "D^D^SG"
+    },
+    {
+        "verse": "524a",
+        "form": "middilgerd",
+        "lemma": "middilgard",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "524b",
+        "form": "monege",
+        "lemma": "manag",
+        "pos": "Q^A^SG"
+    },
+    {
+        "verse": "524b",
+        "form": "huila",
+        "lemma": "hwila",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "525a",
+        "form": "thurtiga",
+        "lemma": "thurftig",
+        "pos": "ADJ^N^SG"
+    },
+    {
+        "verse": "525a",
+        "form": "thiada",
+        "lemma": "thiod",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "525b",
+        "form": "so",
+        "lemma": "so",
+        "pos": "C"
+    },
+    {
+        "verse": "525b",
+        "form": "nu",
+        "lemma": "nu",
+        "pos": "ADV"
+    },
+    {
+        "verse": "525b",
+        "form": "thes",
+        "lemma": "the",
+        "pos": "D^G^SG"
+    },
+    {
+        "verse": "525b",
+        "form": "thinges",
+        "lemma": "thing",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "525b",
+        "form": "mugun",
+        "lemma": "mugan",
+        "pos": "MDPI^3^PL"
+    },
+    {
+        "verse": "526a",
+        "form": "mendian",
+        "lemma": "mendian",
+        "pos": "VB"
+    },
+    {
+        "verse": "526a",
+        "form": "monnakunni",
+        "lemma": "mankunni",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "526b",
+        "form": "moneg",
+        "lemma": "manag",
+        "pos": "Q^N^SG"
+    },
+    {
+        "verse": "526b",
+        "form": "fegonade",
+        "lemma": "faganon",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "527a",
+        "form": "uuered",
+        "lemma": "werod",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "527a",
+        "form": "ahter",
+        "lemma": "aftar",
+        "pos": "P"
+    },
+    {
+        "verse": "527a",
+        "form": "themu",
+        "lemma": "the",
+        "pos": "D^D^SG"
+    },
+    {
+        "verse": "527a",
+        "form": "uuihe",
+        "lemma": "wih",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "527b",
+        "form": "gihardun",
+        "lemma": "horian",
+        "pos": "GE+VBDI^3^PL"
+    },
+    {
+        "verse": "527b",
+        "form": "uuilspell",
+        "lemma": "wilspel",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "527b",
+        "form": "mikil",
+        "lemma": "mikil",
+        "pos": "ADJ^A^SG"
+    },
+    {
+        "verse": "528a",
+        "form": "fon",
+        "lemma": "fan",
+        "pos": "P"
+    },
+    {
+        "verse": "528a",
+        "form": "gode",
+        "lemma": "god",
+        "pos": "NPR^D^SG"
+    },
+    {
+        "verse": "528a",
+        "form": "seggian",
+        "lemma": "seggian",
+        "pos": "VB"
+    },
+    {
+        "verse": "528b",
+        "form": "that",
+        "lemma": "the",
+        "pos": "D^A^SG"
+    },
+    {
+        "verse": "528b",
+        "form": "geld",
+        "lemma": "geld",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "528b",
+        "form": "hedde",
+        "lemma": "hebbian",
+        "pos": "HVDI^3^SG"
+    },
+    {
+        "verse": "528b",
+        "form": "tha",
+        "lemma": "tho",
+        "pos": "ADV"
+    },
+    {
+        "verse": "528b",
+        "form": "gilestid",
+        "lemma": "lestian",
+        "pos": "GE+VN"
+    },
+    {
+        "verse": "529a",
+        "form": "thiu",
+        "lemma": "the",
+        "pos": "D^N^SG"
+    },
+    {
+        "verse": "529a",
+        "form": "idis",
+        "lemma": "idis",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "529a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "529a",
+        "form": "themu",
+        "lemma": "the",
+        "pos": "D^D^SG"
+    },
+    {
+        "verse": "529a",
+        "form": "alahe",
+        "lemma": "alah",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "529b",
+        "form": "all",
+        "lemma": "al",
+        "pos": "ADV"
+    },
+    {
+        "verse": "529b",
+        "form": "so",
+        "lemma": "so",
+        "pos": "C"
+    },
+    {
+        "verse": "529b",
+        "form": "it",
+        "lemma": "it",
+        "pos": "PRO^N^3^SG"
+    },
+    {
+        "verse": "529b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "529b",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "529b",
+        "form": "ira",
+        "lemma": "iru",
+        "pos": "PRO$^D^3^SG"
+    },
+    {
+        "verse": "529b",
+        "form": "ea",
+        "lemma": "eo",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "529b",
+        "form": "gibad",
+        "lemma": "biodan",
+        "pos": "GE+VBDI^3^SG"
+    },
+    {
+        "verse": "530a",
+        "form": "endi",
+        "lemma": "endi",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "530a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "530a",
+        "form": "theru",
+        "lemma": "the",
+        "pos": "D^D^SG"
+    },
+    {
+        "verse": "530a",
+        "form": "berhtan",
+        "lemma": "berht",
+        "pos": "ADJ^D^SG"
+    },
+    {
+        "verse": "530a",
+        "form": "burg",
+        "lemma": "burg",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "530b",
+        "form": "bok",
+        "lemma": "bok",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "530b",
+        "form": "giuuisdun",
+        "lemma": "wisian",
+        "pos": "GE+VBDI^3^PL"
+    },
+    {
+        "verse": "531a",
+        "form": "helegera",
+        "lemma": "helag",
+        "pos": "ADJ^G^PL"
+    },
+    {
+        "verse": "531a",
+        "form": "hondgiuuerk",
+        "lemma": "handgiwerk",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "531b",
+        "form": "giuuitun",
+        "lemma": "witan",
+        "pos": "GE+VBDI^3^PL"
+    },
+    {
+        "verse": "531b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "531b",
+        "form": "tha",
+        "lemma": "tho",
+        "pos": "ADV"
+    },
+    {
+        "verse": "531b",
+        "form": "ti",
+        "lemma": "te",
+        "pos": "P"
+    },
+    {
+        "verse": "531b",
+        "form": "hus",
+        "lemma": "hus",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "531b",
+        "form": "thonan",
+        "lemma": "thanan",
+        "pos": "ADV"
+    },
+    {
+        "verse": "532a",
+        "form": "fon",
+        "lemma": "fan",
+        "pos": "P"
+    },
+    {
+        "verse": "532a",
+        "form": "hierusalem",
+        "lemma": "hierusalem",
+        "pos": "NPR^D^SG"
+    },
+    {
+        "verse": "532b",
+        "form": "ioseph",
+        "lemma": "joseph",
+        "pos": "NPR^N^SG"
+    },
+    {
+        "verse": "532b",
+        "form": "endi",
+        "lemma": "endi",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "532b",
+        "form": "maria",
+        "lemma": "maria",
+        "pos": "NPR^N^SG"
+    },
+    {
+        "verse": "533a",
+        "form": "heleg",
+        "lemma": "helag",
+        "pos": "ADJ^N^SG"
+    },
+    {
+        "verse": "533a",
+        "form": "hiski",
+        "lemma": "hiwiski",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "533b",
+        "form": "heddun",
+        "lemma": "hebbian",
+        "pos": "HVDI^3^PL"
+    },
+    {
+        "verse": "533b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "533b",
+        "form": "heƀencuning",
+        "lemma": "hevankuning",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "534a",
+        "form": "simlun",
+        "lemma": "simbla",
+        "pos": "ADV"
+    },
+    {
+        "verse": "534a",
+        "form": "ti",
+        "lemma": "te",
+        "pos": "P"
+    },
+    {
+        "verse": "534a",
+        "form": "gisiđe",
+        "lemma": "gisith",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "534b",
+        "form": "sunu",
+        "lemma": "sunu",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "534b",
+        "form": "drohtines",
+        "lemma": "drohtin",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "535a",
+        "form": "monegera",
+        "lemma": "manag",
+        "pos": "Q^G^PL"
+    },
+    {
+        "verse": "535a",
+        "form": "mundbora",
+        "lemma": "mundboro",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "535b",
+        "form": "so",
+        "lemma": "so",
+        "pos": "C"
+    },
+    {
+        "verse": "535b",
+        "form": "it",
+        "lemma": "it",
+        "pos": "PRO^N^3^SG"
+    },
+    {
+        "verse": "535b",
+        "form": "ia",
+        "lemma": "eo",
+        "pos": "ADV"
+    },
+    {
+        "verse": "535b",
+        "form": "meri",
+        "lemma": "mari",
+        "pos": "ADJ^N^SG"
+    },
+    {
+        "verse": "535b",
+        "form": "ni",
+        "lemma": "ne",
+        "pos": "NEG"
+    },
+    {
+        "verse": "535b",
+        "form": "uuarđ",
+        "lemma": "werthan",
+        "pos": "RDDI^3^SG"
+    },
+    {
+        "verse": "536a",
+        "form": "than",
+        "lemma": "than",
+        "pos": "ADV"
+    },
+    {
+        "verse": "536a",
+        "form": "uuidur",
+        "lemma": "wido",
+        "pos": "ADVR"
+    },
+    {
+        "verse": "536a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "536a",
+        "form": "thesseru",
+        "lemma": "these",
+        "pos": "D^D^SG"
+    },
+    {
+        "verse": "536a",
+        "form": "uueroldi",
+        "lemma": "werold",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "536b",
+        "form": "neƀon",
+        "lemma": "newan",
+        "pos": "P"
+    },
+    {
+        "verse": "536b",
+        "form": "so",
+        "lemma": "so",
+        "pos": "C"
+    },
+    {
+        "verse": "536b",
+        "form": "is",
+        "lemma": "is",
+        "pos": "PRO$^N^3^SG"
+    },
+    {
+        "verse": "536b",
+        "form": "uuillie",
+        "lemma": "willio",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "536b",
+        "form": "geng",
+        "lemma": "gangan",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "537a",
+        "form": "heƀencuninges",
+        "lemma": "hevankuning",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "537a",
+        "form": "hugi",
+        "lemma": "hugi",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "537b",
+        "form": "thah",
+        "lemma": "thoh",
+        "pos": "ADV"
+    },
+    {
+        "verse": "537b",
+        "form": "thar",
+        "lemma": "thar",
+        "pos": "ADV"
+    },
+    {
+        "verse": "537b",
+        "form": "than",
+        "lemma": "than",
+        "pos": "ADV"
+    },
+    {
+        "verse": "537b",
+        "form": "huilic",
+        "lemma": "hwilik",
+        "pos": "WADJ^N^SG"
+    },
+    {
+        "verse": "537b",
+        "form": "helag",
+        "lemma": "helag",
+        "pos": "ADJ^N^SG"
+    },
+    {
+        "verse": "537b",
+        "form": "monn",
+        "lemma": "man",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "538a",
+        "form": "crist",
+        "lemma": "krist",
+        "pos": "NPR^A^SG"
+    },
+    {
+        "verse": "538a",
+        "form": "untkiendi",
+        "lemma": "andkennian",
+        "pos": "VBDS^3^SG"
+    },
+    {
+        "verse": "538b",
+        "form": "thah",
+        "lemma": "thoh",
+        "pos": "ADV"
+    },
+    {
+        "verse": "538b",
+        "form": "ni",
+        "lemma": "ne",
+        "pos": "NEG"
+    },
+    {
+        "verse": "538b",
+        "form": "uuarđ",
+        "lemma": "werthan",
+        "pos": "RDDI^3^SG"
+    },
+    {
+        "verse": "538b",
+        "form": "it",
+        "lemma": "it",
+        "pos": "PRO^N^3^SG"
+    },
+    {
+        "verse": "538b",
+        "form": "ia",
+        "lemma": "eo",
+        "pos": "ADV"
+    },
+    {
+        "verse": "538b",
+        "form": "ti",
+        "lemma": "te",
+        "pos": "P"
+    },
+    {
+        "verse": "538b",
+        "form": "thes",
+        "lemma": "the",
+        "pos": "D^G^SG"
+    },
+    {
+        "verse": "538b",
+        "form": "cuninges",
+        "lemma": "kuning",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "538b",
+        "form": "houe",
+        "lemma": "hof",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "539a",
+        "form": "them",
+        "lemma": "the",
+        "pos": "D^D^PL"
+    },
+    {
+        "verse": "539a",
+        "form": "monnun",
+        "lemma": "man",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "539a",
+        "form": "gimerid",
+        "lemma": "marian",
+        "pos": "GE+VN"
+    },
+    {
+        "verse": "539b",
+        "form": "the",
+        "lemma": "the",
+        "pos": "D^N^PL"
+    },
+    {
+        "verse": "539b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "539b",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "539b",
+        "form": "ira",
+        "lemma": "iru",
+        "pos": "PRO$^D^3^SG"
+    },
+    {
+        "verse": "539b",
+        "form": "modseƀan",
+        "lemma": "modsevo",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "540a",
+        "form": "holde",
+        "lemma": "hold",
+        "pos": "ADJ^N^PL"
+    },
+    {
+        "verse": "540a",
+        "form": "ni",
+        "lemma": "ne",
+        "pos": "NEG"
+    },
+    {
+        "verse": "540a",
+        "form": "uuerun",
+        "lemma": "wesan",
+        "pos": "BEDI^3^PL"
+    },
+    {
+        "verse": "540b",
+        "form": "ak",
+        "lemma": "ak",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "540b",
+        "form": "uuas",
+        "lemma": "wesan",
+        "pos": "BEDI^3^SG"
+    },
+    {
+        "verse": "540b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "540b",
+        "form": "so",
+        "lemma": "so",
+        "pos": "ADV"
+    },
+    {
+        "verse": "540b",
+        "form": "bihalden",
+        "lemma": "bihaldan",
+        "pos": "VN"
+    },
+    {
+        "verse": "540b",
+        "form": "forđ",
+        "lemma": "forth",
+        "pos": "ADV"
+    },
+    {
+        "verse": "541a",
+        "form": "mid",
+        "lemma": "mid",
+        "pos": "P"
+    },
+    {
+        "verse": "541a",
+        "form": "uuordun",
+        "lemma": "word",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "541a",
+        "form": "endi",
+        "lemma": "endi",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "541a",
+        "form": "mid",
+        "lemma": "mid",
+        "pos": "P"
+    },
+    {
+        "verse": "541a",
+        "form": "uuercun",
+        "lemma": "werk",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "541b",
+        "form": "untthat",
+        "lemma": "untat",
+        "pos": "C"
+    },
+    {
+        "verse": "541b",
+        "form": "thar",
+        "lemma": "thar",
+        "pos": "ADV"
+    },
+    {
+        "verse": "541b",
+        "form": "uueros",
+        "lemma": "wer",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "541b",
+        "form": "astan",
+        "lemma": "ostan",
+        "pos": "ADV"
+    },
+    {
+        "verse": "542a",
+        "form": "tulgo",
+        "lemma": "tulgo",
+        "pos": "ADV"
+    },
+    {
+        "verse": "542a",
+        "form": "glauuue",
+        "lemma": "glau",
+        "pos": "ADJ^N^PL"
+    },
+    {
+        "verse": "542a",
+        "form": "guman",
+        "lemma": "gumo",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "542b",
+        "form": "gangan",
+        "lemma": "gangan",
+        "pos": "VB"
+    },
+    {
+        "verse": "542b",
+        "form": "camun",
+        "lemma": "kuman",
+        "pos": "VBDI^3^PL"
+    },
+    {
+        "verse": "543a",
+        "form": "thrie",
+        "lemma": "thrie",
+        "pos": "NUM^N^PL"
+    },
+    {
+        "verse": "543a",
+        "form": "ti",
+        "lemma": "te",
+        "pos": "P"
+    },
+    {
+        "verse": "543a",
+        "form": "theru",
+        "lemma": "the",
+        "pos": "D^D^SG"
+    },
+    {
+        "verse": "543a",
+        "form": "thiadu",
+        "lemma": "thiod",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "543b",
+        "form": "thegnos",
+        "lemma": "thegan",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "543b",
+        "form": "snelle",
+        "lemma": "snel",
+        "pos": "ADJ^N^PL"
+    },
+    {
+        "verse": "544a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "544a",
+        "form": "longan",
+        "lemma": "lang",
+        "pos": "ADJ^A^SG"
+    },
+    {
+        "verse": "544a",
+        "form": "uueg",
+        "lemma": "weg",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "544b",
+        "form": "ouer",
+        "lemma": "ovar",
+        "pos": "P"
+    },
+    {
+        "verse": "544b",
+        "form": "that",
+        "lemma": "the",
+        "pos": "D^A^SG"
+    },
+    {
+        "verse": "544b",
+        "form": "land",
+        "lemma": "land",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "544b",
+        "form": "tharod",
+        "lemma": "tharod",
+        "pos": "ADV"
+    },
+    {
+        "verse": "545a",
+        "form": "folgadun",
+        "lemma": "folgon",
+        "pos": "VBDI^3^PL"
+    },
+    {
+        "verse": "545a",
+        "form": "enun",
+        "lemma": "en",
+        "pos": "NUM^D^SG"
+    },
+    {
+        "verse": "545a",
+        "form": "berhtan",
+        "lemma": "berht",
+        "pos": "ADJ^D^SG"
+    },
+    {
+        "verse": "545a",
+        "form": "bakne",
+        "lemma": "bokan",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "545b",
+        "form": "endi",
+        "lemma": "endi",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "545b",
+        "form": "sohtun",
+        "lemma": "sokian",
+        "pos": "VBDI^3^PL"
+    },
+    {
+        "verse": "545b",
+        "form": "that",
+        "lemma": "the",
+        "pos": "D^A^SG"
+    },
+    {
+        "verse": "545b",
+        "form": "barn",
+        "lemma": "barn",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "545b",
+        "form": "godes",
+        "lemma": "god",
+        "pos": "NPR^G^SG"
+    },
+    {
+        "verse": "546a",
+        "form": "mid",
+        "lemma": "mid",
+        "pos": "P"
+    },
+    {
+        "verse": "546a",
+        "form": "hluttru",
+        "lemma": "hluttar",
+        "pos": "ADJ^I^SG"
+    },
+    {
+        "verse": "546a",
+        "form": "hugi",
+        "lemma": "hugi",
+        "pos": "N^I^SG"
+    },
+    {
+        "verse": "546b",
+        "form": "uueldun",
+        "lemma": "willian",
+        "pos": "MDDI^3^PL"
+    },
+    {
+        "verse": "546b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^SG"
+    },
+    {
+        "verse": "546b",
+        "form": "hnigan",
+        "lemma": "hnigan",
+        "pos": "VB"
+    },
+    {
+        "verse": "546b",
+        "form": "to",
+        "lemma": "to",
+        "pos": "P"
+    },
+    {
+        "verse": "547a",
+        "form": "gehan",
+        "lemma": "gehan",
+        "pos": "VB"
+    },
+    {
+        "verse": "547a",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^SG"
+    },
+    {
+        "verse": "547a",
+        "form": "ti",
+        "lemma": "te",
+        "pos": "P"
+    },
+    {
+        "verse": "547a",
+        "form": "giungerun",
+        "lemma": "jungaro",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "547b",
+        "form": "driƀun",
+        "lemma": "drivan",
+        "pos": "VBDI^3^PL"
+    },
+    {
+        "verse": "547b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "547b",
+        "form": "godes",
+        "lemma": "god",
+        "pos": "NPR^G^SG"
+    },
+    {
+        "verse": "547b",
+        "form": "giscapu",
+        "lemma": "giskap",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "548a",
+        "form": "tha",
+        "lemma": "tho",
+        "pos": "ADV"
+    },
+    {
+        "verse": "548a",
+        "form": "sie",
+        "lemma": "he",
+        "pos": "PRO^N^3^PL"
+    },
+    {
+        "verse": "548a",
+        "form": "erodes",
+        "lemma": "erodes",
+        "pos": "NPR^A^SG"
+    },
+    {
+        "verse": "548a",
+        "form": "thar",
+        "lemma": "thar",
+        "pos": "ADV"
+    },
+    {
+        "verse": "548b",
+        "form": "rikiene",
+        "lemma": "riki",
+        "pos": "ADJ^A^SG"
+    },
+    {
+        "verse": "548b",
+        "form": "fundun",
+        "lemma": "findan",
+        "pos": "VBDI^3^PL"
+    },
+    {
+        "verse": "549a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "549a",
+        "form": "is",
+        "lemma": "is",
+        "pos": "PRO$^D^3^SG"
+    },
+    {
+        "verse": "549a",
+        "form": "selu",
+        "lemma": "seli",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "549a",
+        "form": "sittian",
+        "lemma": "sittian",
+        "pos": "VB"
+    },
+    {
+        "verse": "549b",
+        "form": "sliđuurdiene",
+        "lemma": "slithwordi",
+        "pos": "ADJ^A^SG"
+    },
+    {
+        "verse": "549b",
+        "form": "kuning",
+        "lemma": "kuning",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "550a",
+        "form": "modegne",
+        "lemma": "modag",
+        "pos": "ADJ^A^SG"
+    },
+    {
+        "verse": "550a",
+        "form": "mid",
+        "lemma": "mid",
+        "pos": "P"
+    },
+    {
+        "verse": "550a",
+        "form": "is",
+        "lemma": "is",
+        "pos": "PRO$^D^3^PL"
+    },
+    {
+        "verse": "550a",
+        "form": "monnun",
+        "lemma": "man",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "550b",
+        "form": "simlun",
+        "lemma": "simbla",
+        "pos": "ADV"
+    },
+    {
+        "verse": "550b",
+        "form": "uuas",
+        "lemma": "wesan",
+        "pos": "BEDI^3^SG"
+    },
+    {
+        "verse": "550b",
+        "form": "he",
+        "lemma": "he",
+        "pos": "PRO^N^3^SG"
+    },
+    {
+        "verse": "550b",
+        "form": "morđes",
+        "lemma": "morth",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "550b",
+        "form": "gern",
+        "lemma": "gern",
+        "pos": "ADJ^N^SG"
+    },
+    {
+        "verse": "551a",
+        "form": "tha",
+        "lemma": "tho",
+        "pos": "ADV"
+    },
+    {
+        "verse": "551a",
+        "form": "queddun",
+        "lemma": "kweddian",
+        "pos": "VBDI^3^PL"
+    },
+    {
+        "verse": "551a",
+        "form": "sie",
+        "lemma": "he",
+        "pos": "PRO^N^3^PL"
+    },
+    {
+        "verse": "551a",
+        "form": "ine",
+        "lemma": "he",
+        "pos": "PRO^A^3^SG"
+    },
+    {
+        "verse": "551a",
+        "form": "kusco",
+        "lemma": "kusko",
+        "pos": "ADV"
+    },
+    {
+        "verse": "551b",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "551b",
+        "form": "cuninguuisan",
+        "lemma": "kuningwisa",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "552a",
+        "form": "fagara",
+        "lemma": "fagaro",
+        "pos": "ADV"
+    },
+    {
+        "verse": "552a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "552a",
+        "form": "is",
+        "lemma": "is",
+        "pos": "PRO$^D^3^SG"
+    },
+    {
+        "verse": "552a",
+        "form": "flettie",
+        "lemma": "fletti",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "552b",
+        "form": "endi",
+        "lemma": "endi",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "552b",
+        "form": "he",
+        "lemma": "he",
+        "pos": "PRO^N^3^SG"
+    },
+    {
+        "verse": "552b",
+        "form": "fregade",
+        "lemma": "fragon",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "552b",
+        "form": "son",
+        "lemma": "san",
+        "pos": "ADV"
+    },
+    {
+        "verse": "553a",
+        "form": "huilic",
+        "lemma": "hwilik",
+        "pos": "WADJ^N^SG"
+    },
+    {
+        "verse": "553a",
+        "form": "sie",
+        "lemma": "he",
+        "pos": "PRO^A^3^PL"
+    },
+    {
+        "verse": "553a",
+        "form": "erundi",
+        "lemma": "arundi",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "553b",
+        "form": "ute",
+        "lemma": "uta",
+        "pos": "ADV"
+    },
+    {
+        "verse": "553b",
+        "form": "gibrohti",
+        "lemma": "brengian",
+        "pos": "VBDS^3^SG"
+    },
+    {
+        "verse": "554a",
+        "form": "uueros",
+        "lemma": "wer",
+        "pos": "N^A^PL"
+    },
+    {
+        "verse": "554a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "554a",
+        "form": "thane",
+        "lemma": "the",
+        "pos": "D^A^SG"
+    },
+    {
+        "verse": "554a",
+        "form": "uureksiđ",
+        "lemma": "wraksith",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "554b",
+        "form": "huiđer",
+        "lemma": "hwethar",
+        "pos": "WQ"
+    },
+    {
+        "verse": "554b",
+        "form": "lediat",
+        "lemma": "ledian",
+        "pos": "VBPI^2^PL"
+    },
+    {
+        "verse": "554b",
+        "form": "ge",
+        "lemma": "gi",
+        "pos": "PRO^N^2^PL"
+    },
+    {
+        "verse": "554b",
+        "form": "giuunden",
+        "lemma": "windan",
+        "pos": "VNI^A^SG"
+    },
+    {
+        "verse": "554b",
+        "form": "gold",
+        "lemma": "gold",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "555a",
+        "form": "ti",
+        "lemma": "te",
+        "pos": "P"
+    },
+    {
+        "verse": "555a",
+        "form": "geuu",
+        "lemma": "geva",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "555a",
+        "form": "huilicun",
+        "lemma": "hwilik",
+        "pos": "WADJ^D^SG"
+    },
+    {
+        "verse": "555a",
+        "form": "gumona",
+        "lemma": "gumo",
+        "pos": "N^G^PL"
+    },
+    {
+        "verse": "555b",
+        "form": "ti",
+        "lemma": "te",
+        "pos": "P"
+    },
+    {
+        "verse": "555b",
+        "form": "hui",
+        "lemma": "hwe",
+        "pos": "WPRO^I"
+    },
+    {
+        "verse": "555b",
+        "form": "ge",
+        "lemma": "gi",
+        "pos": "PRO^N^2^PL"
+    },
+    {
+        "verse": "555b",
+        "form": "thus",
+        "lemma": "sus",
+        "pos": "ADV"
+    },
+    {
+        "verse": "555b",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "555b",
+        "form": "gonge",
+        "lemma": "gang",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "555b",
+        "form": "cumat",
+        "lemma": "kuman",
+        "pos": "VBPI^2^PL"
+    },
+    {
+        "verse": "556a",
+        "form": "gifaren",
+        "lemma": "faran",
+        "pos": "GE+VN"
+    },
+    {
+        "verse": "556a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "556a",
+        "form": "fađi",
+        "lemma": "fathi",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "556b",
+        "form": "huat",
+        "lemma": "hwe",
+        "pos": "WADV"
+    },
+    {
+        "verse": "556b",
+        "form": "ge",
+        "lemma": "gi",
+        "pos": "PRO^N^2^PL"
+    },
+    {
+        "verse": "556b",
+        "form": "nethuonan",
+        "lemma": "nethwanan",
+        "pos": "ADV"
+    },
+    {
+        "verse": "556b",
+        "form": "ferran",
+        "lemma": "ferran",
+        "pos": "ADV"
+    },
+    {
+        "verse": "556b",
+        "form": "sind",
+        "lemma": "wesan",
+        "pos": "BEPI^2^PL"
+    },
+    {
+        "verse": "557a",
+        "form": "erlos",
+        "lemma": "erl",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "557a",
+        "form": "fon",
+        "lemma": "fan",
+        "pos": "P"
+    },
+    {
+        "verse": "557a",
+        "form": "ođrun",
+        "lemma": "othar",
+        "pos": "ADJ^D^PL"
+    },
+    {
+        "verse": "557a",
+        "form": "thiadun",
+        "lemma": "thiod",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "557b",
+        "form": "ek",
+        "lemma": "ik",
+        "pos": "PRO^N^1^SG"
+    },
+    {
+        "verse": "557b",
+        "form": "gisiu",
+        "lemma": "sehan",
+        "pos": "GE+VBPI^1^SG"
+    },
+    {
+        "verse": "557b",
+        "form": "that",
+        "lemma": "that",
+        "pos": "C"
+    },
+    {
+        "verse": "557b",
+        "form": "ge",
+        "lemma": "gi",
+        "pos": "PRO^N^2^PL"
+    },
+    {
+        "verse": "557b",
+        "form": "sind",
+        "lemma": "wesan",
+        "pos": "BEPI^2^PL"
+    },
+    {
+        "verse": "557b",
+        "form": "eđeligiburdie",
+        "lemma": "ethiligiburd",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "558a",
+        "form": "cunnies",
+        "lemma": "kunni",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "558a",
+        "form": "fan",
+        "lemma": "fan",
+        "pos": "P"
+    },
+    {
+        "verse": "558a",
+        "form": "knosle",
+        "lemma": "knosal",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "558a",
+        "form": "godun",
+        "lemma": "god",
+        "pos": "ADJ^D^SG"
+    },
+    {
+        "verse": "558b",
+        "form": "nio",
+        "lemma": "eo",
+        "pos": "NEG+ADV"
+    },
+    {
+        "verse": "558b",
+        "form": "her",
+        "lemma": "her",
+        "pos": "ADV"
+    },
+    {
+        "verse": "558b",
+        "form": "er",
+        "lemma": "er",
+        "pos": "ADV"
+    },
+    {
+        "verse": "558b",
+        "form": "sulike",
+        "lemma": "sulik",
+        "pos": "ADJ^N^PL"
+    },
+    {
+        "verse": "558b",
+        "form": "cumene",
+        "lemma": "kuman",
+        "pos": "VNI^N^PL"
+    },
+    {
+        "verse": "558b",
+        "form": "ni",
+        "lemma": "ne",
+        "pos": "NEG"
+    },
+    {
+        "verse": "558b",
+        "form": "uurdun",
+        "lemma": "werthan",
+        "pos": "RDDI^3^PL"
+    },
+    {
+        "verse": "559a",
+        "form": "eri",
+        "lemma": "er",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "559a",
+        "form": "fon",
+        "lemma": "fan",
+        "pos": "P"
+    },
+    {
+        "verse": "559a",
+        "form": "ođrun",
+        "lemma": "othar",
+        "pos": "ADJ^D^PL"
+    },
+    {
+        "verse": "559a",
+        "form": "thiadun",
+        "lemma": "thiod",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "559b",
+        "form": "siđor",
+        "lemma": "sithor",
+        "pos": "ADV"
+    },
+    {
+        "verse": "559b",
+        "form": "ek",
+        "lemma": "ik",
+        "pos": "PRO^N^1^SG"
+    },
+    {
+        "verse": "559b",
+        "form": "moste",
+        "lemma": "motan",
+        "pos": "MDDI^1^SG"
+    },
+    {
+        "verse": "559b",
+        "form": "thesses",
+        "lemma": "these",
+        "pos": "D^G^SG"
+    },
+    {
+        "verse": "559b",
+        "form": "erla",
+        "lemma": "erl",
+        "pos": "N^G^PL"
+    },
+    {
+        "verse": "559b",
+        "form": "folkies",
+        "lemma": "folk",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "560a",
+        "form": "giuualdan",
+        "lemma": "waldan",
+        "pos": "GE+VB"
+    },
+    {
+        "verse": "560a",
+        "form": "thes",
+        "lemma": "these",
+        "pos": "D^G^SG"
+    },
+    {
+        "verse": "560a",
+        "form": "uuidan",
+        "lemma": "wid",
+        "pos": "ADJ^G^SG"
+    },
+    {
+        "verse": "560a",
+        "form": "rikies",
+        "lemma": "riki",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "560b",
+        "form": "ge",
+        "lemma": "gi",
+        "pos": "PRO^N^2^PL"
+    },
+    {
+        "verse": "560b",
+        "form": "sculun",
+        "lemma": "skulan",
+        "pos": "MDPI^2^PL"
+    },
+    {
+        "verse": "560b",
+        "form": "me",
+        "lemma": "ik",
+        "pos": "PRO^D^1^SG"
+    },
+    {
+        "verse": "560b",
+        "form": "ti",
+        "lemma": "te",
+        "pos": "P"
+    },
+    {
+        "verse": "560b",
+        "form": "uuaran",
+        "lemma": "war",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "560b",
+        "form": "seggian",
+        "lemma": "seggian",
+        "pos": "VB"
+    },
+    {
+        "verse": "561a",
+        "form": "fore",
+        "lemma": "for",
+        "pos": "P"
+    },
+    {
+        "verse": "561a",
+        "form": "thessun",
+        "lemma": "these",
+        "pos": "D^D^SG"
+    },
+    {
+        "verse": "561a",
+        "form": "iudia",
+        "lemma": "liudi",
+        "pos": "N^G^PL"
+    },
+    {
+        "verse": "561a",
+        "form": "folkie",
+        "lemma": "folk",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "561b",
+        "form": "bihuon",
+        "lemma": "bihwi",
+        "pos": "WADV"
+    },
+    {
+        "verse": "561b",
+        "form": "ge",
+        "lemma": "gi",
+        "pos": "PRO^N^2^PL"
+    },
+    {
+        "verse": "561b",
+        "form": "sin",
+        "lemma": "wesan",
+        "pos": "BEPS^2^PL"
+    },
+    {
+        "verse": "561b",
+        "form": "ti",
+        "lemma": "te",
+        "pos": "P"
+    },
+    {
+        "verse": "561b",
+        "form": "thessun",
+        "lemma": "these",
+        "pos": "D^D^SG"
+    },
+    {
+        "verse": "561b",
+        "form": "lande",
+        "lemma": "land",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "561b",
+        "form": "cumene",
+        "lemma": "kuman",
+        "pos": "VN"
+    },
+    {
+        "verse": "562a",
+        "form": "tha",
+        "lemma": "tho",
+        "pos": "ADV"
+    },
+    {
+        "verse": "562a",
+        "form": "sprakun",
+        "lemma": "sprekan",
+        "pos": "VBDI^3^PL"
+    },
+    {
+        "verse": "562a",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^SG"
+    },
+    {
+        "verse": "562a",
+        "form": "eht",
+        "lemma": "eft",
+        "pos": "ADV"
+    },
+    {
+        "verse": "562a",
+        "form": "tigene",
+        "lemma": "tegegnes",
+        "pos": "ADV"
+    },
+    {
+        "verse": "562b",
+        "form": "guman",
+        "lemma": "gumo",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "562b",
+        "form": "astrunie",
+        "lemma": "ostroni",
+        "pos": "ADJ^N^PL"
+    },
+    {
+        "verse": "563a",
+        "form": "uuordspahe",
+        "lemma": "wordspah",
+        "pos": "ADJ^N^PL"
+    },
+    {
+        "verse": "563a",
+        "form": "uueros",
+        "lemma": "wer",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "563b",
+        "form": "uue",
+        "lemma": "we",
+        "pos": "PRO^N^1^PL"
+    },
+    {
+        "verse": "563b",
+        "form": "thi",
+        "lemma": "thu",
+        "pos": "PRO^D^2^SG"
+    },
+    {
+        "verse": "563b",
+        "form": "ti",
+        "lemma": "te",
+        "pos": "P"
+    },
+    {
+        "verse": "563b",
+        "form": "uuaran",
+        "lemma": "war",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "563b",
+        "form": "mugun",
+        "lemma": "mugan",
+        "pos": "MDPI^1^PL"
+    },
+    {
+        "verse": "563b",
+        "form": "quadun",
+        "lemma": "kwethan",
+        "pos": "VBDI^3^PL"
+    },
+    {
+        "verse": "563b",
+        "form": "sie",
+        "lemma": "he",
+        "pos": "PRO^N^3^PL"
+    },
+    {
+        "verse": "564a",
+        "form": "use",
+        "lemma": "usa",
+        "pos": "PRO$^A^1^SG"
+    },
+    {
+        "verse": "564a",
+        "form": "erundi",
+        "lemma": "arundi",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "564b",
+        "form": "ođa",
+        "lemma": "otho",
+        "pos": "ADV"
+    },
+    {
+        "verse": "564b",
+        "form": "gitellian",
+        "lemma": "tellian",
+        "pos": "GE+VB"
+    },
+    {
+        "verse": "565a",
+        "form": "giseggian",
+        "lemma": "seggian",
+        "pos": "GE+VB"
+    },
+    {
+        "verse": "565a",
+        "form": "sođlica",
+        "lemma": "sothlik",
+        "pos": "ADV"
+    },
+    {
+        "verse": "565b",
+        "form": "bihuon",
+        "lemma": "bihwi",
+        "pos": "WADV"
+    },
+    {
+        "verse": "565b",
+        "form": "uue",
+        "lemma": "we",
+        "pos": "PRO^N^1^PL"
+    },
+    {
+        "verse": "565b",
+        "form": "camun",
+        "lemma": "kuman",
+        "pos": "VBDI^1^PL"
+    },
+    {
+        "verse": "565b",
+        "form": "on",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "565b",
+        "form": "thessan",
+        "lemma": "these",
+        "pos": "D^A^SG"
+    },
+    {
+        "verse": "565b",
+        "form": "siđ",
+        "lemma": "sith",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "565b",
+        "form": "herod",
+        "lemma": "herod",
+        "pos": "ADV"
+    },
+    {
+        "verse": "566a",
+        "form": "fon",
+        "lemma": "fan",
+        "pos": "P"
+    },
+    {
+        "verse": "566a",
+        "form": "astan",
+        "lemma": "ostan",
+        "pos": "ADV"
+    },
+    {
+        "verse": "566a",
+        "form": "thesseru",
+        "lemma": "these",
+        "pos": "D^D^SG"
+    },
+    {
+        "verse": "566a",
+        "form": "erđu",
+        "lemma": "ertha",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "566b",
+        "form": "giu",
+        "lemma": "ju",
+        "pos": "ADV"
+    },
+    {
+        "verse": "566b",
+        "form": "uuarun",
+        "lemma": "wesan",
+        "pos": "BEDI^3^PL"
+    },
+    {
+        "verse": "566b",
+        "form": "that",
+        "lemma": "thar",
+        "pos": "ADV"
+    },
+    {
+        "verse": "566b",
+        "form": "ađelies",
+        "lemma": "athali",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "566b",
+        "form": "menn",
+        "lemma": "man",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "567a",
+        "form": "godsprake",
+        "lemma": "godspraki",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "567a",
+        "form": "guman",
+        "lemma": "gumo",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "567b",
+        "form": "the",
+        "lemma": "the",
+        "pos": "D^N^PL"
+    },
+    {
+        "verse": "567b",
+        "form": "us",
+        "lemma": "we",
+        "pos": "PRO^D^1^PL"
+    },
+    {
+        "verse": "567b",
+        "form": "godes",
+        "lemma": "god",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "567b",
+        "form": "so",
+        "lemma": "so",
+        "pos": "ADV"
+    },
+    {
+        "verse": "567b",
+        "form": "uilu",
+        "lemma": "filo",
+        "pos": "Q^A^SG"
+    },
+    {
+        "verse": "568a",
+        "form": "helpa",
+        "lemma": "helpa",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "568a",
+        "form": "gihetun",
+        "lemma": "hetan",
+        "pos": "GE+VBDI^3^PL"
+    },
+    {
+        "verse": "568b",
+        "form": "fon",
+        "lemma": "fan",
+        "pos": "P"
+    },
+    {
+        "verse": "568b",
+        "form": "heƀencuninge",
+        "lemma": "hevankuning",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "569a",
+        "form": "uuarun",
+        "lemma": "war",
+        "pos": "ADJ^D^PL"
+    },
+    {
+        "verse": "569a",
+        "form": "uuordun",
+        "lemma": "word",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "569b",
+        "form": "than",
+        "lemma": "than",
+        "pos": "ADV"
+    },
+    {
+        "verse": "569b",
+        "form": "uuas",
+        "lemma": "wesan",
+        "pos": "BEDI^3^SG"
+    },
+    {
+        "verse": "569b",
+        "form": "thar",
+        "lemma": "thar",
+        "pos": "ADV"
+    },
+    {
+        "verse": "569b",
+        "form": "en",
+        "lemma": "en",
+        "pos": "NUM^N^SG"
+    },
+    {
+        "verse": "569b",
+        "form": "giuuittig",
+        "lemma": "giwittig",
+        "pos": "ADJ^N^SG"
+    },
+    {
+        "verse": "569b",
+        "form": "monn",
+        "lemma": "man",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "570a",
+        "form": "frod",
+        "lemma": "frod",
+        "pos": "ADV^N^SG"
+    },
+    {
+        "verse": "570a",
+        "form": "endi",
+        "lemma": "endi",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "570a",
+        "form": "filuuuis",
+        "lemma": "filowis",
+        "pos": "ADJ^N^SG"
+    },
+    {
+        "verse": "570b",
+        "form": "furn",
+        "lemma": "forn",
+        "pos": "ADV"
+    },
+    {
+        "verse": "570b",
+        "form": "uuas",
+        "lemma": "wesan",
+        "pos": "BEDI^3^SG"
+    },
+    {
+        "verse": "570b",
+        "form": "that",
+        "lemma": "the",
+        "pos": "D^N^SG"
+    },
+    {
+        "verse": "570b",
+        "form": "giu",
+        "lemma": "ju",
+        "pos": "ADV"
+    },
+    {
+        "verse": "571a",
+        "form": "use",
+        "lemma": "usa",
+        "pos": "PRO$^N^1^SG"
+    },
+    {
+        "verse": "571a",
+        "form": "aldiera",
+        "lemma": "aldiro",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "571a",
+        "form": "aster",
+        "lemma": "ostar",
+        "pos": "ADV"
+    },
+    {
+        "verse": "571a",
+        "form": "hinan",
+        "lemma": "hinan",
+        "pos": "ADV"
+    },
+    {
+        "verse": "571b",
+        "form": "thar",
+        "lemma": "thar",
+        "pos": "ADV"
+    },
+    {
+        "verse": "571b",
+        "form": "ni",
+        "lemma": "ne",
+        "pos": "NEG"
+    },
+    {
+        "verse": "571b",
+        "form": "uuarđ",
+        "lemma": "werthan",
+        "pos": "RDDI^3^SG"
+    },
+    {
+        "verse": "571b",
+        "form": "siđur",
+        "lemma": "sithor",
+        "pos": "ADV"
+    },
+    {
+        "verse": "571b",
+        "form": "enig",
+        "lemma": "enig",
+        "pos": "Q^N^SG"
+    },
+    {
+        "verse": "571b",
+        "form": "monn",
+        "lemma": "man",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "572a",
+        "form": "sprekana",
+        "lemma": "spraka",
+        "pos": "N^G^PL"
+    },
+    {
+        "verse": "572a",
+        "form": "so",
+        "lemma": "so",
+        "pos": "ADV"
+    },
+    {
+        "verse": "572a",
+        "form": "spe",
+        "lemma": "spah",
+        "pos": "ADJ^N^SG"
+    },
+    {
+        "verse": "572b",
+        "form": "huand",
+        "lemma": "hwand",
+        "pos": "C"
+    },
+    {
+        "verse": "572b",
+        "form": "he",
+        "lemma": "he",
+        "pos": "PRO^N^3^SG"
+    },
+    {
+        "verse": "572b",
+        "form": "mahte",
+        "lemma": "mugan",
+        "pos": "MDDI^3^SG"
+    },
+    {
+        "verse": "572b",
+        "form": "rekkian",
+        "lemma": "rekkian",
+        "pos": "VB"
+    },
+    {
+        "verse": "572b",
+        "form": "spell",
+        "lemma": "spel",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "572b",
+        "form": "godes",
+        "lemma": "god",
+        "pos": "NPR^G^SG"
+    },
+    {
+        "verse": "573a",
+        "form": "huande",
+        "lemma": "hwand",
+        "pos": "C"
+    },
+    {
+        "verse": "573a",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^SG"
+    },
+    {
+        "verse": "573a",
+        "form": "hedde",
+        "lemma": "hebbian",
+        "pos": "HVDI^3^SG"
+    },
+    {
+        "verse": "573a",
+        "form": "forlien",
+        "lemma": "farlihan",
+        "pos": "VN"
+    },
+    {
+        "verse": "573b",
+        "form": "liudia",
+        "lemma": "liudi",
+        "pos": "N^G^PL"
+    },
+    {
+        "verse": "573b",
+        "form": "herra",
+        "lemma": "herro",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "574a",
+        "form": "that",
+        "lemma": "that",
+        "pos": "C"
+    },
+    {
+        "verse": "574a",
+        "form": "he",
+        "lemma": "he",
+        "pos": "PRO^N^3^SG"
+    },
+    {
+        "verse": "574a",
+        "form": "mahte",
+        "lemma": "mugan",
+        "pos": "MDDI^3^SG"
+    },
+    {
+        "verse": "574a",
+        "form": "fon",
+        "lemma": "fan",
+        "pos": "P"
+    },
+    {
+        "verse": "574a",
+        "form": "erđu",
+        "lemma": "ertha",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "574b",
+        "form": "upp",
+        "lemma": "up",
+        "pos": "RP"
+    },
+    {
+        "verse": "574b",
+        "form": "giharian",
+        "lemma": "horian",
+        "pos": "GE+VB"
+    },
+    {
+        "verse": "575a",
+        "form": "uualdandes",
+        "lemma": "waldand",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "575a",
+        "form": "uuord",
+        "lemma": "word",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "575b",
+        "form": "bethiu",
+        "lemma": "bethiu",
+        "pos": "ADV"
+    },
+    {
+        "verse": "575b",
+        "form": "uuas",
+        "lemma": "wesan",
+        "pos": "BEDI^3^SG"
+    },
+    {
+        "verse": "575b",
+        "form": "is",
+        "lemma": "is",
+        "pos": "PRO$^N^3^SG"
+    },
+    {
+        "verse": "575b",
+        "form": "giuuitt",
+        "lemma": "giwit",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "575b",
+        "form": "mikil",
+        "lemma": "mikil",
+        "pos": "ADJ^N^SG"
+    },
+    {
+        "verse": "576a",
+        "form": "thes",
+        "lemma": "the",
+        "pos": "D^G^SG"
+    },
+    {
+        "verse": "576a",
+        "form": "thegnes",
+        "lemma": "thegan",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "576a",
+        "form": "githahti",
+        "lemma": "githaht",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "576b",
+        "form": "tha",
+        "lemma": "tho",
+        "pos": "ADV"
+    },
+    {
+        "verse": "576b",
+        "form": "he",
+        "lemma": "he",
+        "pos": "PRO^N^3^SG"
+    },
+    {
+        "verse": "576b",
+        "form": "thonan",
+        "lemma": "thanan",
+        "pos": "ADV"
+    },
+    {
+        "verse": "576b",
+        "form": "scolde",
+        "lemma": "skulan",
+        "pos": "MDDI^3^SG"
+    },
+    {
+        "verse": "577a",
+        "form": "ageuan",
+        "lemma": "agevan",
+        "pos": "VB"
+    },
+    {
+        "verse": "577a",
+        "form": "gardos",
+        "lemma": "gard",
+        "pos": "N^A^PL"
+    },
+    {
+        "verse": "577b",
+        "form": "gadulinga",
+        "lemma": "gaduling",
+        "pos": "N^G^PL"
+    },
+    {
+        "verse": "577b",
+        "form": "gumong",
+        "lemma": "gimang",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "578a",
+        "form": "forletan",
+        "lemma": "farlatan",
+        "pos": "VB"
+    },
+    {
+        "verse": "578a",
+        "form": "liudia",
+        "lemma": "liudi",
+        "pos": "N^G^PL"
+    },
+    {
+        "verse": "578a",
+        "form": "drom",
+        "lemma": "drom",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "578b",
+        "form": "sokian",
+        "lemma": "sokian",
+        "pos": "VB"
+    },
+    {
+        "verse": "578b",
+        "form": "lioht",
+        "lemma": "lioht",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "578b",
+        "form": "ođer",
+        "lemma": "othar",
+        "pos": "ADJ^A^SG"
+    },
+    {
+        "verse": "579a",
+        "form": "tha",
+        "lemma": "tho",
+        "pos": "ADV"
+    },
+    {
+        "verse": "579a",
+        "form": "he",
+        "lemma": "he",
+        "pos": "PRO^N^3^SG"
+    },
+    {
+        "verse": "579a",
+        "form": "is",
+        "lemma": "he",
+        "pos": "PRO^D^3^SG"
+    },
+    {
+        "verse": "579a",
+        "form": "giungeron",
+        "lemma": "jungaro",
+        "pos": "N^A^PL"
+    },
+    {
+        "verse": "579a",
+        "form": "het",
+        "lemma": "hetan",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "579b",
+        "form": "gongan",
+        "lemma": "gangan",
+        "pos": "VB"
+    },
+    {
+        "verse": "579b",
+        "form": "nahur",
+        "lemma": "nah",
+        "pos": "ADVR"
+    },
+    {
+        "verse": "580a",
+        "form": "erƀiuuardos",
+        "lemma": "erviward",
+        "pos": "N^A^PL"
+    },
+    {
+        "verse": "580b",
+        "form": "endi",
+        "lemma": "endi",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "580b",
+        "form": "is",
+        "lemma": "is",
+        "pos": "PRO$^D^3^PL"
+    },
+    {
+        "verse": "580b",
+        "form": "erlun",
+        "lemma": "erl",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "580b",
+        "form": "tha",
+        "lemma": "tho",
+        "pos": "ADV"
+    },
+    {
+        "verse": "581a",
+        "form": "segde",
+        "lemma": "seggian",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "581a",
+        "form": "sođlica",
+        "lemma": "sothlik",
+        "pos": "ADV"
+    },
+    {
+        "verse": "581b",
+        "form": "that",
+        "lemma": "the",
+        "pos": "D^N^SG"
+    },
+    {
+        "verse": "581b",
+        "form": "all",
+        "lemma": "al",
+        "pos": "Q^N^SG"
+    },
+    {
+        "verse": "581b",
+        "form": "siđor",
+        "lemma": "sithor",
+        "pos": "ADV"
+    },
+    {
+        "verse": "581b",
+        "form": "cam",
+        "lemma": "kuman",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "582a",
+        "form": "giuuarđ",
+        "lemma": "werthan",
+        "pos": "GE+RDDI^3^SG"
+    },
+
+    {
+        "verse": "675a",
+        "form": "endi",
+        "lemma": "endi",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "675a",
+        "form": "mirran",
+        "lemma": "myrra",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "675a",
+        "form": "tha",
+        "lemma": "thar",
+        "pos": "ADV"
+    },
+    {
+        "verse": "675a",
+        "form": "mid",
+        "lemma": "mid",
+        "pos": "P"
+    },
+    {
+        "verse": "675b",
+        "form": "the",
+        "lemma": "the",
+        "pos": "D^N^PL"
+    },
+    {
+        "verse": "675b",
+        "form": "menn",
+        "lemma": "man",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "675b",
+        "form": "stodun",
+        "lemma": "standan",
+        "pos": "VBDI^3^PL"
+    },
+    {
+        "verse": "675b",
+        "form": "gare",
+        "lemma": "garu",
+        "pos": "ADJ^N^PL"
+    },
+    {
+        "verse": "676a",
+        "form": "holda",
+        "lemma": "hold",
+        "pos": "ADJ^N^PL"
+    },
+    {
+        "verse": "676a",
+        "form": "for",
+        "lemma": "furi",
+        "pos": "P"
+    },
+    {
+        "verse": "676a",
+        "form": "ira",
+        "lemma": "iru",
+        "pos": "PRO$^D^3^SG"
+    },
+    {
+        "verse": "676a",
+        "form": "herran",
+        "lemma": "herro",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "676b",
+        "form": "the",
+        "lemma": "the",
+        "pos": "D^N^PL"
+    },
+    {
+        "verse": "676b",
+        "form": "it",
+        "lemma": "it",
+        "pos": "PRO^A^3^SG"
+    },
+    {
+        "verse": "676b",
+        "form": "mid",
+        "lemma": "mid",
+        "pos": "P"
+    },
+    {
+        "verse": "676b",
+        "form": "ira",
+        "lemma": "iru",
+        "pos": "PRO$^D^3^PL"
+    },
+    {
+        "verse": "676b",
+        "form": "hondun",
+        "lemma": "hand",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "676b",
+        "form": "son",
+        "lemma": "san",
+        "pos": "ADV"
+    },
+    {
+        "verse": "677a",
+        "form": "fagara",
+        "lemma": "fagaro",
+        "pos": "ADV"
+    },
+    {
+        "verse": "677a",
+        "form": "anfengun",
+        "lemma": "andfahan",
+        "pos": "VBDI^3^PL"
+    },
+    {
+        "verse": "677b",
+        "form": "tha",
+        "lemma": "tho",
+        "pos": "ADV"
+    },
+    {
+        "verse": "677b",
+        "form": "giuuitun",
+        "lemma": "witan",
+        "pos": "GE+VBDI^3^PL"
+    },
+    {
+        "verse": "677b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "677b",
+        "form": "the",
+        "lemma": "the",
+        "pos": "D^N^PL"
+    },
+    {
+        "verse": "677b",
+        "form": "ferhtan",
+        "lemma": "feraht",
+        "pos": "ADJ^N^PL"
+    },
+    {
+        "verse": "677b",
+        "form": "monn",
+        "lemma": "man",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "678a",
+        "form": "seggi",
+        "lemma": "seg",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "678a",
+        "form": "ti",
+        "lemma": "te",
+        "pos": "P"
+    },
+    {
+        "verse": "678a",
+        "form": "seliđun",
+        "lemma": "selitha",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "678b",
+        "form": "siđuuorige",
+        "lemma": "sithworig",
+        "pos": "ADJ^N^PL"
+    },
+    {
+        "verse": "679a",
+        "form": "gumun",
+        "lemma": "gumo",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "679a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "679a",
+        "form": "gestseli",
+        "lemma": "gastseli",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "679b",
+        "form": "thar",
+        "lemma": "thar",
+        "pos": "ADV"
+    },
+    {
+        "verse": "679b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "679b",
+        "form": "godes",
+        "lemma": "god",
+        "pos": "NPR^G^SG"
+    },
+    {
+        "verse": "679b",
+        "form": "engil",
+        "lemma": "engil",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "680a",
+        "form": "slapandiun",
+        "lemma": "slapan",
+        "pos": "VGI^D^PL"
+    },
+    {
+        "verse": "680a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "680a",
+        "form": "naht",
+        "lemma": "naht",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "680b",
+        "form": "sueƀan",
+        "lemma": "swevan",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "680b",
+        "form": "gitagde",
+        "lemma": "togian",
+        "pos": "GE+VBDI^3^SG"
+    },
+    {
+        "verse": "681a",
+        "form": "gidrog",
+        "lemma": "dragan",
+        "pos": "GE+VBDI^3^SG"
+    },
+    {
+        "verse": "681a",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "681a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "681a",
+        "form": "drome",
+        "lemma": "drom",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "681b",
+        "form": "all",
+        "lemma": "al",
+        "pos": "ADV"
+    },
+    {
+        "verse": "681b",
+        "form": "so",
+        "lemma": "so",
+        "pos": "C"
+    },
+    {
+        "verse": "681b",
+        "form": "it",
+        "lemma": "it",
+        "pos": "PRO^A^3^SG"
+    },
+    {
+        "verse": "681b",
+        "form": "drohtin",
+        "lemma": "drohtin",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "681b",
+        "form": "self",
+        "lemma": "self",
+        "pos": "ADJ^N^SG"
+    },
+    {
+        "verse": "682a",
+        "form": "uualdand",
+        "lemma": "waldand",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "682a",
+        "form": "ok",
+        "lemma": "ok",
+        "pos": "ALSO"
+    },
+    {
+        "verse": "682a",
+        "form": "uelda",
+        "lemma": "willian",
+        "pos": "MDDI^3^SG"
+    },
+    {
+        "verse": "682b",
+        "form": "that",
+        "lemma": "that",
+        "pos": "C"
+    },
+    {
+        "verse": "682b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "682b",
+        "form": "thuhte",
+        "lemma": "thunkian",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "682b",
+        "form": "that",
+        "lemma": "that",
+        "pos": "C"
+    },
+    {
+        "verse": "682b",
+        "form": "man",
+        "lemma": "man",
+        "pos": "MAN^N^3^SG"
+    },
+    {
+        "verse": "682b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "682b",
+        "form": "mid",
+        "lemma": "mid",
+        "pos": "P"
+    },
+    {
+        "verse": "682b",
+        "form": "uuordun",
+        "lemma": "word",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "682b",
+        "form": "gibudi",
+        "lemma": "biodan",
+        "pos": "GE+VBDS^3^SG"
+    },
+    {
+        "verse": "683a",
+        "form": "that",
+        "lemma": "that",
+        "pos": "C"
+    },
+    {
+        "verse": "683a",
+        "form": "sie",
+        "lemma": "he",
+        "pos": "PRO^N^3^PL"
+    },
+    {
+        "verse": "683a",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "693a",
+        "form": "ira",
+        "lemma": "iru",
+        "pos": "PRO$^A^3^SG"
+    },
+    {
+        "verse": "693a",
+        "form": "mod",
+        "lemma": "iru",
+        "pos": "PRO$^A^3^SG"
+    },
+    {
+        "verse": "693a",
+        "form": "morgana",
+        "lemma": "morgan",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "693a",
+        "form": "gihuilikes",
+        "lemma": "gihwilik",
+        "pos": "GE+WADJ^G^SG"
+    },
+    {
+        "verse": "693b",
+        "form": "foron",
+        "lemma": "faran",
+        "pos": "VBDI^3^PL"
+    },
+    {
+        "verse": "693b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "693b",
+        "form": "eht",
+        "lemma": "eft",
+        "pos": "ADV"
+    },
+    {
+        "verse": "693b",
+        "form": "the",
+        "lemma": "the",
+        "pos": "D^N^PL"
+    },
+    {
+        "verse": "693b",
+        "form": "menn",
+        "lemma": "man",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "693b",
+        "form": "thonan",
+        "lemma": "thanan",
+        "pos": "ADV"
+    },
+    {
+        "verse": "694a",
+        "form": "erlos",
+        "lemma": "erl",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "694a",
+        "form": "astronia",
+        "lemma": "ostroni",
+        "pos": "ADJ^N^PL"
+    },
+    {
+        "verse": "694b",
+        "form": "all",
+        "lemma": "al",
+        "pos": "ADV"
+    },
+    {
+        "verse": "694b",
+        "form": "so",
+        "lemma": "so",
+        "pos": "C"
+    },
+    {
+        "verse": "694b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "694b",
+        "form": "the",
+        "lemma": "the",
+        "pos": "D^N^SG"
+    },
+    {
+        "verse": "694b",
+        "form": "engil",
+        "lemma": "engil",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "694b",
+        "form": "godes",
+        "lemma": "god",
+        "pos": "NPR^G^SG"
+    },
+    {
+        "verse": "695a",
+        "form": "uuordun",
+        "lemma": "word",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "695a",
+        "form": "giuuisda",
+        "lemma": "wisian",
+        "pos": "GE+VBDI^3^SG"
+    },
+    {
+        "verse": "695b",
+        "form": "namun",
+        "lemma": "niman",
+        "pos": "VBDI^3^PL"
+    },
+    {
+        "verse": "695b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "695b",
+        "form": "uueg",
+        "lemma": "weg",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "695b",
+        "form": "ođerne",
+        "lemma": "othar",
+        "pos": "ADJ^A^SG"
+    },
+    {
+        "verse": "696a",
+        "form": "fulgengun",
+        "lemma": "fulgangan",
+        "pos": "VBDI^3^PL"
+    },
+    {
+        "verse": "696a",
+        "form": "godes",
+        "lemma": "god",
+        "pos": "NPR^G^SG"
+    },
+    {
+        "verse": "696a",
+        "form": "lerun",
+        "lemma": "lera",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "696b",
+        "form": "ni",
+        "lemma": "ne",
+        "pos": "NEG"
+    },
+    {
+        "verse": "696b",
+        "form": "uueldun",
+        "lemma": "willian",
+        "pos": "MDDI^3^PL"
+    },
+    {
+        "verse": "696b",
+        "form": "them",
+        "lemma": "the",
+        "pos": "D^D^SG"
+    },
+    {
+        "verse": "696b",
+        "form": "giudeona",
+        "lemma": "judeo",
+        "pos": "NPR^G^PL"
+    },
+    {
+        "verse": "696b",
+        "form": "cuninge",
+        "lemma": "kuning",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "697a",
+        "form": "endi",
+        "lemma": "umbi",
+        "pos": "P"
+    },
+    {
+        "verse": "697a",
+        "form": "thas",
+        "lemma": "the",
+        "pos": "D^G^SG"
+    },
+    {
+        "verse": "697a",
+        "form": "barnes",
+        "lemma": "barn",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "697a",
+        "form": "giburd",
+        "lemma": "giburd",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "697b",
+        "form": "bodan",
+        "lemma": "bodo",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "697b",
+        "form": "astrunie",
+        "lemma": "ostroni",
+        "pos": "ADJ^N^PL"
+    },
+    {
+        "verse": "698b",
+        "form": "seggian",
+        "lemma": "seggian",
+        "pos": "VB"
+    },
+    {
+        "verse": "698b",
+        "form": "iauuiht",
+        "lemma": "eowiht",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "699a",
+        "form": "ac",
+        "lemma": "ak",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "699a",
+        "form": "uuendun",
+        "lemma": "wendian",
+        "pos": "VBDI^3^PL"
+    },
+    {
+        "verse": "699a",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "699a",
+        "form": "tho",
+        "lemma": "tho",
+        "pos": "ADV"
+    },
+    {
+        "verse": "699a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "699a",
+        "form": "ira",
+        "lemma": "iru",
+        "pos": "PRO$^A^3^SG"
+    },
+    {
+        "verse": "699a",
+        "form": "uuillian",
+        "lemma": "willio",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "699b",
+        "form": "tha",
+        "lemma": "tho",
+        "pos": "ADV"
+    },
+    {
+        "verse": "699b",
+        "form": "uuarđ",
+        "lemma": "werthan",
+        "pos": "RDDI^3^SG"
+    },
+    {
+        "verse": "699b",
+        "form": "son",
+        "lemma": "san",
+        "pos": "ADV"
+    },
+    {
+        "verse": "699b",
+        "form": "ahter",
+        "lemma": "aftar",
+        "pos": "P"
+    },
+    {
+        "verse": "699b",
+        "form": "thiu",
+        "lemma": "the",
+        "pos": "D^D^SG"
+    },
+    {
+        "verse": "699b",
+        "form": "uualdandes",
+        "lemma": "waldand",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "700a",
+        "form": "godes",
+        "lemma": "god",
+        "pos": "NPR^G^SG"
+    },
+    {
+        "verse": "700a",
+        "form": "engil",
+        "lemma": "engil",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "700a",
+        "form": "cumen",
+        "lemma": "kuman",
+        "pos": "VN"
+    },
+    {
+        "verse": "700b",
+        "form": "iosepe",
+        "lemma": "joseph",
+        "pos": "NPR^D^SG"
+    },
+    {
+        "verse": "700b",
+        "form": "ti",
+        "lemma": "te",
+        "pos": "P"
+    },
+    {
+        "verse": "700b",
+        "form": "sprake",
+        "lemma": "spraka",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "701a",
+        "form": "sagden",
+        "lemma": "seggian",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "701a",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^SG"
+    },
+    {
+        "verse": "701a",
+        "form": "in",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "701a",
+        "form": "suuene",
+        "lemma": "swevan",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "701b",
+        "form": "slapandiun",
+        "lemma": "slapan",
+        "pos": "VGI^D^SG"
+    },
+    {
+        "verse": "701b",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "701b",
+        "form": "naht",
+        "lemma": "naht",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "702a",
+        "form": "bodu",
+        "lemma": "bodo",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "702a",
+        "form": "drohtines",
+        "lemma": "drohtin",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "702b",
+        "form": "that",
+        "lemma": "that",
+        "pos": "C"
+    },
+    {
+        "verse": "702b",
+        "form": "that",
+        "lemma": "the",
+        "pos": "D^A^SG"
+    },
+    {
+        "verse": "702b",
+        "form": "barn",
+        "lemma": "barn",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "702b",
+        "form": "godes",
+        "lemma": "god",
+        "pos": "NPR^G^SG"
+    },
+    {
+        "verse": "703a",
+        "form": "sliđmod",
+        "lemma": "slithmod",
+        "pos": "ADJ^N^SG"
+    },
+    {
+        "verse": "703a",
+        "form": "cuning",
+        "lemma": "kuning",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "703b",
+        "form": "sokian",
+        "lemma": "sokian",
+        "pos": "VB"
+    },
+    {
+        "verse": "703b",
+        "form": "uulde",
+        "lemma": "willian",
+        "pos": "MDDI^3^SG"
+    },
+    {
+        "verse": "704a",
+        "form": "ohtian",
+        "lemma": "ahtian",
+        "pos": "VB"
+    },
+    {
+        "verse": "704a",
+        "form": "is",
+        "lemma": "is",
+        "pos": "PRO$^G^3^SG"
+    },
+    {
+        "verse": "704a",
+        "form": "aldres",
+        "lemma": "aldar",
+        "pos": "N^G^SG"
+    },
+    {
+        "verse": "704b",
+        "form": "nu",
+        "lemma": "nu",
+        "pos": "ADV"
+    },
+    {
+        "verse": "704b",
+        "form": "scalt",
+        "lemma": "skulan",
+        "pos": "MDPI^2^SG"
+    },
+    {
+        "verse": "704b",
+        "form": "thu",
+        "lemma": "thu",
+        "pos": "PRO^N^2^SG"
+    },
+    {
+        "verse": "704b",
+        "form": "ine",
+        "lemma": "he",
+        "pos": "PRO^A^3^SG"
+    },
+    {
+        "verse": "704b",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "704b",
+        "form": "ægypta",
+        "lemma": "egypt",
+        "pos": "NPR^G^SG"
+    },
+    {
+        "verse": "705a",
+        "form": "land",
+        "lemma": "land",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "705a",
+        "form": "ledian",
+        "lemma": "andledian",
+        "pos": "VB"
+    },
+    {
+        "verse": "705b",
+        "form": "endi",
+        "lemma": "endi",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "705b",
+        "form": "undar",
+        "lemma": "undar",
+        "pos": "P"
+    },
+    {
+        "verse": "705b",
+        "form": "them",
+        "lemma": "the",
+        "pos": "D^D^PL"
+    },
+    {
+        "verse": "705b",
+        "form": "liudun",
+        "lemma": "liudi",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "705b",
+        "form": "uuesan",
+        "lemma": "wesan",
+        "pos": "BE"
+    },
+    {
+        "verse": "706a",
+        "form": "mid",
+        "lemma": "mid",
+        "pos": "P"
+    },
+    {
+        "verse": "706a",
+        "form": "thiu",
+        "lemma": "the",
+        "pos": "D^I^SG"
+    },
+    {
+        "verse": "706a",
+        "form": "godes",
+        "lemma": "god",
+        "pos": "NPR^G^SG"
+    },
+    {
+        "verse": "706a",
+        "form": "barnu",
+        "lemma": "barn",
+        "pos": "N^I^SG"
+    },
+    {
+        "verse": "706b",
+        "form": "endi",
+        "lemma": "endi",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "706b",
+        "form": "mid",
+        "lemma": "mid",
+        "pos": "P"
+    },
+    {
+        "verse": "706b",
+        "form": "theru",
+        "lemma": "the",
+        "pos": "D^D^SG"
+    },
+    {
+        "verse": "706b",
+        "form": "godes",
+        "lemma": "god",
+        "pos": "ADJ^D^SG"
+    },
+    {
+        "verse": "716b",
+        "form": "he",
+        "lemma": "he",
+        "pos": "PRO^N^3^SG"
+    },
+    {
+        "verse": "716b",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "716b",
+        "form": "is",
+        "lemma": "is",
+        "pos": "PRO$^G^3^SG"
+    },
+    {
+        "verse": "716b",
+        "form": "rikie",
+        "lemma": "riki",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "716b",
+        "form": "sat",
+        "lemma": "sittian",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "717a",
+        "form": "that",
+        "lemma": "that",
+        "pos": "C"
+    },
+    {
+        "verse": "717a",
+        "form": "uuaren",
+        "lemma": "wesan",
+        "pos": "BEDI^3^PL"
+    },
+    {
+        "verse": "717a",
+        "form": "the",
+        "lemma": "the",
+        "pos": "D^N^PL"
+    },
+    {
+        "verse": "717a",
+        "form": "uuisan",
+        "lemma": "wis",
+        "pos": "ADJ^N^PL"
+    },
+    {
+        "verse": "717a",
+        "form": "menn",
+        "lemma": "man",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "717b",
+        "form": "uuestan",
+        "lemma": "westan",
+        "pos": "ADV"
+    },
+    {
+        "verse": "717b",
+        "form": "gihuorƀen",
+        "lemma": "hwervan",
+        "pos": "GE+VN"
+    },
+    {
+        "verse": "718a",
+        "form": "aster",
+        "lemma": "ostar",
+        "pos": "ADV"
+    },
+    {
+        "verse": "718a",
+        "form": "on",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "718a",
+        "form": "ođil",
+        "lemma": "othil",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "718b",
+        "form": "endi",
+        "lemma": "endi",
+        "pos": "CONJ"
+    },
+    {
+        "verse": "718b",
+        "form": "forun",
+        "lemma": "faran",
+        "pos": "VBDI^3^PL"
+    },
+    {
+        "verse": "718b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^PL"
+    },
+    {
+        "verse": "718b",
+        "form": "ođerne",
+        "lemma": "othar",
+        "pos": "ADJ^A^SG"
+    },
+    {
+        "verse": "719a",
+        "form": "uuisse",
+        "lemma": "witan",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "719a",
+        "form": "that",
+        "lemma": "that",
+        "pos": "C"
+    },
+    {
+        "verse": "719a",
+        "form": "ti",
+        "lemma": "he",
+        "pos": "PRO^N^3^PL"
+    },
+    {
+        "verse": "719a",
+        "form": "uuaran",
+        "lemma": "war",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "719a",
+        "form": "that",
+        "lemma": "the",
+        "pos": "D^A^SG"
+    },
+    {
+        "verse": "719a",
+        "form": "sie",
+        "lemma": "the",
+        "pos": "D^A^SG"
+    },
+    {
+        "verse": "719a",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^SG"
+    },
+    {
+        "verse": "719a",
+        "form": "that",
+        "lemma": "the",
+        "pos": "D^A^SG"
+    },
+    {
+        "verse": "719a",
+        "form": "erundi",
+        "lemma": "arundi",
+        "pos": "N^A^SG"
+    },
+    {
+        "verse": "719b",
+        "form": "eht",
+        "lemma": "eft",
+        "pos": "ADV"
+    },
+    {
+        "verse": "719b",
+        "form": "ni",
+        "lemma": "ne",
+        "pos": "NEG"
+    },
+    {
+        "verse": "719b",
+        "form": "uueldun",
+        "lemma": "willian",
+        "pos": "MDDI^3^PL"
+    },
+    {
+        "verse": "720a",
+        "form": "seggian",
+        "lemma": "seggian",
+        "pos": "VB"
+    },
+    {
+        "verse": "720a",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "720a",
+        "form": "is",
+        "lemma": "is",
+        "pos": "PRO$^D^3^PL"
+    },
+    {
+        "verse": "720a",
+        "form": "selđun",
+        "lemma": "selitha",
+        "pos": "N^D^PL"
+    },
+    {
+        "verse": "720b",
+        "form": "tha",
+        "lemma": "tho",
+        "pos": "ADV"
+    },
+    {
+        "verse": "720b",
+        "form": "uuarđ",
+        "lemma": "werthan",
+        "pos": "RDDI^3^SG"
+    },
+    {
+        "verse": "720b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^SG"
+    },
+    {
+        "verse": "720b",
+        "form": "thas",
+        "lemma": "the",
+        "pos": "D^G^SG"
+    },
+    {
+        "verse": "720b",
+        "form": "an",
+        "lemma": "an",
+        "pos": "P"
+    },
+    {
+        "verse": "720b",
+        "form": "sorgun",
+        "lemma": "sorga",
+        "pos": "N^D^SG"
+    },
+    {
+        "verse": "720b",
+        "form": "hugi",
+        "lemma": "hugi",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "721a",
+        "form": "mod",
+        "lemma": "mod",
+        "pos": "N^N^SG"
+    },
+    {
+        "verse": "721a",
+        "form": "murnandi",
+        "lemma": "mornian",
+        "pos": "VGI^N^SG"
+    },
+    {
+        "verse": "721b",
+        "form": "quađ",
+        "lemma": "kwethan",
+        "pos": "VBDI^3^SG"
+    },
+    {
+        "verse": "721b",
+        "form": "that",
+        "lemma": "that",
+        "pos": "C"
+    },
+    {
+        "verse": "721b",
+        "form": "it",
+        "lemma": "it",
+        "pos": "PRO^A^3^SG"
+    },
+    {
+        "verse": "721b",
+        "form": "im",
+        "lemma": "he",
+        "pos": "PRO^D^3^SG"
+    },
+    {
+        "verse": "721b",
+        "form": "the",
+        "lemma": "the",
+        "pos": "D^N^PL"
+    },
+    {
+        "verse": "721b",
+        "form": "menn",
+        "lemma": "man",
+        "pos": "N^N^PL"
+    },
+    {
+        "verse": "721b",
+        "form": "dedin",
+        "lemma": "don",
+        "pos": "VBDS^3^PL"
+    },
+    {
+        "verse": "722a",
+        "form": "heliđas",
+        "lemma": "helith",
+        "pos": "N^N^PL"
+    }
+]

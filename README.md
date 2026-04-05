@@ -50,6 +50,10 @@ This file sits outside the pipeline, as it represents a manually proofread versi
 
 This file sits outside the pipeline, as it has been manually proofread and represents gold standard lemma and POS metadata.
 
+## `heliand-s_rich_corrected.json`
+
+This file sits outside the pipeline, as it has been manually proofread and represents gold standard lemma and POS metadata.
+
 ## `heliand_xpollinate_2ndpass.py`
 
 Generates `heliand-m_rich_2ndpass.json` by repeating a version of `heliand_xpollinate.py`, but now informed by `lemmas_inverted_corrected.json` so as to avoid misassignments. It also knows to assign a lemma and rough POS label in most cases where C offers no matching token.
