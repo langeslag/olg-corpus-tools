@@ -1,5 +1,4 @@
 # Generates synoptic heliand_synoptic.json and heliand_synoptic.txt.
-# TODO: add in LPS
 import re,json
 from pathlib import Path
 import wikisource_extract

@@ -1,39 +1,39 @@
 0351 ..............    ...... [uua]run ·
 0352 bokspahe uueros    endi an bref scriuun
-0353 tulgo niudli.. romana gihuilikne 
+0353 tulgo niudlica    nomana gihuilikne 
 0354 ia land ia liudi    that im ni mahti alettian monn
-0355 gumano sulica gambra    so imu scolde geldan gihue
-0356 heliđa fan haƀde ·    Tha giuuet im ak mid is hiskie
+0355 gumano sulica gambra    so imu scolde geldan gihue ·
+0356 heliđa fan is haƀde ·    Tha giuuet im ak mid is hiskie ·
 0357 ioseph the goda    so it god mahtig
-0358 uualdand uuelde ·    so hie im thie ....mun hem
-0359 the burg in bethleem    ... ira beđera uuas
+0358 uualdand uuelde ·    sohte im thie uuanamun hem
+0359 thie burg an bethleem    [t]h[ar] ira beđera uuas
 0360 [t]he[s] [he]liđes handmal
 0368 .................    endi maht godes
-0369 that an themu si.e    sunu aden uuarđ
-0370 giboren an bethleem    barno str[a]ngest ·
+0369 that iru an themu si[đ]e    sunu aden uuarđ
+0370 giboren an bethleem    barno strongost ·
 0371 allera kuninga crahtigost ·    cumen uuarđ
-0372 the meria an monna lioht    so is er m[o]nigan dag
+0372 the meria an monna lioht    so is er monigan dag
 0373 biliđi uuarun    endi bakna filu
 0374 giuuorden an thesseru uueraldi    Tha uuas it all giuuarod so ·
 0375 so it er sp[e]he menn    gisproken heddun
-0376 thurh huelik ađmodi    he thit erđriki herod
-0377 thurh his selues craht    sokian uuelde
+0376 thur huilik ađmodi    he thit erđriki herod
+0377 thur his selues craht    sokian uuelde
 0378 monegera mundbora ·    Th[a] ine thiu moder nam
 0379 biuuand ine mid uuadie    uuiuo sconiost
 0380 fagarun frahtun    e[n]di [ine] mid ire folmun tuem
-0381 legdu liuƀlica    luttilne monn ·
+0381 legdu lioƀlica    luttilne monn ·
 0382 that kind an ene krebbian    thah he heddi creht godes
 0383 manno drohtin    Thar sat thiu moder bi[uo]ran
 0384 uuif [uua]kandi    uu[ardode] ........
-0393 ........... [fel]de ·    Sie uurdun anforhtan tha
+0393 ........... [fel]de ·    Sie uurdun an forhtun tha
 0394 [th]e menn an ira mode ·    giseun thar ma[htig]ne
 0395 godes engil cuman    the im tigene sp[ra]k
-0396 het that im the uuardas    uuiht ni and[riedin]
-0397 leđes fon themu liohte ·    ek scal iu l[ie]ƀe[re] thing ·
+0396 het that im the uuardas    uuiht ni and[redin]
+0397 leđes fon themu liohte ·    ek scal iu l[ie]ƀa[re] thing ·
 0398 tulgo uuarlica    uuillian seggian
 0399 kuđian craht mikil ·    Nu is crist giboren
 0400 an thes[seru]
-0514 ......................    siu nia thane uuih ni forlet ·
+0514 ......................    .. siu nia thane uuih ni forlet ·
 0515 ak siu thar ire drohtine uuel    dages endi nahtes
 0516 gode thianade ·    Siu cam than ak gongan to ·
 0517 an the seluan tid ·    son untkiende ·
@@ -43,53 +43,80 @@
 0521 helpa heuencuninges ·    Nu is the helega crist
 0522 uualda[nd] selua ·    an thessan uuih cumen ·
 0523 ti alasianne ·    the liudi thi her nu longa bidadun ·
-0524 an thesseru middilgerd ·    monege huil[e]
+0524 an thesseru middilgerd ·    monege huil[a]
 0525 thurtiga thiada ·    so nu thes thinges mugun ·
-0526 mendian monnakunni ·    Moneg feg[e?]nade ·
+0526 mendian monnakunni ·    Moneg feg[o]nade ·
 0527 uuered ahter themu uuihe    gihardun uuilspell mikil
 0528 fon gode seggian ·    That geld hedde tha gilestid
-0529 thiu idis an themu alahe    all so it im an ira ea gebad* ·
-0530 endi an thera berhtan burg    bok giuuisdon
+0529 thiu idis an themu alahe    all so it im an ira ea g[i]bad ·
+0530 endi an theru berhtan burg    bok giuuisdun
 0531 helegera hondgiuuerk ·    Giuuitun [im] tha ti hus thonan
 0532 fon hierusalem    ioseph endi maria ·
 0533 heleg hiski ·    heddun im heƀencuning
 0534 simlun ti gisiđe    sunu drohtines
 0535 Monegera mundbora    son it ia meri [n]i uuarđ ·
-0536 than uuidur an thesseru uue[roldi]
-0558 ......................    ....... sulike cumene ni uurdun
-0559 er. .on ođrun thiadun ·    siđor ek moste thesses erla folkies
+0536 than uuidur an thesseru uueroldi ·    neƀon so is uuillie geng
+0537 heƀencuninges hugi ·    Thah thar than huilic helag monn
+0538 crist untkiendi ·    thah ni uuarđ it ia ti thes cuninges houe
+0539 [t]hem monnun gimerid    the im an ira mods[eƀ]an
+0540 holde nu uuerun ·    ak uuas im so bihald[en] forđ
+0541 mid uuordun endi mid uuercun ·    unt[that] thar uueros astan
+0542 tulgo glauuue guman    g[a]ngan camun ·
+0543 thrie ti theru thiadu    thegnos snelle
+0544 an longan uueg    ouer that land tharod ·
+0545 folgadun enun berhtan bakne    endi sohtun that barn godes
+0546 mid hluttru hugi ·    uueldun im hnigan to
+0547 gehan im ti giungerun    driƀun im godes giscapu ·
+0548 Tha sie erodes thar    rikiene fundun
+0549 an is selu sittian    sliđuurdiene kuning ·
+0550 modegne mid is monnun ·    simlun uuas he morđes gern ·
+0551 Tha queddun sie ine kusco    an cuning uuisan
+0552 fagara an is flettie    endi he fregade son
+0553 huilic sie erundi    ute gibrohti
+0554 uueros an thane uureksiđ    Huiđer lediat ge giuunden gold ·
+0555 ti geuu huilicun gumona ·    ti hui ge thus an gonge  cumat ·
+0556 gifaren an fađi    huat ge nethuonan ferran sind ·
+0557 erlos fon ođrun thiadun ·    ek gisiu that ge sind eđeligiburdie ·
+0558 cunnies fan knosle godun ·    nio her er sulike cumene ni uurdun
+0559 er[i] [f]on ođrun thiadun ·    siđor ek moste thesses erla folkies
 0560 giuualdan thes uuidan rikies ·    ge sculun me ti uuaran seggian
 0561 fore thessun iudia folkie ·    bihuon ge sin ti thessun l[an]de cumene
-0562 Tha sprakun im ehttigene*    gum[a]n astrunie
+0562 Tha sprakun im eht tigene    gum[a]n astrunie
 0563 uuordspahe uueros ·    Uue [thi] ti uuaran mugun quadun sie
 0564 use erundi    [o]đa gitellian ·
 0565 giseggian sođlica    bihuon uue camun on thessan siđ herod
 0566 fon astan thesseru erđu    Giu uuarun that ađelies menn
-0567 godsprake guman · the us godes so uilu
+0567 godsprake guman ·    the us godes so uilu
 0568 helpa gihetun    fon heƀencuninge ·
 0569 uuarun uuordun    than uuas thar en giuuittig monn
 0570 frodendi filuuuis    furn uuas that giu ·
-0571 use aldiera aster hinan    thar ni uuarđ siđur enig monn
-0572 sprekana so spe    hu[a]nd he mahte rekkian spell godes
-0573 hu[a]nd* im hedde forlien    liu[di]a herra
-0574 that he [ni] [m]ahte fon erđu    upp giharian
+0571 use aldiera aster hinan ·    thar ni uuarđ siđur enig monn
+0572 sprekana so spe ·    huand he mahte rekkian spell godes
+0573 hu[a]nde ~~he mahte~~ im hedde forlien    liu[di]a herra
+0574 that he mahte fon erđu    upp giharian
 0575 uualdandes uuord    bethiu uuas is giuuittmahal
-0576 thes thegnes githahti · Tha he thonan scolde
+0576 thes thegnes githahti ·    Tha he thonan scolde
 0578 ageuan gardos    gadulinga gumong
 0579 forletan liudia drom    sokian lioht ođer ·
 0580 tha he is giungeron het    gongan nahur
-0581 erƀiuuardos · endi is erlun tha
-0582 segde s[o]đlica · that all siđor cam ·
-0583 giuuarđ
+0581 erƀiuuardos ·    endi is erlun tha
+0582 segde sođlica ·    that all siđor cam ·
+0583 giuuarđ .......
 0675 endi [mir]ran tha mid ·    the menn stodun gare
 0676 holda for ira herran    the it mid ira hondun son
-0677 ..... anfengun ·    Tha giuuitun im the ferhtan ....
-0678 seggi ti seliđun ·    siđuu[o?]rige
-0679 gumun an gastseli    thar im godes engil
-0680 slapandiun an naht    sueƀ[an] g[it]agde ·
-0681 gidrog \im/ [an] dro.ume ·    all so it drohtin self ·
+0677 [faga]ra anfengun ·    Tha giuuitun im the ferhtan monn
+0678 seggi ti seliđun ·    siđuu[o]rige
+0679 gumun an gestseli    thar im godes engil
+0680 slapandiun an naht    sueƀ[an] gitagde ·
+0681 gidrog \\im/ [an] drome ·    all so it drohtin self ·
 0682 uualdand ok uelda ·    that im thuhte that man im mid uu[or]dun gibudi
-0683 that sie im
+0683 that sie im ........
+0693 [i]ra mod [morgan]a gihuilikes    ... f[oron] im eht the menn thonan ·
+0694 erlos [a]str[onia]    all so im the engil godes
+0695 uuordun gi[uuisda]    namun im uueg ođerne ·
+0696 fulgengun g[o]d[es] lerun    ni uueldun them giudeona cuning[e]
+0697 endi th[a]s barnes giburd    bodan astrunie
+0698 ........    seggian ia uuiht ·
 0699 Ac uuendun im th. an ira uuillia[n] ·    ..a uuarđ? son ah?ter thiu uualdandes
 0700 godes engil cumen    iosepe ti sprake
 0701 sagden im in suue.ne    slapandiun an na.g
@@ -104,4 +131,4 @@
 0719 uuisse that ti uuaran that sie im that [er]undi    eht ni uueldun
 0720 seggian an is sel[đ]un ·    tha uuarđ im thas an sorgun hugi
 0721 mod murnandi    quađ that it im the menn dedin
-0722 heliđas
+0722 heliđas ...........
