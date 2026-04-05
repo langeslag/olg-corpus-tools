@@ -11,6 +11,7 @@ import heliand_xpollinate
 import heliandv_xpollinate
 import verses_of_different_length
 import heliand_xpollinate_2ndpass
+import heliandlps_xpollinate
 
 #for file in [
 #    'heliand-c.json',
@@ -39,3 +40,6 @@ heliand_xpollinate.xfer()
 heliandv_xpollinate.xfer()
 verses_of_different_length.generate()
 heliand_xpollinate_2ndpass.xfer()
+heliandlps_xpollinate.xfer('l')
+heliandlps_xpollinate.xfer('p')
+heliandlps_xpollinate.xfer('s')
