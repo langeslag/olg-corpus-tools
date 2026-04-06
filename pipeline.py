@@ -1,5 +1,8 @@
 # Runs all the generative processes in the repository, replacing any files
 # already in place. See requirements.txt for required libraries.
+# Note that the most important files in the repository are NOT generated
+# by this pipeline, as they are the `*corrected` files that have been
+# proofread and manually corrected.
 
 import os
 import helipad_extract
@@ -12,6 +15,7 @@ import heliandv_xpollinate
 import verses_of_different_length
 import heliand_xpollinate_2ndpass
 import heliandlps_xpollinate
+import add_fragments_to_inverted_lemmas
 
 #for file in [
 #    'heliand-c.json',
@@ -34,7 +38,6 @@ import heliandlps_xpollinate
 helipad_extract.extract()
 wikisource_extract.extract()
 heliandv.extract()
-heliand_forms.generate()
 heliand_synoptic.generate()
 heliand_xpollinate.xfer()
 heliandv_xpollinate.xfer()
@@ -43,3 +46,4 @@ heliand_xpollinate_2ndpass.xfer()
 heliandlps_xpollinate.xfer('l')
 heliandlps_xpollinate.xfer('p')
 heliandlps_xpollinate.xfer('s')
+add_fragments_to_inverted_lemmas.generate()
