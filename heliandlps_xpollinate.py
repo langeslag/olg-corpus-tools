@@ -1,7 +1,7 @@
 # This script normalizes the L, P, and S plaintext transcriptions,
 # stores them as plaintext and JSON, then transfers lemma and POS
 # metadata from HeliPaD to additional, "rich" JSON files.
-import json
+import json,re
 from pathlib import Path
 from Levenshtein import distance
 from prettytable import PrettyTable
@@ -25,9 +25,9 @@ normalization = {
     ',': '',
     ';': '',
     '[': '',
-    ']': '',
-    '\\': '',
-    '/': ''
+    ']': ''
+#    '\\': '',
+#    '/': ''
 }
 
 def normalize(token):
@@ -74,15 +74,19 @@ def xfer(witness):
     verse_lines = []
     for k,v in heliand.items():
         tokens = [token for token in v if len(v) > 0]
+        text_string = ' '.join(tokens)
         if 'a' in k:
             if print_line_numbers == True:
                 line_no = k.rstrip('a') + ' '
             else:
                 line_no = ''
-            reconstructed_line = line_no + ' '.join(tokens)
+            if not(re.search(r'\w', text_string)):
+                reconstructed_line = line_no + '                    '
+            else:
+                reconstructed_line = line_no + text_string
             verse_lines.append(reconstructed_line)
         else:
-            verse_lines[-1] = verse_lines[-1] + caesura_span + ' '.join(tokens)
+            verse_lines[-1] = verse_lines[-1] + caesura_span + text_string
             
     with open(plaintext_outfile, 'w') as outfile:
         outfile.write('\n'.join(verse_lines))

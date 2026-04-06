@@ -22,7 +22,10 @@ def generate():
         on_verse_ref = line_no + 'a'
         off_verse_ref = line_no + 'b'
         if on_verse_ref in lps[witness].keys():
-            a = ' '.join(lps[witness][on_verse_ref])
+            if re.search(r"\w", ''.join(lps[witness][on_verse_ref])):
+                a = ' '.join(lps[witness][on_verse_ref])
+            else:
+                a = '                   '
             if off_verse_ref in lps[witness].keys():
                 b = ' '.join(lps[witness][off_verse_ref])
                 line = '    '.join([a, b])
