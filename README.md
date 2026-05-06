@@ -78,7 +78,7 @@ Outputs a file `heliand-translation.txt` that is like `heliand-synoptic.txt` but
 
 ## `map.py`
 
-If `heliand-translation.txt` exists, this command-line utility tallies what translated words occur near forms of each lexeme and outputs the frequency ranking to stdout. Stop words are filtered out, and terms in adjacent lines are counted once, while words in matching lines are doubly counted by way of a rough weighted score. The tool was written to keep tabs on consistency of translation.
+If `heliand-translation.txt` exists, this command-line utility tallies what translated lemmas occur near forms of each OLG lexeme and outputs the frequency ranking to stdout. Stop words are filtered out, and lemmas in adjacent lines are counted once, while lemmas in matching lines are doubly counted by way of a crude weighted score. The tool was written to keep tabs on consistency of translation. It involves a hard frequency cutoff that may have to be tweaked depending on the amount of translated text in the file.
 
 ## License Notice
 

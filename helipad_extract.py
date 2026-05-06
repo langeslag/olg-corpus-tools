@@ -67,6 +67,8 @@ def extract():
                         token['form'] = 'uuerd'
                 if line_num in [805, 1662, 1685] and token['lemma'] == 'gornon':
                     token['lemma'] = 'grornon'
+                if line_num == 1149 and token['form'] == 'iugron':
+                    token['form'] = 'iungoron'
                 if line_num == 1217 and token['form'] == 'lansam':
                     token['form'] = 'langsam'
                 if line_num == 2104 and token['lemma'] == 'wehslan':
