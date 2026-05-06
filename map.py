@@ -1,17 +1,26 @@
 # This script engages in a rough form of bitext word mapping so I have easy
 # access to what terms I have previously used to translate the same lemmas.
+# TODO: make the frequency/score cutoff dependent on the length of the list
+# TODO: add those last lines from M where C doesn't have them
+# TODO: add lines ending in x
 # TODO: further weight the scores by relative token index
 # TODO: allow MnE queries and return OS equivalents
 
-import re,json,sys,string,argparse
+import re,json,sys,string,argparse,nltk
 from pathlib import Path
 from collections import Counter
 from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
 from prettytable import PrettyTable
 import wikisource_extract
 import helipad_extract
 import heliand_v
 import heliandlps_xpollinate
+
+nltk.download('wordnet', quiet=True)    
+nltk.download('omw-1.4', quiet=True) 
+nltk.download('averaged_perceptron_tagger_eng', quiet=True)
+lemmatizer = WordNetLemmatizer()
 
 argparser = argparse.ArgumentParser()
 argparser.add_argument("query", nargs='+')
@@ -19,6 +28,13 @@ args = argparser.parse_args()
 query = args.query
 
 stops = stopwords.words('english')
+stops.extend(
+        [
+            'according',
+            'go',
+            'well',
+            'would'
+        ])
 
 with open('lemmas_inverted_corrected.json') as lemma_file:
     lemmas = json.load(lemma_file)
@@ -53,7 +69,9 @@ def generate():
             line_content = t.split(' ', 1)[1].lstrip().lower()
             for character in string.punctuation:
                 line_content = line_content.replace(character, '')
-            t_lines[line_ref] = line_content.split()
+            t_tokens = line_content.split()
+            t_lemmas = [lemmatizer.lemmatize(token) for token in t_tokens]
+            t_lines[line_ref] = t_lemmas
     else:
         print('heliand-translation.txt not found.')
         print('You can generate it, but you would have to write your own translation into it.')
@@ -114,7 +132,8 @@ def retrieve(query):
     elif query in lemmas:
         headwords = lemmas[query]
         for headword in headwords:
-            results[headword] = trends[headword]
+            if headword in trends:
+                results[headword] = trends[headword]
     return results
 
 if __name__ == '__main__':
