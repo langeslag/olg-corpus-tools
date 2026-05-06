@@ -1,6 +1,7 @@
 # This script engages in a rough form of bitext word mapping so I have easy
 # access to what terms I have previously used to translate the same lemmas.
 # TODO: further weight the scores by relative token index
+# TODO: allow MnE queries and return OS equivalents
 
 import re,json,sys,string,argparse
 from pathlib import Path
@@ -19,6 +20,9 @@ query = args.query
 
 stops = stopwords.words('english')
 
+with open('lemmas_inverted_corrected.json') as lemma_file:
+    lemmas = json.load(lemma_file)
+
 def generate():
     c_json_file = 'heliand-c.json'
     if not(Path(c_json_file).is_file()):
@@ -27,16 +31,8 @@ def generate():
     with open(c_json_file) as c_json_data:
         c_tokens = json.load(c_json_data)
  
-    m_json_file = 'heliand-m.json'
-    if not(Path(m_json_file).is_file()):
-        wikisource_extract.extract()
-    
-    with open(m_json_file) as m_json_data:
-            m_tokens = json.load(m_json_data)
-
     with open('lemmas_inverted_corrected.json') as lemma_file:
         lemmas = json.load(lemma_file)
-        forms = lemmas.keys()
 
     with open('heliand-lemma-list.json') as lemma_list_file:
         lemma_list = json.load(lemma_list_file)
@@ -112,19 +108,28 @@ def generate():
     return trends
 
 def retrieve(query):
+    results = dict()
     if query in trends:
-        return trends[query]
+        results[query] = trends[query]
+    elif query in lemmas:
+        headwords = lemmas[query]
+        for headword in headwords:
+            results[headword] = trends[headword]
+    return results
 
 if __name__ == '__main__':
     trends = generate()
     for subquery in query:
         matches = retrieve(subquery)
-        # Best set the cutoff point in the function above?
-        terms = [i[0] for i in matches]# if i[1] > 1]
-        counts = [i[1] for i in matches]# if i[1] > 1]
-        table = PrettyTable()
-        table.add_column('Near OS "' + subquery + '"', terms)
-        table.add_column('Score', counts)
-        table.align = 'l'
-        print(table)
-        #print(matches)
+        if matches is None:
+            print(f'No returns for "{subquery}"')
+        else:
+            for lemma,match in matches.items():
+                if len(match) > 0:
+                    terms = [i[0] for i in match]
+                    counts = [i[1] for i in match]
+                    table = PrettyTable()
+                    table.add_column('Near OS "' + lemma + '"', terms)
+                    table.add_column('Score', counts)
+                    table.align = 'l'
+                    print(table)
