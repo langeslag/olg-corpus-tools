@@ -72,6 +72,14 @@ Requires `prettytable`.
 
 Generates `verses-of-different-length.txt`, a synoptic output of M and C verses with different token counts for ease of comparison.
 
+## `translation_crib.py`
+
+Outputs a file `heliand-translation.txt` that is like `heliand-synoptic.txt` but with a dedicated line intended to accommodate a (manual) translation. If the target file exists, any translated lines therein contained are preserved and only the OLG text is updated from the pipeline.
+
+## `map.py`
+
+If `heliand-translation.txt` exists, this command-line utility tallies what translated words occur near forms of each lexeme and outputs the frequency ranking to stdout. Stop words are filtered out, and terms in adjacent lines are counted once, while words in matching lines are doubly counted by way of a rough weighted score. The tool was written to keep tabs on consistency of translation.
+
 ## License Notice
 
 These tools are Copyright 2026 P. S. Langeslag.
