@@ -1,87 +1,71 @@
 # This script engages in a rough form of bitext word mapping so I have easy
 # access to what terms I have previously used to translate the same lemmas.
+# TODO: further weight the scores by relative token index
 # TODO: make the frequency/score cutoff dependent on the length of the list
 # TODO: add those last lines from M where C doesn't have them
 # TODO: add lines ending in x
-# TODO: further weight the scores by relative token index
 # TODO: allow MnE queries and return OS equivalents
 
-import re,json,sys,string,argparse,nltk
+import re,json,sys,string,argparse,time
 from pathlib import Path
 from collections import Counter
+from nltk import download
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from prettytable import PrettyTable
-import wikisource_extract
+#import wikisource_extract
 import helipad_extract
-import heliand_v
-import heliandlps_xpollinate
 
-nltk.download('wordnet', quiet=True)    
-nltk.download('omw-1.4', quiet=True) 
-nltk.download('averaged_perceptron_tagger_eng', quiet=True)
-lemmatizer = WordNetLemmatizer()
+start = time.time()
+
+# Uncomment for first run:
+#download('wordnet', quiet=True)    
+#download('omw-1.4', quiet=True) 
+#download('averaged_perceptron_tagger_eng', quiet=True)
 
 argparser = argparse.ArgumentParser()
 argparser.add_argument("query", nargs='+')
 args = argparser.parse_args()
 query = args.query
 
-stops = stopwords.words('english')
-stops.extend(
-        [
-            'according',
-            'go',
-            'well',
-            'would'
-        ])
-
 with open('lemmas_inverted_corrected.json') as lemma_file:
     lemmas = json.load(lemma_file)
 
 def generate():
-    c_json_file = 'heliand-c.json'
-    if not(Path(c_json_file).is_file()):
-        helipad_extract.extract()
-    
-    with open(c_json_file) as c_json_data:
-        c_tokens = json.load(c_json_data)
- 
-    with open('lemmas_inverted_corrected.json') as lemma_file:
-        lemmas = json.load(lemma_file)
-
-    with open('heliand-lemma-list.json') as lemma_list_file:
-        lemma_list = json.load(lemma_list_file)
-
     c_lines = dict.fromkeys(range(1,5968))
-    #m_lines = dict.fromkeys(range(1,5983))
     t_lines = dict.fromkeys(range(1,5983))
-    #for k,v in m_tokens.items():
-    #    if k[-1] == 'a':
-    #        m_lines[k[:-1]] = v + m_tokens[k[:-1] + 'b']
    
-    if Path('heliand-translation.txt').is_file():
-        plaintext = open('heliand-translation.txt').read().splitlines()
-        plaintext_no_empties = [t for t in plaintext if len(t) > 0]
-        translation = [t for t in plaintext_no_empties if t[0] == 'T']
-        for t in translation:
-            line_ref = t.split(' ', 1)[0].lstrip('T0')
-            line_content = t.split(' ', 1)[1].lstrip().lower()
-            for character in string.punctuation:
-                line_content = line_content.replace(character, '')
-            t_tokens = line_content.split()
-            t_lemmas = [lemmatizer.lemmatize(token) for token in t_tokens]
-            t_lines[line_ref] = t_lemmas
-    else:
-        print('heliand-translation.txt not found.')
-        print('You can generate it, but you would have to write your own translation into it.')
-        print('Aborting.')
-        sys.exit()
-
     trends = dict()
     c_range = range(1,5968)
     if not(Path('lemma-line-matches.json').is_file()):
+        if Path('heliand-translation.txt').is_file():
+            print('Lemmatizing translated tokens...')
+            lemmatizer = WordNetLemmatizer()
+            plaintext = open('heliand-translation.txt').read().splitlines()
+            plaintext_no_empties = [t for t in plaintext if len(t) > 0]
+            translation = [t for t in plaintext_no_empties if t[0] == 'T']
+            for t in translation:
+                line_ref = t.split(' ', 1)[0].lstrip('T0')
+                line_content = t.split(' ', 1)[1].lstrip().lower()
+                for character in string.punctuation:
+                    line_content = line_content.replace(character, '')
+                t_tokens = line_content.split()
+                t_lemmas = [lemmatizer.lemmatize(token) for token in t_tokens]
+                t_lines[line_ref] = t_lemmas
+        else:
+            print('heliand-translation.txt not found.')
+            print('You can generate it, but you would have to write your own translation into it.')
+            print('Aborting.')
+            sys.exit()
+
         print('Generating lemma-line-matches.json...')
+        c_json_file = 'heliand-c.json'
+        if not(Path(c_json_file).is_file()):
+            helipad_extract.extract()
+    
+        with open(c_json_file) as c_json_data:
+            c_tokens = json.load(c_json_data)
+
         c_line_lemmas = dict()
         for ln in c_range:
             # using strings rather than integers because I have yet to fit those 'x' lines back in:
@@ -94,6 +78,16 @@ def generate():
             c_line_lemmas = json.load(c_line_lemma_data)
 
     if not(Path('translation-trends.json').is_file()):
+        stops = stopwords.words('english')
+        stops.extend(
+            [
+                'according',
+                'go',
+                'well',
+                'would'
+            ])
+        with open('heliand-lemma-list.json') as lemma_list_file:
+            lemma_list = json.load(lemma_list_file)
         for lemma in lemma_list:
             trans_terms = []
             matching_lines = [k for k,v in c_line_lemmas.items() if lemma in v]
@@ -152,3 +146,6 @@ if __name__ == '__main__':
                     table.add_column('Score', counts)
                     table.align = 'l'
                     print(table)
+
+    end = time.time()
+    print(f'Execution time {round(end-start, 2)} seconds.')
