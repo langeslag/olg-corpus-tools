@@ -1,4 +1,4 @@
-# This script engages in a rough form of bitext word mapping so I have easy
+# This script engages in a crude form of bitext word mapping so I have easy
 # access to what terms I have previously used to translate the same lemmas.
 # TODO: further weight the scores by relative token index
 # TODO: make the frequency/score cutoff dependent on the length of the list
@@ -6,7 +6,7 @@
 # TODO: add lines ending in x
 # TODO: allow MnE queries and return OS equivalents
 
-import re,json,sys,string,argparse,time
+import re,json,sys,argparse,time
 from pathlib import Path
 from collections import Counter
 from nltk import download
@@ -25,19 +25,33 @@ start = time.time()
 
 argparser = argparse.ArgumentParser()
 argparser.add_argument("query", nargs='+')
+argparser.add_argument("-f", "--fresh", action="store_true", help="refresh the database")
 args = argparser.parse_args()
 query = args.query
+refresh = args.fresh
+
+lemma_line_matches = Path('lemma-line-matches.json')
+translation_trends = Path('translation-trends.json')
 
 with open('lemmas_inverted_corrected.json') as lemma_file:
     lemmas = json.load(lemma_file)
 
+if refresh:
+    print('Purging databases...')
+    if lemma_line_matches.is_file():
+        lemma_line_matches.unlink()
+    if translation_trends.is_file():
+        translation_trends.unlink()
+
 def generate():
-    c_lines = dict.fromkeys(range(1,5968))
-    t_lines = dict.fromkeys(range(1,5983))
+    c_range = range(1,5969)
+    t_range = range(1,5984)
+    c_lines = dict.fromkeys(c_range)
+    t_lines = dict.fromkeys(t_range)
    
     trends = dict()
-    c_range = range(1,5968)
-    if not(Path('lemma-line-matches.json').is_file()):
+    translated_lines = 0
+    if not(lemma_line_matches.is_file()):
         if Path('heliand-translation.txt').is_file():
             print('Lemmatizing translated tokens...')
             lemmatizer = WordNetLemmatizer()
@@ -47,11 +61,14 @@ def generate():
             for t in translation:
                 line_ref = t.split(' ', 1)[0].lstrip('T0')
                 line_content = t.split(' ', 1)[1].lstrip().lower()
-                for character in string.punctuation:
+                for character in """.,:;'"?!–""":
                     line_content = line_content.replace(character, '')
                 t_tokens = line_content.split()
+                if len(t_tokens) > 0:
+                    translated_lines += 1
                 t_lemmas = [lemmatizer.lemmatize(token) for token in t_tokens]
                 t_lines[line_ref] = t_lemmas
+            print(f'{translated_lines} lines of translation found ({round(((translated_lines / len(t_range)) * 100), 2)}% complete)')
         else:
             print('heliand-translation.txt not found.')
             print('You can generate it, but you would have to write your own translation into it.')
@@ -77,7 +94,7 @@ def generate():
         with open('lemma-line-matches.json') as c_line_lemma_data:
             c_line_lemmas = json.load(c_line_lemma_data)
 
-    if not(Path('translation-trends.json').is_file()):
+    if not(translation_trends.is_file()):
         stops = stopwords.words('english')
         stops.extend(
             [

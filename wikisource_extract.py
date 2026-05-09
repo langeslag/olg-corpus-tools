@@ -13,6 +13,7 @@ caesura_span = '    '
 normalization = {
     'â': 'a',
     'ê': 'e',
+    'ē': 'e',
     'î': 'i',
     'ô': 'o',
     'û': 'u',
