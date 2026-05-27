@@ -1,4 +1,5 @@
 # Generate a dictionary linking each form to all matching lemmas.
+# Cf. lemma2pos.py, which outputs heliand-c_pos.json
 import json
 from pathlib import Path
 import heliand_xpollinate

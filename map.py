@@ -1,6 +1,8 @@
 # This script engages in a crude form of bitext word mapping so I have easy
 # access to what terms I have previously used to translate the same lemmas.
-# TODO: further weight the scores by relative token index
+# TODO: build a second pass within generate() selecting (or boosting)
+# from each translated line the token that scores the highest in the first
+# pass (i.e. in `trends`).
 # TODO: make the frequency/score cutoff dependent on the length of the list
 # TODO: add those last lines from M where C doesn't have them
 # TODO: add lines ending in x
@@ -32,6 +34,7 @@ refresh = args.fresh
 
 lemma_line_matches = Path('lemma-line-matches.json')
 translation_trends = Path('translation-trends.json')
+trends_2ndpass = Path('trends-2ndpass.json')
 
 with open('lemmas_inverted_corrected.json') as lemma_file:
     lemmas = json.load(lemma_file)
@@ -42,6 +45,8 @@ if refresh:
         lemma_line_matches.unlink()
     if translation_trends.is_file():
         translation_trends.unlink()
+    if trends_2ndpass.is_file():
+        trends_2ndpass.unlink()
 
 def generate():
     c_range = range(1,5969)
@@ -94,17 +99,18 @@ def generate():
         with open('lemma-line-matches.json') as c_line_lemma_data:
             c_line_lemmas = json.load(c_line_lemma_data)
 
+    stops = stopwords.words('english')
+    stops.extend(
+        [
+            'according',
+            'go',
+            'well',
+            'would'
+        ])
+    with open('heliand-lemma-list.json') as lemma_list_file:
+        lemma_list = json.load(lemma_list_file)
+
     if not(translation_trends.is_file()):
-        stops = stopwords.words('english')
-        stops.extend(
-            [
-                'according',
-                'go',
-                'well',
-                'would'
-            ])
-        with open('heliand-lemma-list.json') as lemma_list_file:
-            lemma_list = json.load(lemma_list_file)
         for lemma in lemma_list:
             trans_terms = []
             matching_lines = [k for k,v in c_line_lemmas.items() if lemma in v]
@@ -134,6 +140,37 @@ def generate():
     else:
         with open('translation-trends.json') as trends_data:
             trends = json.load(trends_data)
+
+    # Now this is where to build in a second pass!
+    # For the moment I'm just trying to output the data to disk to inspect before I loop it in,
+    # but it's still generating an empty JSON
+#    if True:
+#        print('Thinking about doing a second pass...')
+#        secondpass = dict()
+#        # This routine is hardly efficient, but let's get it to work first:
+#        for line,lemmas in c_line_lemmas.items():
+#            if int(line) in range(95,5982):
+#                for lemma in lemmas:
+#                    if trends[lemma] is not None:
+#                        pre_rankings = sorted([i[0] for i in trends[lemma]], key=lambda x: x[1], reverse=True)
+#                        print(f"pre_rankings: {pre_rankings}")
+#                        t_lemmas = t_lines[int(line)]
+#                        t_line_rankings = dict()
+#                       #TODO: this is where it goes wrong because you haven't stored the translated lemma lists from up above.
+#                        for t_lemma in t_lemmas:
+#                            if t_lemma in pre_rankings:
+#                                t_lemma_idx = pre_rankings.index(t_lemma)
+#                                t_line_rankings[t_lemma] = pre_rankings[t_lemma_idx]
+#                        if t_line_rankings is not None:
+#                            top_ranking_translation = sorted([k for k,v in t_line_rankings.items()], key=lambda x: x[1])[0]
+#                            if lemma in secondpass:
+#                                if any(top_ranking_translation in secondpass[lemma]):
+#                                    existing_index = index(next([q for p,q in secondpass[lemma] if p == top_ranking_translation]))
+#                                    old_score = secondpass[lemma][existing_index][1]
+#                                    secondpass[lemma][existing_index] = (top_ranking_translation, old_score+1)
+#
+#        with open(trends_2ndpass, 'w') as f:
+#            json.dump(secondpass, f, ensure_ascii=False, indent=4)
     return trends
 
 def retrieve(query):
