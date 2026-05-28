@@ -80,6 +80,10 @@ Outputs a file `heliand-translation.txt` that is like `heliand-synoptic.txt` but
 
 If `heliand-translation.txt` exists, this command-line utility tallies what translated lemmas occur near forms of each OLG lexeme and outputs the frequency ranking to stdout. Stop words are filtered out, and lemmas in adjacent lines are counted once, while lemmas in matching lines are doubly counted by way of a crude weighted score. The tool was written to keep tabs on consistency of translation. It involves a hard frequency cutoff that may have to be tweaked depending on the amount of translated text in the file.
 
+## `identify_lifts.py`
+
+Uses POS, token length, and line position to try to allocate metrical lifts. Outputs to JSON and plaintext.
+
 ## License Notice
 
 These tools are Copyright 2026 P. S. Langeslag.

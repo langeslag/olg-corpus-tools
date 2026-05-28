@@ -20,6 +20,7 @@ stress_words = [
         'VAG',
         'VBN',
         'VN',
+        'VNI',
         'BE',
         'BAG',
         'BEN',
@@ -115,12 +116,12 @@ def scan(line):
             stripped_pos = token['pos'].split('^', 1)[0]
             if '+' in stripped_pos:
                 stripped_pos = stripped_pos.split('+', 1)[1]
-            if stripped_pos in stress_words:
+                # experiment with length/auslaut measures here:
+            if stripped_pos in stress_words or (stripped_pos in stress_words_or_particles and len(token['form']) > 5):
                 token['lift'] = True
                 formatted.append(token['form'].upper())
-            # also the last word in the offverse ?nearly always accommodates a lift:
+            # also the last word in the offverse usually accommodates a lift:
             elif halfline == 'b':
-                # TODO: not working. mark the final word of the off-verse as a lift:
                 if idx == len(line[halfline]) - 1:
                     token['lift'] = True
                     formatted.append(token['form'].upper())
@@ -128,6 +129,8 @@ def scan(line):
                     formatted.append(token['form'])
             else:
                 formatted.append(token['form'])
+            if halfline == 'a' and idx == len(line['a']) - 1:
+                formatted[-1] = formatted[-1] + '    '
             data.append(token)
 
     formatted = str("{:04d}".format(int(line_no))) + ' ' + ' '.join(formatted)
