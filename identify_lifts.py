@@ -1,4 +1,5 @@
 # Attempt to identify the lifts in Old Low German verse.
+# TODO: consider alliteration to promote esp. ADV/VERB
 import json
 from pathlib import Path
 
@@ -45,9 +46,7 @@ stress_words_or_particles = [
         'PRO$'
         ]
 
-particles = [
-        'MAN',
-        'C',
+finite = [
         'VBI',
         'VBPH',
         'VBPI',
@@ -87,6 +86,11 @@ particles = [
         'MDD'
         ]
 
+particles = finite + [
+        'MAN',
+        'C'
+        ]
+
 proclitics = [
         'D',
         'P',
@@ -116,7 +120,7 @@ def scan(line):
             stripped_pos = token['pos'].split('^', 1)[0]
             if '+' in stripped_pos:
                 stripped_pos = stripped_pos.split('+', 1)[1]
-                # experiment with length/auslaut measures here:
+                # experiment with length/coda measures here:
             if stripped_pos in stress_words or (stripped_pos in stress_words_or_particles and len(token['form']) > 5):
                 token['lift'] = True
                 formatted.append(token['form'].upper())
@@ -131,6 +135,8 @@ def scan(line):
                 formatted.append(token['form'])
             if halfline == 'a' and idx == len(line['a']) - 1:
                 formatted[-1] = formatted[-1] + '    '
+            # TODO: insert a second pass here to promote alliterating finites
+            # if lift count < 4
             data.append(token)
 
     formatted = str("{:04d}".format(int(line_no))) + ' ' + ' '.join(formatted)
