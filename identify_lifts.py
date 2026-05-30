@@ -1,7 +1,8 @@
 # Attempt to identify the lifts in Old Low German verse.
-# TODO: consider alliteration to promote esp. ADV/VERB
-import json
+# TODO: if still < 3, promite adv/vb AFTER initial stave
+import json,re
 from pathlib import Path
+from collections import Counter
 
 c_range = 5969
 c_json_file = Path('heliand-c.json')
@@ -102,6 +103,16 @@ exceptionally_proclitics = [
         'sulic'
         ]
 
+def alliterates(token, stave):
+    stem = re.sub(r"^gi", "", token)
+    if len(stem) > 0:
+        if stem[0].lower() in 'aeioy':
+            initial = 'a'
+        else:
+            initial = stem[0]
+        if initial == stave.lower():
+            return True
+
 def scan(line):
     data = []
     formatted = []
@@ -135,9 +146,22 @@ def scan(line):
                 formatted.append(token['form'])
             if halfline == 'a' and idx == len(line['a']) - 1:
                 formatted[-1] = formatted[-1] + '    '
-            # TODO: insert a second pass here to promote alliterating finites
-            # if lift count < 4
             data.append(token)
+    lift_count = len([token for token in data if token['lift'] == True])
+    if len(data) > 3 and lift_count < 4:
+        initials = [re.sub(r"^gi", "", token['form'])[0] for token in data if token['lift'] == True]
+        for idx,i in enumerate(initials):
+            if i in 'aeioy':
+                initials[idx] = 'a'
+        counter = Counter(initials)
+        stave = counter.most_common(1)[0][0]
+        for idx,token in enumerate(data):
+            if token['lift'] != True and alliterates(token['form'], stave):
+                data[idx]['lift'] = True
+                formatted[idx] = formatted[idx].upper()
+        #if (data[0]['pos'] in finite or data[0]['pos'] in stress_words_or_particles) and data[0]['lift'] != True:
+        #    data[0]['lift'] = True
+        #    formatted[0] = formatted[0].upper()
 
     formatted = str("{:04d}".format(int(line_no))) + ' ' + ' '.join(formatted)
 
