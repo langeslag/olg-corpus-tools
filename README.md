@@ -84,6 +84,10 @@ If `heliand-translation.txt` exists, this command-line utility tallies what tran
 
 Uses POS, token length, and line position to try to allocate metrical lifts. Outputs to JSON and plaintext.
 
+## `tatian.py`
+
+Extracts selections from the Latin Tatian as edited by Nicholas J. Zola. Outputs to JSON.
+
 ## License Notice
 
 These tools are Copyright 2026 P. S. Langeslag.
