@@ -51,7 +51,6 @@ if refresh:
 def generate():
     c_range = range(1,5969)
     t_range = range(1,5984)
-    c_lines = dict.fromkeys(c_range)
     t_lines = dict.fromkeys(t_range)
    
     trends = dict()
@@ -64,7 +63,7 @@ def generate():
             plaintext_no_empties = [t for t in plaintext if len(t) > 0]
             translation = [t for t in plaintext_no_empties if t[0] == 'T']
             for t in translation:
-                line_ref = t.split(' ', 1)[0].lstrip('T0')
+                line_ref = int(t.split(' ', 1)[0].lstrip('T0'))
                 line_content = t.split(' ', 1)[1].lstrip().lower()
                 for character in """.,:;'"?!–""":
                     line_content = line_content.replace(character, '')
@@ -73,6 +72,8 @@ def generate():
                     translated_lines += 1
                 t_lemmas = [lemmatizer.lemmatize(token) for token in t_tokens]
                 t_lines[line_ref] = t_lemmas
+            with open('translated-lemmas.json', 'w') as f:
+                json.dump(t_lines, f, ensure_ascii=False, indent=4)
             print(f'{translated_lines} lines of translation found ({round(((translated_lines / len(t_range)) * 100), 2)}% complete)')
         else:
             print('heliand-translation.txt not found.')
@@ -90,14 +91,16 @@ def generate():
 
         c_line_lemmas = dict()
         for ln in c_range:
-            # using strings rather than integers because I have yet to fit those 'x' lines back in:
-            c_line_lemmas[str(ln)] = [token['lemma'] for token in c_tokens if token['verse'].rstrip('ab') == str(ln)]
+            # moving to integers, meaning those 'x' lines are out for now:
+            c_line_lemmas[ln] = [token['lemma'] for token in c_tokens if int(token['verse'].rstrip('ab')) == ln]
 
         with open('lemma-line-matches.json', 'w', encoding='utf-8') as outfile:
             json.dump(c_line_lemmas, outfile, ensure_ascii=False, indent=4)
     else:
         with open('lemma-line-matches.json') as c_line_lemma_data:
             c_line_lemmas = json.load(c_line_lemma_data)
+        with open('translated-lemmas.json') as t_lines_data:
+            t_lines = json.load(t_lines_data)
 
     stops = stopwords.words('english')
     stops.extend(
@@ -113,7 +116,7 @@ def generate():
     if not(translation_trends.is_file()):
         for lemma in lemma_list:
             trans_terms = []
-            matching_lines = [k for k,v in c_line_lemmas.items() if lemma in v]
+            matching_lines = [int(k) for k,v in c_line_lemmas.items() if lemma in v]
             for line in matching_lines:
                 if len(t_lines[line]) > 0:
                     trans_terms.extend(t_lines[line])
@@ -141,36 +144,49 @@ def generate():
         with open('translation-trends.json') as trends_data:
             trends = json.load(trends_data)
 
-    # Now this is where to build in a second pass!
-    # For the moment I'm just trying to output the data to disk to inspect before I loop it in,
-    # but it's still generating an empty JSON
-#    if True:
-#        print('Thinking about doing a second pass...')
-#        secondpass = dict()
-#        # This routine is hardly efficient, but let's get it to work first:
-#        for line,lemmas in c_line_lemmas.items():
-#            if int(line) in range(95,5982):
-#                for lemma in lemmas:
-#                    if trends[lemma] is not None:
-#                        pre_rankings = sorted([i[0] for i in trends[lemma]], key=lambda x: x[1], reverse=True)
-#                        print(f"pre_rankings: {pre_rankings}")
-#                        t_lemmas = t_lines[int(line)]
-#                        t_line_rankings = dict()
-#                       #TODO: this is where it goes wrong because you haven't stored the translated lemma lists from up above.
-#                        for t_lemma in t_lemmas:
-#                            if t_lemma in pre_rankings:
-#                                t_lemma_idx = pre_rankings.index(t_lemma)
-#                                t_line_rankings[t_lemma] = pre_rankings[t_lemma_idx]
-#                        if t_line_rankings is not None:
-#                            top_ranking_translation = sorted([k for k,v in t_line_rankings.items()], key=lambda x: x[1])[0]
-#                            if lemma in secondpass:
-#                                if any(top_ranking_translation in secondpass[lemma]):
-#                                    existing_index = index(next([q for p,q in secondpass[lemma] if p == top_ranking_translation]))
-#                                    old_score = secondpass[lemma][existing_index][1]
-#                                    secondpass[lemma][existing_index] = (top_ranking_translation, old_score+1)
-#
-#        with open(trends_2ndpass, 'w') as f:
-#            json.dump(secondpass, f, ensure_ascii=False, indent=4)
+    # Now this is where to build in a second pass! I'll need to document this closely since it's hard to follow...
+    # Just generating a JSON for now, yet to make up my mind what to fill it with exactly...
+    # The thinking: for each translated lemma, if another lemma in the same three-line window
+    # scores HIGHER than the present lemma, DON'T give the current lemma any points in the second pass
+    # (you can later redirect it to a list of collocations for Philip's sake)
+    if True: # currently set to always true so I can build in an is_file() test later
+        print('Running a second pass...')
+        secondpass = dict()
+        # This routine is hardly efficient, but let's get it to work first:
+        for line,lemmas in c_line_lemmas.items():
+            if int(line) in range(1,5982):
+                for lemma in lemmas:
+                    if trends[lemma] is not None:
+                        pre_rankings = sorted([i for i in trends[lemma]], key=lambda x: x[1], reverse=True)
+                        pre_rankings = [i[0] for i in pre_rankings]
+                        tr_lemmas = t_lines[line]
+                        tr_line_rankings = dict()
+                        if tr_lemmas is not None:
+                            for tr_lemma in tr_lemmas:
+                                if tr_lemma in pre_rankings:
+                                    tr_lemma_idx = pre_rankings.index(tr_lemma)
+                                    tr_line_rankings[tr_lemma] = pre_rankings[tr_lemma_idx]
+                        if tr_line_rankings is not None:
+                            if len(tr_line_rankings.items()) > 0:
+                                sorted_translations = sorted([i for i in tr_line_rankings.items()], key=lambda x: x[1])[0]
+                                # 0 is the highest rank, since the rankings are a list:
+                                top_ranking_translation = [i[0] for i in sorted_translations][0]
+                                # I think here maybe I should not 
+                                if lemma in secondpass:
+                                    if top_ranking_translation in [i[0] for i in secondpass[lemma]]:
+                                        interim_list = [i[0] for i in secondpass[lemma]]
+                                        # Is this the index I was looking for here? or do I want .index(lemma)? top ranking is always 0?
+                                        existing_index = interim_list.index(top_ranking_translation)
+                                        old_score = secondpass[lemma][existing_index][1]
+                                        secondpass[lemma][existing_index] = (top_ranking_translation, old_score+1)
+                                    # TODO: enter old data if not already entered.
+                                    # but in what format again?
+                                    # currently I'm just duplicating the old rankings which is pointless
+                                else:
+                                    secondpass[lemma] = trends[lemma]
+
+        with open(trends_2ndpass, 'w') as f:
+            json.dump(secondpass, f, ensure_ascii=False, indent=4)
     return trends
 
 def retrieve(query):

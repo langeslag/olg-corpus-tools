@@ -9,6 +9,34 @@ import wikisource_extract
 import helipad_extract
 import heliand_v
 import heliandlps_xpollinate
+import amiatinus_extract
+
+amiatinus_extract.extract()
+
+with open('amiatinus.json') as json_data:
+    amiatinus = json.load(json_data)
+
+gospels = {
+        'Mt': amiatinus['mattheum'],
+        'Mc': amiatinus['marcum'],
+        'Lc': amiatinus['lucam'],
+        'Io': amiatinus['iohannem']
+        }
+
+# I am not sharing my gospel index for now,
+# so this routine will be bypassed if you are not me:
+gospel_index = None
+gospel_index_file = Path('gospel-index.tsv')
+if gospel_index_file.is_file():
+    with open(gospel_index_file) as gospel_data:
+        gospel_index_raw = gospel_data.read().splitlines()
+        gospel_index = dict()
+        for line in gospel_index_raw:
+            rubble = re.split(r"\t+", line, maxsplit=1)
+            if len(rubble) == 1:
+                gospel_index[rubble[0]] = None
+            else:
+                gospel_index[rubble[0]] = rubble[1]
 
 lps = dict()
 for witness in ['l', 'p', 's']:
@@ -22,6 +50,23 @@ for witness in ['l', 'p', 's']:
     lps[witness] = tokens
 
 def generate():
+    def find_vulgate(line_no):
+        if gospel_index == None or 'x' in line_no: # ignore 'x' lines for now
+            return None
+        else:
+            result = []
+            for i in 'ab':
+                if gospel_index[line_no + i] is not None and re.search(r"\S", gospel_index[line_no + i]):
+                    print(f"{line_no}: {gospel_index[line_no+i]}")
+                    book,ref = gospel_index[line_no + i].split(',', 1)[0].split(' ', 1)
+                    verse_result = book + ' ' + ref + ': ' + gospels[book][ref.replace('*', '').replace(':', '.')]
+                    if ref in gospels[book] and verse_result not in result:
+                        result.append(verse_result)
+            if len(result) < 1:
+                return None
+            else:
+                return '\n'.join(result)
+    
     def lps_reconstruct(witness, line_no):
         on_verse_ref = line_no + 'a'
         off_verse_ref = line_no + 'b'
@@ -40,6 +85,7 @@ def generate():
         return line
 
     def reconstruct(line_no):
+        vulgate = find_vulgate(line_no)
         on_verse_ref = line_no + 'a'
         off_verse_ref = line_no + 'b'
         c_a = ' '.join([token['form'] for token in c_tokens if token['verse'] == str(line_no)+'a'])
@@ -71,6 +117,7 @@ def generate():
         s = lps_reconstruct('s', line_no)
 
         result = {
+            'vulgate': vulgate,
             'c': c,
             'm': m,
             'l': l,
@@ -138,6 +185,8 @@ def generate():
                 if line is not None:
                     if 'x' in k:
                         outfile.write(witness.upper() + line_no + ' ' + line + '\n')
+                    elif witness == 'vulgate':
+                        outfile.write(line + '\n')
                     else:
                         outfile.write(witness.upper() + line_no + '  ' + line + '\n')
             outfile.write('\n')

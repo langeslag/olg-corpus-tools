@@ -1,5 +1,10 @@
 # Extracts selections from Tatian as edited by Zola.
 # Requires pdftotext.
+# TODO: the PDF pages vary in text flow: e.g. 44 and
+# 46–47, 52, 56–57 mix the columns :( will have to use
+# language recognition to recombine. May as well use
+# Sievers in that case.
+# http://lexicon.ff.cuni.cz/texts/ohg_sievers_tatian_about.html
 
 import re,json,subprocess,urllib.request
 import roman
