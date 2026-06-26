@@ -5,12 +5,21 @@
 
 import re,json
 from pathlib import Path
+from git import Repo
 import wikisource_extract
 import helipad_extract
 import heliand_v
 import heliandlps_xpollinate
-import amiatinus_extract
 
+remote = 'https://github.com/langeslag/latin-corpus-tools.git'
+local = Path('latin-corpus-tools')
+if not(local.exists()):
+    repo = Repo.clone_from(remote, local)
+else:
+    repo = Repo(local)
+    repo.remotes.origin.pull()
+
+import amiatinus_extract
 amiatinus_extract.extract()
 
 with open('amiatinus.json') as json_data:
@@ -59,8 +68,8 @@ def generate():
                 if gospel_index[line_no + i] is not None and re.search(r"\S", gospel_index[line_no + i]):
                     print(f"{line_no}: {gospel_index[line_no+i]}")
                     book,ref = gospel_index[line_no + i].split(',', 1)[0].split(' ', 1)
-                    verse_result = book + ' ' + ref + ': ' + gospels[book][ref.replace('*', '').replace(':', '.')]
-                    if ref in gospels[book] and verse_result not in result:
+                    verse_result = book + ' ' + ref + ': ' + gospels[book.replace('(', '')][re.sub(r"[:*()]*", '', ref)]
+                    if ref in gospels[book.replace('(', '')] and verse_result not in result:
                         result.append(verse_result)
             if len(result) < 1:
                 return None
