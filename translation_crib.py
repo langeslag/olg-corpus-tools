@@ -12,24 +12,22 @@ import heliand_v
 import heliandlps_xpollinate
 
 remote = 'https://github.com/langeslag/latin-corpus-tools.git'
-local = Path('latin-corpus-tools')
+local = Path('latin_corpus_tools')
 if not(local.exists()):
     repo = Repo.clone_from(remote, local)
-else:
-    repo = Repo(local)
-    repo.remotes.origin.pull()
 
-import amiatinus_extract
+from latin_corpus_tools import amiatinus_extract
 amiatinus_extract.extract()
 
 with open('amiatinus.json') as json_data:
     amiatinus = json.load(json_data)
 
-gospels = {
+scripture = {
         'Mt': amiatinus['mattheum'],
         'Mc': amiatinus['marcum'],
         'Lc': amiatinus['lucam'],
-        'Io': amiatinus['iohannem']
+        'Io': amiatinus['iohannem'],
+        '1Th': amiatinus['thessalonicenses-i']
         }
 
 # I am not sharing my gospel index for now,
@@ -68,8 +66,8 @@ def generate():
                 if gospel_index[line_no + i] is not None and re.search(r"\S", gospel_index[line_no + i]):
                     print(f"{line_no}: {gospel_index[line_no+i]}")
                     book,ref = gospel_index[line_no + i].split(',', 1)[0].split(' ', 1)
-                    verse_result = book + ' ' + ref + ': ' + gospels[book.replace('(', '')][re.sub(r"[:*()]*", '', ref)]
-                    if ref in gospels[book.replace('(', '')] and verse_result not in result:
+                    verse_result = book + ' ' + ref + ': ' + scripture[book.replace('(', '')][re.sub(r"[:*()]*", '', ref)]
+                    if ref in scripture[book.replace('(', '')] and verse_result not in result:
                         result.append(verse_result)
             if len(result) < 1:
                 return None
