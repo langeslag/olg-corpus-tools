@@ -86,7 +86,17 @@ Uses POS, token length, and line position to try to allocate metrical lifts. Out
 
 ## `tatian.py`
 
-Extracts selections from the Latin Tatian as edited by Nicholas J. Zola. Outputs to JSON.
+Extracts selections from the Latin Tatian as edited by Nicholas J. Zola. Outputs to JSON. Not very useful as the work is both incomplete and inconsistently formatted.
+
+## `heliand-fitts.json`
+
+A lookup table of fitts and verse line numbers.
+
+## `typeset_translation.py`
+
+Generates LaTeX and PDF outputs if you have generated `heliand-translation.txt` and there drafted your own translation. May be modified to produce an Old Saxon edition instead.
+
+Requires `pylatex`.
 
 ## License Notice
 
