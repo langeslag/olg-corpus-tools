@@ -157,7 +157,7 @@ def generate():
     
     poem = dict()
     x = [4517, 5920]
-    for i in range(1, 5983):
+    for i in range(1, 5984):
         poem[str(i)] = reconstruct(str(i))
         if i in x:
             xline = str(i) + 'x'
@@ -167,7 +167,7 @@ def generate():
     with open('heliand-synoptic.json', 'w', encoding='utf-8') as outfile:
         json.dump(poem, outfile, ensure_ascii=False, indent=4)
 
-    for i in range(1, 5983):
+    for i in range(1, 5984):
         poem[str(i)]['t'] = ''
         if i in x:
             xline = str(i) + 'x'
