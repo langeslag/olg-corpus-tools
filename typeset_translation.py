@@ -118,7 +118,7 @@ def generate(fitts):
                     else:
                         doc.append(NoEscape(translated_line + '\\\\' + '\\vspace*{3mm}\\marginpar{' + scripture_string + '}'))
 
-    doc.generate_pdf("edition", clean_tex=False, compiler='xelatex')
+    doc.generate_pdf("translation", clean_tex=False, compiler='xelatex')
 
 if __name__ == '__main__':
     generate(selection)
