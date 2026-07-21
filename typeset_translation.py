@@ -69,8 +69,12 @@ def generate(fitts):
     #doc.append(NoEscape('\\setlength{\\vleftskip}{4em}'))
     doc.append(NoEscape('\\verselinenumbersleft'))
     doc.append(NoEscape('\\settowidth{\\versewidth}{Old Low German lines can be really quite long, as in this example}'))
-    #doc.append(NoEscape('\\newcommand*{\\verselinenumbersalternating}{\\def\\@vstypelinenum{\\ifodd\\thepage\\@vstypelinenumright\\else\\@vstypelinenumleft\\fi}}'))
-    #doc.append(NoEscape('\\verselinenumbersalternating'))
+    doc.append(NoEscape('\\title{The \\emph{Heliand}}'))
+    doc.append(NoEscape('\\author{Anonymous Draft}'))
+    doc.append(NoEscape('\\date{\\today}'))
+    doc.append(NoEscape('\\maketitle'))
+    doc.append(NoEscape('\\setcounter{page}{1}'))
+    #doc.append(NoEscape('\\thispagestyle{plain}'))
 
     for fitt in fitts:
         with doc.create(Section('Fitt ' + str(fitt))):

@@ -1,7 +1,9 @@
 # This file largely duplicates heliand_synoptic.py, except it outputs
-# heliand-translation.txt with a line for translation. If the output file is
+# heliand-translation.txt with empty lines for translation. If the output file is
 # present, it updates the readings but leaves the translation lines untouched.
-# TODO: substitute the unnormalized Behaghel text, with length marks?
+# Legend: Q = source (Codex Amiatinus); X = your manual translation of Q;
+#         CMLPSV: conventional manuscript sigla; T: your manual Heliand translation.
+# TODO: substitute the unnormalized Behaghel text, with length marks and punctuation?
 
 import re,json
 from pathlib import Path
@@ -58,7 +60,7 @@ for witness in ['l', 'p', 's']:
 
 def generate():
     def find_vulgate(line_no):
-        if gospel_index == None or 'x' in line_no: # ignore 'x' lines for now
+        if gospel_index == None:
             return None
         else:
             result = []
@@ -124,7 +126,8 @@ def generate():
         s = lps_reconstruct('s', line_no)
 
         result = {
-            'vulgate': vulgate,
+            'q': vulgate,
+            'x': None,
             'c': c,
             'm': m,
             'l': l,
@@ -169,31 +172,46 @@ def generate():
 
     for i in range(1, 5984):
         poem[str(i)]['t'] = ''
+        poem[str(i)]['x'] = ''
         if i in x:
             xline = str(i) + 'x'
             poem[xline]['t'] = ''
+            poem[xline]['x'] = ''
     
     if Path('heliand-translation.txt').is_file():
         print('heliand-translation.txt exists; updating readings only!')
         plaintext = open('heliand-translation.txt').read().splitlines()
         plaintext_no_empties = [t for t in plaintext if len(t) > 0]
         translation = [t for t in plaintext_no_empties if t[0] == 'T']
+        source_translation = [t for t in plaintext_no_empties if t[0] == 'X']
         for t in translation:
             line_ref = t.split(' ', 1)[0].lstrip('T0')
             line_content = t.split(' ', 1)[1].lstrip()
             poem[line_ref]['t'] = line_content
+        for x in source_translation:
+            line_ref = x.split(' ', 1)[0].lstrip('X0')
+            line_content = x.split(' ', 1)[1].lstrip()
+            poem[line_ref]['x'] = line_content
             
     print('Generating heliand-translation.txt...')
     with open('heliand-translation.txt', 'w') as outfile:
+        #poem = dict(sorted(poem.items(), key=lambda siglum: 'qxcmlpsvt'.index(c) for c in siglum))
         for k,v in poem.items():
             line_no = str("{:04d}".format(int(k.rstrip('x'))))
             for witness in v.keys():
                 line = v[witness]
                 if line is not None:
-                    if 'x' in k:
-                        outfile.write(witness.upper() + line_no + ' ' + line + '\n')
-                    elif witness == 'vulgate':
+                    if witness == 'q':
                         outfile.write(line + '\n')
+                    elif witness == 'x':
+                        if v['q'] is not None:
+                            if re.search(r"\S", v['q']):
+                                if 'x' in k:
+                                    outfile.write(witness.upper() + line_no + 'x ' + line + '\n')
+                                else:
+                                    outfile.write(witness.upper() + line_no + '  ' + line + '\n')
+                    elif 'x' in k:
+                        outfile.write(witness.upper() + line_no + 'x ' + line + '\n')
                     else:
                         outfile.write(witness.upper() + line_no + '  ' + line + '\n')
             outfile.write('\n')
