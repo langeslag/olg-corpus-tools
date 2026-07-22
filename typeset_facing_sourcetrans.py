@@ -1,11 +1,13 @@
-# A script for generating XeLaTeX / PDF editions/translations
-# (this one will eventually be set up to produce a translation
-# of Heliand's sources facing a translation of the Heliand).
-# It draws on heliand-translation.txt, but even if you've generated that
-# using translation_crib.py, if you configure this script to print the
-# translation (as is the default) you'll have to write one into heliand-translation.txt first.
-# Also the scripture references are not part of this repository.
-# TODO: figure out LaTeX errors; improve even page layout
+# A script for generating XeLaTeX / PDF editions/translations.
+# This version produces a Heliand translation alongside a
+# translation of its sources, but it relies on your manual translation
+# of both, as well as a nonpublic list of source keys, to generate any output.
+# Start by generating heliand-translation.txt (using translation_crib.py)
+# as a container for your translation.
+# TODO: process subsequent non-parenthetical source references
+# TODO: but prevent subsequent references from triggering repeat source inserts
+# TODO: avoid blank lines across from run-on lines; the astanza environment is half the answer.
+#       and see https://tex.stackexchange.com/a/757799/45456 also
 
 import re,json,argparse
 from pathlib import Path
@@ -41,9 +43,22 @@ sources = {
         '1Th': amiatinus['thessalonicenses-i']
         }
 
+bookmatrix = {
+        'Mt': 'Mt',
+        'Mc': 'Mk',
+        'Lc': 'Lk',
+        'Io': 'Jn',
+        '1Th': '1 Thes'
+        }
+
+def english_ref(ref):
+    for k,v in bookmatrix.items():
+        ref = ref.replace(k,v)
+    return ref
+
 class Pages(Environment):
     """ A class for the reledpar pages environment """
-    packages = [Package("fontspec"), Package("reledmac"), Package("reledpar")]
+    packages = [Package("fontspec"), Package("reledmac"), Package("reledpar")]#, options="shiftedpstarts")]
     escape = False
     content_separator = "\n"
 
@@ -80,10 +95,17 @@ if gospel_index_file.is_file():
 
 plaintext_no_empties = [t for t in plaintext if len(t) > 0]
 translation = [t for t in plaintext_no_empties if t[0] == 'T']
+source_translation = [t for t in plaintext_no_empties if t[0] == 'X']
+
 trans_dict = dict()
 for line in translation:
     rubble = re.split(r'\s+', line, maxsplit=1)
     trans_dict[rubble[0][1:].lstrip('0')] = re.sub(r'"(\w)', r'“\1', rubble[1])
+
+source_trans_dict = dict()
+for line in source_translation:
+    rubble = re.split(r'\s+', line, maxsplit=1)
+    source_trans_dict[rubble[0][1:].lstrip('0')] = re.sub(r'"(\w)', r'“\1', rubble[1])
 
 #document_options = ["a4"]
 
@@ -91,12 +113,13 @@ def round_line_no(line_range):
     return [i for i in line_range if int(i) % 5 == 0][0]
 
 def generate(fitts):
-    doc = Document(documentclass='book', fontenc='TU')#, document_options=document_options)
+    doc = Document(documentclass='scrbook', fontenc='TU')#, document_options=document_options)
     fitt_list = list(fitt_reference.keys())
 
     doc.append(NoEscape('\\setmainfont[Ligatures=TeX]{Junicode}'))
     doc.append(NoEscape('\\setcounter{secnumdepth}{0}'))
     doc.append(NoEscape('\\title{The \\emph{Heliand}}'))
+    doc.append(NoEscape('\\subtitle{Translated with its Sources}}'))
     doc.append(NoEscape('\\author{Anonymous Draft}'))
     doc.append(NoEscape('\\date{\\today}'))
     doc.append(NoEscape('\\maketitle'))
@@ -106,6 +129,8 @@ def generate(fitts):
     doc.append(NoEscape('\\newcommand{\\envalias}[2]{\\newenvironment{#1}{\\begin{#2}}{\\end{#2}}}'))
     doc.append(NoEscape('\\envalias{leftside}{Leftside}'))
     doc.append(NoEscape('\\envalias{rightside}{Rightside}'))
+    doc.append(NoEscape('\\renewcommand{\\linenumrepR}[1]{}'))
+    doc.append(NoEscape('\\setRlineflag{}'))
 
     for fitt in fitts:
         first_verse = fitt_reference[str(fitt)]
@@ -136,6 +161,7 @@ def generate(fitts):
                         doc.append(NoEscape(translated_line + '&'))
                 doc.append(NoEscape('\\endnumbering'))
             with doc.create(Rightside()):
+                verses_so_far = []
                 doc.append(NoEscape('\\beginnumbering'))
                 doc.append(NoEscape('\\setline{' + first_verse.rstrip('abx') + '}'))
                 doc.append(NoEscape('\\stanza[\\section{Fitt ' + str(fitt) + '}]'))
@@ -147,9 +173,15 @@ def generate(fitts):
                         if str(line) + i in gospel_index:
                             if gospel_index[str(line) + i] is not None and re.search(r"\S", gospel_index[str(line) + i]):
                                 main_verse = gospel_index[str(line) + i].split(',')[0]
-                                if main_verse[0] != '(':
-                                    book, ref = main_verse.rstrip('*').split(' ', 1)
-                                    printline = main_verse + ': ' + sources[book][ref]
+                                if main_verse[0] != '(' and not(main_verse.rstrip('*') in verses_so_far):
+                                    printline = ''
+                                    verses_so_far.append(main_verse.rstrip('*'))
+                                    if str(line) in source_trans_dict:
+                                        if re.search(r"\S", source_trans_dict[str(line)]):
+                                            printline = english_ref(main_verse) + ' ' + source_trans_dict[str(line)]
+                                    if len(printline) < 1:
+                                        book, ref = main_verse.rstrip('*').split(' ', 1)
+                                        printline = main_verse + ' ' + sources[book][ref]
                                     if printline not in scripture:
                                         scripture.append(printline)
                     if len(scripture) > 1:
