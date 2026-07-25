@@ -92,18 +92,26 @@ Extracts selections from the Latin Tatian as edited by Nicholas J. Zola. Outputs
 
 A lookup table of fitts and verse line numbers.
 
-## `typeset_translation.py`
+## `typeset_*.py`
 
-Generates LaTeX and PDF outputs if you have generated `heliand-translation.txt` and there drafted your own translation. May be modified to produce an Old Saxon edition instead.
+These scripts generate LaTeX and PDF outputs if the requisite materials are present. This may involve generating `heliand-translation.txt` and drafting your own translations within that file.
 
 Requires `pylatex`.
 
+## `investigations/`
+
+Contains NLP/statistical analysis of the repository's materials, and also of source data not yet publicly shared. It is the contents of this folder in particular that warrant the inclusion of a Creative Commons license (for the images) alongside the GPLv3 license (for the code).
+
 ## License Notice
 
-These tools are Copyright 2026 P. S. Langeslag.
+All contents of this repository are Copyright 2026 P. S. Langeslag.
 
-These tools are free software: you can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+Any __images__ distributed as part of this repository are licensed under a [Creative Commons Attribution 4.0 International License][cc-by].
 
-These tools are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+Any __software__ in this repository is licensed under version 3 of the GNU General Public License.
+
+This software free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with these tools. If not, see <https://www.gnu.org/licenses/>.
