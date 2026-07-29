@@ -5,7 +5,6 @@
 # pass (i.e. in `trends`).
 # TODO: make the frequency/score cutoff dependent on the length of the list
 # TODO: add those last lines from M where C doesn't have them
-# TODO: add lines ending in x
 # TODO: allow MnE queries and return OS equivalents
 
 import re,json,sys,argparse,time
@@ -51,7 +50,7 @@ if refresh:
 def generate():
     c_range = range(1,5969)
     t_range = range(1,5984)
-    t_lines = dict.fromkeys(t_range)
+    t_lines = dict.fromkeys([str(t) for t in range(1,4518)] + ['4517x'] + [str(t) for t in range(4518,5921)] + ['5920x'] + [str(t) for t in range(5921,5984)])
    
     trends = dict()
     translated_lines = 0
@@ -63,7 +62,7 @@ def generate():
             plaintext_no_empties = [t for t in plaintext if len(t) > 0]
             translation = [t for t in plaintext_no_empties if t[0] == 'T']
             for t in translation:
-                line_ref = int(t.split(' ', 1)[0].lstrip('T0'))
+                line_ref = t.split(' ', 1)[0].lstrip('T0')
                 line_content = t.split(' ', 1)[1].lstrip().lower()
                 for character in """.,:;'"?!–""":
                     line_content = line_content.replace(character, '')
@@ -116,8 +115,9 @@ def generate():
     if not(translation_trends.is_file()):
         for lemma in lemma_list:
             trans_terms = []
-            matching_lines = [int(k) for k,v in c_line_lemmas.items() if lemma in v]
+            matching_lines = [k for k,v in c_line_lemmas.items() if lemma in v]
             for line in matching_lines:
+                line = str(line)
                 if len(t_lines[line]) > 0:
                     trans_terms.extend(t_lines[line])
                     # repeating that action so exact line matches count twice as much as matches in adjacent lines:
@@ -159,7 +159,7 @@ def generate():
                     if trends[lemma] is not None:
                         pre_rankings = sorted([i for i in trends[lemma]], key=lambda x: x[1], reverse=True)
                         pre_rankings = [i[0] for i in pre_rankings]
-                        tr_lemmas = t_lines[line]
+                        tr_lemmas = t_lines[str(line)]
                         tr_line_rankings = dict()
                         if tr_lemmas is not None:
                             for tr_lemma in tr_lemmas:
