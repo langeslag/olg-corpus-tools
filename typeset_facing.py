@@ -1,9 +1,6 @@
 # A script for generating XeLaTeX / PDF editions/translations.
-# This version produces a Heliand translation alongside a
-# translation of its sources, but it relies on your manual translation
-# of both, as well as a nonpublic list of source keys, to generate any output.
-# Start by generating heliand-translation.txt (using translation_crib.py)
-# as a container for your translation.
+# This version prints the text of the Heliand with its gospel sources facing,
+# but it relies on a nonpublic list of source keys to generate any output.
 # TODO: avoid blank lines across from run-on lines; cf. https://tex.stackexchange.com/a/757799/45456
 
 import re,json,argparse
@@ -40,6 +37,8 @@ if not(source_trans_file.exists()):
 with open(source_trans_file) as json_data:
     xtrans = json.load(json_data)
 
+line_range = dict.fromkeys([str(t) for t in range(1,4518)] + ['4517x'] + [str(t) for t in range(4518,5921)] + ['5920x'] + [str(t) for t in range(5921,5984)])
+
 sources = {
         'Mt': amiatinus['mattheum'],
         'Mc': amiatinus['marcum'],
@@ -55,6 +54,17 @@ bookmatrix = {
         'Io': 'Jn',
         '1Th': '1 Thes'
         }
+
+def reconstruct_line(line):
+    data = []
+    for i in 'ab':
+        if str(line) + i in heliand_tokens:
+            if re.search(r"\S+", ' '.join(heliand_tokens[str(line) + i])):
+                verse_string = ' '.join(heliand_tokens[str(line) + i])
+            else:
+                verse_string = '\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ '
+            data.append(verse_string)
+    return '\\ \\ \\ \\ \\ \\ '.join(data)
 
 def english_ref(ref):
     for k,v in bookmatrix.items():
@@ -79,6 +89,9 @@ class Rightside(Environment):
     escape = False
     content_separator = "\n"
 
+with open('heliand-m.json') as f:
+    heliand_tokens = json.load(f)
+
 with open('heliand-fitts.json') as f:
     fitt_reference = json.load(f)
 
@@ -101,10 +114,10 @@ if gospel_index_file.is_file():
 plaintext_no_empties = [t for t in plaintext if len(t) > 0]
 translation = [t for t in plaintext_no_empties if t[0] == 'T']
 
-trans_dict = dict()
-for line in translation:
-    rubble = re.split(r'\s+', line, maxsplit=1)
-    trans_dict[rubble[0][1:].lstrip('0')] = re.sub(r'"(\w)', r'“\1', rubble[1])
+#trans_dict = dict()
+#for line in translation:
+#    rubble = re.split(r'\s+', line, maxsplit=1)
+#    trans_dict[rubble[0][1:].lstrip('0')] = re.sub(r'"(\w)', r'“\1', rubble[1])
 
 document_options = ["a4", "headings=standardclasses"]
 
@@ -118,9 +131,9 @@ def generate(fitts):
     doc.append(NoEscape('\\setmainfont[Ligatures=TeX]{Junicode}'))
     doc.append(NoEscape('\\setcounter{secnumdepth}{0}'))
     doc.append(NoEscape('\\title{The \\emph{Heliand}}'))
-    doc.append(NoEscape('\\subtitle{Translated with its Sources}'))
-    doc.append(NoEscape('\\author{Anonymous Draft}'))
-    doc.append(NoEscape('\\date{\\today}'))
+    doc.append(NoEscape('\\subtitle{Text and Sources}'))
+    doc.append(NoEscape('\\author{Generated from \\texttt{https://github.com/langeslag/olg-corpus-tools}}'))
+    doc.append(NoEscape('\\date{}'))
     doc.append(NoEscape('\\maketitle'))
     doc.append(NoEscape('\\setcounter{page}{1}'))
     doc.append(NoEscape('\\setlength{\\stanzaindentbase}{0pt}'))
@@ -151,13 +164,13 @@ def generate(fitts):
                 doc.append(NoEscape('\\stanza[\\section{Fitt ' + str(fitt) + '}]'))
                 #doc.append(NoEscape('\\setstanzapenalties{0}'))
                 for line in passage:
-                    translated_line = trans_dict[str(line)]
-                    if translated_line is None:
-                        translated_line = NoEscape('\\ ')
+                    line_text = reconstruct_line(str(line))
+                    if line_text is None:
+                        line_text = NoEscape('\\ ')
                     if line == passage[-1]:
-                        doc.append(NoEscape(translated_line + '\\&'))
+                        doc.append(NoEscape(line_text + '\\&'))
                     else:
-                        doc.append(NoEscape(translated_line + '&'))
+                        doc.append(NoEscape(line_text + '&'))
                 doc.append(NoEscape('\\endnumbering'))
             with doc.create(Rightside()):
                 scripture_cited = []
@@ -181,10 +194,7 @@ def generate(fitts):
                             book, ch_verse = ref.split()
                             bold_ref_english = NoEscape('\\textbf{') + english_ref(book) + NoEscape('\\,') + ch_verse + '}'
                             bold_ref = NoEscape('\\textbf{') + book + NoEscape('\\,') + ch_verse + '}'
-                            if ch_verse in xtrans[book]:
-                                scripture_text.append(bold_ref_english + ' ' + re.sub(r'"(\w)', r'“\1', xtrans[book][ch_verse]))
-                            else:
-                                scripture_text.append(bold_ref + ' ' + sources[book][ch_verse])
+                            scripture_text.append(bold_ref + ' ' + sources[book][ch_verse])
                     printline = ' '.join(scripture_text)
                     if line == passage[-1]:
                         doc.append(NoEscape(printline + '\\&'))
@@ -194,7 +204,7 @@ def generate(fitts):
 
         doc.append(NoEscape('\\Pages'))
 
-    doc.generate_pdf("facingtrans", clean_tex=False, compiler='xelatex')
+    doc.generate_pdf("facingpage", clean_tex=False, compiler='xelatex')
 
 if __name__ == '__main__':
     generate(selection)

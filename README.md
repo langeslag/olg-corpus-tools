@@ -4,7 +4,7 @@ Processing tools for Old Low German (i.e. Old Saxon) text corpora and resources.
 
 ## `pipeline.py`
 
-Runs all the generative scripts mentioned below. See `requirements.txt` for library prerequisites.
+Runs most all the generative scripts mentioned below. See `requirements.txt` for library prerequisites.
 
 ## `helipad_extract.py` and `helipad-extract.ipynb`
 
@@ -96,7 +96,7 @@ A lookup table of fitts and verse line numbers.
 
 These scripts generate LaTeX and PDF outputs if the requisite materials are present. This may involve generating `heliand-translation.txt` and drafting your own translations within that file.
 
-Requires `pylatex`.
+Requires `pylatex` and LaTeX.
 
 ## `investigations/`
 

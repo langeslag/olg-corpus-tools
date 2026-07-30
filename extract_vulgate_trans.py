@@ -1,7 +1,5 @@
 # This script extracts what translation from the Vulgate exists in heliand-translation.txt
 # and stores it as vulgate-trans.json so it can be processed e.g. by typeset*py.
-# TODO: stop the script from loading each verse into EACH gospel dict
-# TODO: make sure all verse duplication is now gone from the json
 
 import re,json
 from pathlib import Path
@@ -9,15 +7,13 @@ from natsort import natsorted
 
 outfile = Path('vulgate-trans.json')
 
-sources = [
-        'Mt',
-        'Mc',
-        'Lc',
-        'Io',
-        '1Th'
-        ]
-
-translations = dict.fromkeys(sources, {})
+translations = {
+        'Mt': {},
+        'Mc': {},
+        'Lc': {},
+        'Io': {},
+        '1Th': {}
+        }
 
 with open('heliand-translation.txt') as f:
     plaintext = f.read().splitlines()
@@ -47,22 +43,29 @@ for line in source_translation:
 line_range = dict.fromkeys([str(t) for t in range(1,4518)] + ['4517x'] + [str(t) for t in range(4518,5921)] + ['5920x'] + [str(t) for t in range(5921,5984)])
 
 def generate():
+    # For str(1) to str(9853), roughly:
     for line_no in line_range:
         ref_counter = 0
         catch = []
+        # If the X-line (Vulgate translation) in heliand-translation.txt has been populated:
         if line_no in source_trans_dict:
-            for i in 'ab':
-                if gospel_index[line_no + i] is not None:
-                    if re.search(r"\S+", gospel_index[line_no + i]):
-                        catch.extend(gospel_index[line_no + i].split(','))
-            catch = list(set([x.replace('*', '') for x in catch if x[0] != '(']))
-            for ref in catch:
-                bk, verse = ref.split()
-                if verse not in translations[bk]:
-                    if re.search(r"\S+", source_trans_dict[line_no]):
+            if re.search(r"\S+", source_trans_dict[line_no]):
+                # Gather up biblical references for each verse of that line of the Heliand:
+                for i in 'ab':
+                    if gospel_index[line_no + i] is not None:
+                        if re.search(r"\S+", gospel_index[line_no + i]):
+                            catch.extend(gospel_index[line_no + i].split(','))
+                catch = natsorted(list(set([x.replace('*', '') for x in catch if x[0] != '('])))
+                # For each of which references:
+                for ref in catch:
+                    bk, ch_verse = ref.split()
+                    # If the dict entry for that book and chapter.verse has not already been filled:
+                    if ch_verse not in translations[bk]:
+                        # Split in case there are multiple translations
                         translations_list = source_trans_dict[line_no].split(' || ')
-                        translations[bk][verse] = translations_list[ref_counter]
-                ref_counter += 1
+                        # And assign the appropriate translation to the appropriate chapter.verse key of the appropriate book dict:
+                        translations[bk][ch_verse] = translations_list[ref_counter]
+                    ref_counter += 1
 
     for k,v in translations.items():
         translations[k] = dict(natsorted(v.items()))

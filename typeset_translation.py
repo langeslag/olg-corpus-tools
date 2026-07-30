@@ -4,7 +4,7 @@
 # translation (as is the default) you'll have to write one into heliand-translation.txt first.
 # Also the scripture references are not part of this repository.
 # TODO: figure out LaTeX errors occurring as soon as I print any line content (seems like a timeout?)
-# TODO: Turn markdown into LaTeX (quotation marks); account for halflines; account for 'x'-lines
+# TODO: account for halflines; account for 'x'-lines
 
 import re,json,argparse
 from pathlib import Path
