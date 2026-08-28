@@ -8,7 +8,7 @@ Runs most all the generative scripts mentioned below. See `requirements.txt` for
 
 ## `helipad_extract.py` and `helipad-extract.ipynb`
 
-A script extracting token forms with their lemma, POS, and verse ID metadata from the CorpusSearch PSD-formatted [HeliPaD](https://github.com/DiGS-Corpora/HeliPaD) corpus (i.e. the C text of [Sievers 1878](https://archive.org/details/heliandherausgvonsieve), representing the _Heliand_ according to [[London, British Library, MS Cotton Caligula A. vii](https://searcharchives.bl.uk/catalog/041-001102326)]), and outputting them in JSON and plaintext formats. The script has a few variables for tweaking the presentation of the plaintext output.
+A script extracting token forms with their lemma, POS, and verse ID metadata from the CorpusSearch PSD-formatted [HeliPaD](https://github.com/DiGS-Corpora/HeliPaD) corpus (i.e. the C text of [Sievers 1878](https://archive.org/details/heliandherausgvonsieve), representing the _Heliand_ according to [London, British Library, MS Cotton Caligula A. vii](https://searcharchives.bl.uk/catalog/041-001102326)), and outputting them in JSON and plaintext formats. The script has a few variables for tweaking the presentation of the plaintext output.
 
 Requires `GitPython`.
 
