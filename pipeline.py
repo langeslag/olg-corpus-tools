@@ -16,6 +16,7 @@ import verses_of_different_length
 import heliand_xpollinate_2ndpass
 import heliandlps_xpollinate
 import add_fragments_to_inverted_lemmas
+import translation_crib
 
 #for file in [
 #    'heliand-c.json',
@@ -47,3 +48,4 @@ heliandlps_xpollinate.xfer('l')
 heliandlps_xpollinate.xfer('p')
 heliandlps_xpollinate.xfer('s')
 add_fragments_to_inverted_lemmas.generate()
+translation_crib.generate()

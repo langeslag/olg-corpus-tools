@@ -8,13 +8,13 @@ Runs most all the generative scripts mentioned below. See `requirements.txt` for
 
 ## `helipad_extract.py` and `helipad-extract.ipynb`
 
-A script extracting token forms with their lemma, POS, and verse ID metadata from the CorpusSearch PSD-formatted [HeliPaD](https://github.com/DiGS-Corpora/HeliPaD) corpus (i.e. the text of [Sievers 1878](https://archive.org/details/heliandherausgvonsieve), representing the C text [[London, British Library, MS Cotton Caligula A. vii](https://searcharchives.bl.uk/catalog/041-001102326)] of the _Heliand_), and outputting them in JSON and plaintext formats. The script has a few variables for tweaking the presentation of the plaintext output.
+A script extracting token forms with their lemma, POS, and verse ID metadata from the CorpusSearch PSD-formatted [HeliPaD](https://github.com/DiGS-Corpora/HeliPaD) corpus (i.e. the C text of [Sievers 1878](https://archive.org/details/heliandherausgvonsieve), representing the _Heliand_ according to [[London, British Library, MS Cotton Caligula A. vii](https://searcharchives.bl.uk/catalog/041-001102326)]), and outputting them in JSON and plaintext formats. The script has a few variables for tweaking the presentation of the plaintext output.
 
 Requires `GitPython`.
 
 ## `wikisource_extract.py` and `wikisource-extract.ipynb`
 
-A script converting the [German Wikisource](https://de.wikisource.org/wiki/Heliand)'s text of the _Heliand_ (representing [Behaghel's [third, i.e. 1922?] edition](https://archive.org/details/heliandundgenesi00beha/), based on M, i.e. [Munich, Bayerische Staatsbibliothek, Cgm 25](https://www.digitale-sammlungen.de/de/view/bsb00026305), but with heavy emendation), to JSON and plaintext.
+A script converting the [German Wikisource](https://de.wikisource.org/wiki/Heliand)'s text of the _Heliand_ (representing the M text of [Sievers 1878](https://archive.org/details/heliandherausgvonsieve), i.e. [Munich, Bayerische Staatsbibliothek, Cgm 25](https://www.digitale-sammlungen.de/de/view/bsb00026305), supplying C for lacunae), to JSON and plaintext.
 
 Requires `bs4` and `pymediawiki`.
 
@@ -115,3 +115,5 @@ This software free software: you can redistribute it and/or modify it under the 
 This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with these tools. If not, see <https://www.gnu.org/licenses/>.
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/

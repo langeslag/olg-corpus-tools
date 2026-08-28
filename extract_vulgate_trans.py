@@ -61,10 +61,14 @@ def generate():
                     bk, ch_verse = ref.split()
                     # If the dict entry for that book and chapter.verse has not already been filled:
                     if ch_verse not in translations[bk]:
+                        print(ref)
                         # Split in case there are multiple translations
                         translations_list = source_trans_dict[line_no].split(' || ')
                         # And assign the appropriate translation to the appropriate chapter.verse key of the appropriate book dict:
-                        translations[bk][ch_verse] = translations_list[ref_counter]
+                        if len(translations_list) == 1:
+                            translations[bk][ch_verse] = translations_list[0]
+                        else:
+                            translations[bk][ch_verse] = translations_list[ref_counter]
                     ref_counter += 1
 
     for k,v in translations.items():

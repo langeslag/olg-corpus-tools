@@ -34,8 +34,7 @@ with open('amiatinus.json') as json_data:
     amiatinus = json.load(json_data)
 
 source_trans_file = Path('vulgate-trans.json')
-if not(source_trans_file.exists()):
-    extract_vulgate_trans.generate()
+extract_vulgate_trans.generate()
 
 with open(source_trans_file) as json_data:
     xtrans = json.load(json_data)
