@@ -3,9 +3,12 @@
 # TODO: build a second pass within generate() selecting (or boosting)
 # from each translated line the token that scores the highest in the first
 # pass (i.e. in `trends`).
+# TODO: perhaps loop in a semantic proximity check into that second pass
 # TODO: make the frequency/score cutoff dependent on the length of the list
 # TODO: add those last lines from M where C doesn't have them
 # TODO: allow MnE queries and return OS equivalents
+# TODO: make an exclude list for very frequent words (man, god) that should
+# be excluded except for known matches.
 
 import re,json,sys,argparse,time
 from pathlib import Path
@@ -64,7 +67,7 @@ def generate():
             for t in translation:
                 line_ref = t.split(' ', 1)[0].lstrip('T0')
                 line_content = t.split(' ', 1)[1].lstrip().lower()
-                for character in """.,:;'"?!–""":
+                for character in """.,:;'"?!–—""":
                     line_content = line_content.replace(character, '')
                 t_tokens = line_content.split()
                 if len(t_tokens) > 0:
@@ -181,7 +184,7 @@ def generate():
                                         secondpass[lemma][existing_index] = (top_ranking_translation, old_score+1)
                                     # TODO: enter old data if not already entered.
                                     # but in what format again?
-                                    # currently I'm just duplicating the old rankings which is pointless
+                                    # currently I'm just duplicating the old rankings, which is pointless
                                 else:
                                     secondpass[lemma] = trends[lemma]
 
